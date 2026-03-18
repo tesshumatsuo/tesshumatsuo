@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "all": "All",
+    "life": "Life",
+    "it": "IT",
+    "language": "Language",
+    "project": "Project",
+    "profile": "Profile",
+    "categories": {
+      "investment": "Investment",
+      "book": "Book",
+      "movie": "Movie",
+      "camera": "Camera",
+      "travel": "Travel",
+      "programming": "Programming",
+      "marketing": "Marketing",
+      "english": "English"
+    }
+  },
+  "home": {
+    "greeting": "Hello, I'm",
+    "tagline": "Creator / Innovator / Developer",
+    "description": "Personal media and knowledge base exploring the intersections of Business, Technology, Philosophy, and Design.",
+    "latestArticles": "Latest Articles",
+    "viewAll": "View All",
+    "exploreCategory": "Explore by Category",
+    "aboutMe": "About Me",
+    "aboutDesc1": "Creating innovative experiences in the digital world. I pursue modern design that balances beauty and functionality, developing products that move users.",
+    "aboutDesc2": "My goal is to always incorporate the latest technology and design trends, providing uncompromising quality.",
+    "readProfile": "Read Full Profile",
+    "selectedWorks": "Selected Works",
+    "getInTouch": "Get In Touch",
+    "contactDesc": "Feel free to reach out about new projects or collaborations."
+  },
+  "blog": {
+    "title": "Writing",
+    "description": "Essays and thoughts on building products, navigating technology shifts, and understanding the digital economy.",
+    "all": "All"
+  },
+  "about": {
+    "tagline": "Creator / Innovator / Developer",
+    "experience": "Experience",
+    "skills": "Skills & Tools",
+    "getInTouch": "Get In Touch"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "successTitle": "Message sent successfully",
+    "successDesc": "Thank you for reaching out. I'll get back to you shortly.",
+    "sendAnother": "Send another message",
+    "error": "Failed to send. Please try again later.",
+    "namePlaceholder": "John Doe",
+    "messagePlaceholder": "Tell me about your project..."
+  }
+}

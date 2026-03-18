@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "all": "All",
+    "life": "Life",
+    "it": "IT",
+    "language": "Language",
+    "project": "Project",
+    "profile": "Profile",
+    "categories": {
+      "investment": "Investment",
+      "book": "Book",
+      "movie": "Movie",
+      "camera": "Camera",
+      "travel": "Travel",
+      "programming": "Programming",
+      "marketing": "Marketing",
+      "english": "English"
+    }
+  },
+  "home": {
+    "greeting": "こんにちは、",
+    "tagline": "クリエイター / イノベーター / 開発者",
+    "description": "ビジネス、テクノロジー、哲学、デザインの交差点を探求するパーソナルメディアとナレッジベース。",
+    "latestArticles": "最新記事",
+    "viewAll": "すべて見る",
+    "exploreCategory": "カテゴリで探す",
+    "aboutMe": "プロフィール",
+    "aboutDesc1": "デジタルの世界で革新的な体験を創り出しています。美しさと機能性を兼ね備えたモダンなデザインを追求し、ユーザーの心を動かすプロダクトを開発しています。",
+    "aboutDesc2": "常に最新の技術とデザイントレンドを取り入れ、妥協のない品質を提供することを目標としています。",
+    "readProfile": "プロフィールを読む",
+    "selectedWorks": "主なプロジェクト",
+    "getInTouch": "お問い合わせ",
+    "contactDesc": "新しいプロジェクトやコラボレーションについて、お気軽にご連絡ください。"
+  },
+  "blog": {
+    "title": "ブログ",
+    "description": "ビジネス、テクノロジー、デジタルエコノミーへの考察と思索のエッセイ。",
+    "all": "すべて"
+  },
+  "about": {
+    "tagline": "クリエイター / イノベーター / 開発者",
+    "experience": "経歴",
+    "skills": "スキル・ツール",
+    "getInTouch": "お問い合わせはこちら"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "message": "メッセージ",
+    "send": "送信する",
+    "sending": "送信中...",
+    "successTitle": "メッセージを送信しました",
+    "successDesc": "お問い合わせありがとうございます。折り返しご連絡いたします。",
+    "sendAnother": "別のメッセージを送る",
+    "error": "送信に失敗しました。時間をおいて再度お試しください。",
+    "namePlaceholder": "山田 太郎",
+    "messagePlaceholder": "ご要件をご記入ください..."
+  }
+}

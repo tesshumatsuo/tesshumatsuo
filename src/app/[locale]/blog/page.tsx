@@ -1,6 +1,9 @@
+import { useTranslations } from 'next-intl'
 import ArticleCard from '@/components/ArticleCard'
 
 export default function BlogIndex() {
+  const t = useTranslations('blog')
+
   const articles = [
     {
       title: 'The Future of Modern Web Development with Next.js and Tailwind CSS',
@@ -35,15 +38,14 @@ export default function BlogIndex() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-12 md:py-24 space-y-16">
       <header className="space-y-4">
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">Writing</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">{t('title')}</h1>
         <p className="text-xl text-gray-600 max-w-2xl leading-relaxed font-light">
-          Essays and thoughts on building products, navigating technology shifts, and understanding the digital economy.
+          {t('description')}
         </p>
       </header>
-      
-      {/* Category Filters Placeholder */}
-      <div className="border-b border-gray-100 pb-4 flex gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap scrollbar-hide">
-        <button className="text-gray-900 border-b-2 border-gray-900 pb-2">All</button>
+
+      <div className="border-b border-gray-100 pb-4 flex gap-6 text-sm font-medium overflow-x-auto whitespace-nowrap">
+        <button className="text-gray-900 border-b-2 border-gray-900 pb-2">{t('all')}</button>
         <button className="text-gray-500 hover:text-gray-900 transition-colors pb-2 cursor-pointer">Business</button>
         <button className="text-gray-500 hover:text-gray-900 transition-colors pb-2 cursor-pointer">Technology</button>
         <button className="text-gray-500 hover:text-gray-900 transition-colors pb-2 cursor-pointer">Philosophy</button>

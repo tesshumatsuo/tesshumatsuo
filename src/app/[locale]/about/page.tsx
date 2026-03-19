@@ -4,16 +4,16 @@ export default function AboutPage() {
   const t = useTranslations('about')
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-12 md:py-24 space-y-16">
+    <div className="space-y-16 w-full max-w-3xl mx-auto">
       <header className="space-y-6 text-center">
         <div className="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-8 border border-gray-100"></div>
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-black">
           Tesshu Matsuo
         </h1>
-        <p className="text-xl text-gray-600 font-light">{t('tagline')}</p>
+        <p className="text-xl text-black font-medium">{t('tagline')}</p>
       </header>
 
-      <article className="max-w-none space-y-8 text-gray-800 leading-loose">
+      <article className="max-w-none space-y-8 text-black leading-loose text-lg">
         <p>
           デジタルの世界で革新的な体験を創り出しています。美しさと機能性を兼ね備えたモダンなデザインを追求し、ユーザーの心を動かすプロダクトを開発しています。
         </p>

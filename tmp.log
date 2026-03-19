@@ -1,0 +1,510 @@
+(node:29866) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/apple/Documents/Vibecoding/tesshumatsuo/scripts/wp-import.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/apple/Documents/Vibecoding/tesshumatsuo/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+📖 Reading XML file...
+🔍 Parsing XML...
+🚀 Found 45 published posts to import.
+⏳ Processing: "【逆転思考】インターネットコンテンツ作成の考え方と今後の戦略"...
+  -> 🖼️ Uploading image: 2023/01/IMG_5684.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00107.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_4527.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00326.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC07373.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_0553.jpg
+✅ Success: 【逆転思考】インターネットコンテンツ作成の考え方と今後の戦略
+⏳ Processing: "スキルまとめ"...
+  -> 🖼️ Uploading image: 2023/01/IMG_5602.jpg
+  -> 🖼️ Uploading image: 2023/01/ethic-nyc.jpeg
+✅ Success: スキルまとめ
+⏳ Processing: "【情報収集】読書することについて考える"...
+  -> 🖼️ Uploading image: 2023/01/IMG_4928.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00259.jpg
+  -> 🖼️ Uploading image: 2023/05/DSC00538.jpg
+  -> 🖼️ Uploading image: 2023/02/wr.jpg
+  -> 🖼️ Uploading image: 2023/05/IMG_4471.jpg
+  -> 🖼️ Uploading image: 2023/04/IMG_7390.jpg
+✅ Success: 【情報収集】読書することについて考える
+⏳ Processing: "【No.1】ウルフオブウォールストリートを鑑賞しました【映画ログ】"...
+  -> 🖼️ Uploading image: 2023/02/wallstreet.jpeg
+  -> 🖼️ Uploading image: 2023/01/DSC00326.jpg
+  -> 🖼️ Uploading image: 2023/02/ninja.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_4527.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_5684.jpg
+  -> 🖼️ Uploading image: 2023/01/ethic-nyc.jpeg
+  -> 🖼️ Uploading image: 2023/01/DSC00107.jpg
+✅ Success: 【No.1】ウルフオブウォールストリートを鑑賞しました【映画ログ】
+⏳ Processing: "【ビジネスに有効的】ブログは時間短縮になる【現代社会の名刺である】"...
+  -> 🖼️ Uploading image: 2023/02/IMG_3224.jpg
+  -> 🖼️ Uploading image: 2023/02/ninja.jpg
+  -> 🖼️ Uploading image: 2023/02/wr.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_3288.jpg
+  -> 🖼️ Uploading image: 2023/02/blifeog.jpg
+✅ Success: 【ビジネスに有効的】ブログは時間短縮になる【現代社会の名刺である】
+⏳ Processing: "【副業スキルに良い】プログラミングを学んでよかった"...
+  -> 🖼️ Uploading image: 2023/02/note7.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_3253.jpg
+  -> 🖼️ Uploading image: 2023/02/note2.jpg
+  -> 🖼️ Uploading image: 2023/02/ethic.jpg
+  -> 🖼️ Uploading image: 2023/02/ninja.jpg
+✅ Success: 【副業スキルに良い】プログラミングを学んでよかった
+⏳ Processing: "【ビジネスとIT】プログラミングスキルを事業に活かすと良い理由"...
+  -> 🖼️ Uploading image: 2023/02/IMG_4496.jpg
+  -> 🖼️ Uploading image: 2023/02/ninja.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_3268.jpg
+  -> 🖼️ Uploading image: 2023/02/wr.jpg
+  -> 🖼️ Uploading image: 2023/02/DSC00509.jpg
+  -> 🖼️ Uploading image: 2023/02/blifeog.jpg
+✅ Success: 【ビジネスとIT】プログラミングスキルを事業に活かすと良い理由
+⏳ Processing: "【自転車通勤】通勤時間は無駄だと思う"...
+  -> 🖼️ Uploading image: 2023/02/IMG_0436-2.jpg
+  -> 🖼️ Uploading image: 2023/04/DSC00540.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_7410.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_7425.jpg
+  -> 🖼️ Uploading image: 2023/02/ethic.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_8150.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_5739-1.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00674.jpg
+  -> 🖼️ Uploading image: 2023/06/adv.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00341.jpg
+  -> 🖼️ Uploading image: 2023/02/blifeog.jpg
+✅ Success: 【自転車通勤】通勤時間は無駄だと思う
+⏳ Processing: "BLUE EPOK"...
+  -> 🖼️ Uploading image: 2023/04/blueepok.jpg
+✅ Success: BLUE EPOK
+⏳ Processing: "Project まとめ"...
+  -> 🖼️ Uploading image: 2023/04/DSC00262.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00671.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_7410.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_5684.jpg
+  -> 🖼️ Uploading image: 2023/04/suutar.jpg
+  -> 🖼️ Uploading image: 2023/04/DSC00540.jpg
+  -> 🖼️ Uploading image: 2023/04/IMG_7390.jpg
+✅ Success: Project まとめ
+⏳ Processing: "FLY HIGH"...
+  -> 🖼️ Uploading image: 2023/04/suutar.jpg
+✅ Success: FLY HIGH
+⏳ Processing: "ごぼう塾"...
+  -> 🖼️ Uploading image: 2023/04/IMG_7390.jpg
+✅ Success: ごぼう塾
+⏳ Processing: "J FARM"...
+  -> 🖼️ Uploading image: 2023/04/IMG_0853.jpg
+✅ Success: J FARM
+⏳ Processing: "【養蜂】長野に蜂を購入しにいきました【思い出】"...
+  -> 🖼️ Uploading image: 2023/05/DSC00545-2.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_4496.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC07373.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_4527.jpg
+✅ Success: 【養蜂】長野に蜂を購入しにいきました【思い出】
+⏳ Processing: "【副業におすすめ】ITスキルってどんなものがある？"...
+  -> 🖼️ Uploading image: 2023/06/adv.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07417.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_0314.jpg
+  -> 🖼️ Uploading image: 2023/06/wrsample.jpg
+  -> 🖼️ Uploading image: 2023/02/blifeog.jpg
+  -> 🖼️ Uploading image: 2023/02/ninja.jpg
+  -> 🖼️ Uploading image: 2023/06/guitar.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_7992.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_0589.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_7410.jpg
+  -> 🖼️ Uploading image: 2023/01/ethic-nyc.jpeg
+  -> 🖼️ Uploading image: 2023/02/IMG_7100JPG.jpg
+✅ Success: 【副業におすすめ】ITスキルってどんなものがある？
+⏳ Processing: "【悲報】金融リテラシーがない日本人は、これからしんどいと思う"...
+  -> 🖼️ Uploading image: 2023/06/IMG_5792.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_3253.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_7410.jpg
+  -> 🖼️ Uploading image: 2023/04/IMG_7750.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07418.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_4496.jpg
+  -> 🖼️ Uploading image: 2023/02/note2.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00326.jpg
+  -> 🖼️ Uploading image: 2023/04/DSC00540.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_7970.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07388.jpg
+  -> 🖼️ Uploading image: 2023/02/note7.jpg
+  -> 🖼️ Uploading image: 2023/04/blueepok.jpg
+✅ Success: 【悲報】金融リテラシーがない日本人は、これからしんどいと思う
+⏳ Processing: "【No.2】フラッシュダンスを鑑賞しました【映画ログ】"...
+  -> 🖼️ Uploading image: 2023/06/flashdance.jpeg
+  -> 🖼️ Uploading image: 2023/06/DSC07417.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_2654.jpg
+  -> 🖼️ Uploading image: 2023/04/IMG_7750.jpg
+  -> 🖼️ Uploading image: 2023/02/note7.jpg
+  -> 🖼️ Uploading image: 2023/04/IMG_7390.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_7100JPG.jpg
+✅ Success: 【No.2】フラッシュダンスを鑑賞しました【映画ログ】
+⏳ Processing: "Chat GPTって何？【初心者に向けて解説】"...
+  -> 🖼️ Uploading image: 2023/08/DSC00734.jpg
+  -> 🖼️ Uploading image: 2023/04/blueepok.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00739.jpg
+  -> 🖼️ Uploading image: 2023/04/suutar.jpg
+  -> 🖼️ Uploading image: 2023/08/blife.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_7100JPG.jpg
+  -> 🖼️ Uploading image: 2023/07/fish.jpg
+  -> 🖼️ Uploading image: 2023/04/IMG_0853.jpg
+✅ Success: Chat GPTって何？【初心者に向けて解説】
+⏳ Processing: "【体験談】経営者になってみて感じたこと【起業】"...
+  -> 🖼️ Uploading image: 2023/09/note36.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_0314.jpg
+  -> 🖼️ Uploading image: 2023/08/note13.jpg
+  -> 🖼️ Uploading image: 2023/07/fish.jpg
+  -> 🖼️ Uploading image: 2023/02/DSC00509.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_4527.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_2988.jpg
+  -> 🖼️ Uploading image: 2023/07/DSCF4807.jpg
+  -> 🖼️ Uploading image: 2023/09/note33.jpg
+  -> 🖼️ Uploading image: 2023/09/note38.jpg
+  -> 🖼️ Uploading image: 2023/09/note32.jpg
+  -> 🖼️ Uploading image: 2023/04/IMG_7750.jpg
+  -> 🖼️ Uploading image: 2023/02/blifeog.jpg
+  -> 🖼️ Uploading image: 2023/04/IMG_7390.jpg
+  -> 🖼️ Uploading image: 2023/09/note29.jpg
+  -> 🖼️ Uploading image: 2023/08/DSC00734.jpg
+✅ Success: 【体験談】経営者になってみて感じたこと【起業】
+⏳ Processing: "【挑戦すれば意外といける】好きなことを仕事にする方法"...
+  -> 🖼️ Uploading image: 2023/09/note34.jpg
+  -> 🖼️ Uploading image: 2023/09/note38.jpg
+  -> 🖼️ Uploading image: 2023/09/note30.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07418.jpg
+  -> 🖼️ Uploading image: 2023/09/note32.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07417.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00674.jpg
+  -> 🖼️ Uploading image: 2023/08/note13.jpg
+  -> 🖼️ Uploading image: 2023/09/note40.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_7529.jpg
+  -> 🖼️ Uploading image: 2023/09/note39.jpg
+  -> 🖼️ Uploading image: 2023/09/note41.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_0314.jpg
+✅ Success: 【挑戦すれば意外といける】好きなことを仕事にする方法
+⏳ Processing: "【積み上げが必須】ストック型のビジネスは、時間にゆとりをもてるので最高です"...
+  -> 🖼️ Uploading image: 2023/02/IMG_3259.jpg
+  -> 🖼️ Uploading image: 2023/06/guitar.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_4473.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_7970.jpg
+  -> 🖼️ Uploading image: 2023/09/note42.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07388.jpg
+✅ Success: 【積み上げが必須】ストック型のビジネスは、時間にゆとりをもてるので最高です
+⏳ Processing: "【再現性高め】時間をかければ、誰でもお金持ちになれる件"...
+  -> 🖼️ Uploading image: 2023/06/IMG_4473.jpg
+  -> 🖼️ Uploading image: 2023/07/DSC05858.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_3259.jpg
+  -> 🖼️ Uploading image: 2023/04/DSC00540.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00671.jpg
+  -> 🖼️ Uploading image: 2023/07/DSCF4807.jpg
+  -> 🖼️ Uploading image: 2023/07/finance.jpg
+  -> 🖼️ Uploading image: 2023/02/ethic.jpg
+  -> 🖼️ Uploading image: 2023/07/fish.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00674.jpg
+✅ Success: 【再現性高め】時間をかければ、誰でもお金持ちになれる件
+⏳ Processing: "仕事の概念とは【新しい視点から考える】"...
+  -> 🖼️ Uploading image: 2023/09/note35.jpg
+  -> 🖼️ Uploading image: 2023/04/IMG_7750.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_5792.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07418.jpg
+  -> 🖼️ Uploading image: 2023/07/DSCF4807.jpg
+  -> 🖼️ Uploading image: 2023/07/swiss.jpg
+  -> 🖼️ Uploading image: 2023/08/note13.jpg
+  -> 🖼️ Uploading image: 2023/09/note36.jpg
+  -> 🖼️ Uploading image: 2023/09/book1.jpg
+  -> 🖼️ Uploading image: 2023/09/note37.jpg
+  -> 🖼️ Uploading image: 2023/06/adv.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_7100JPG.jpg
+  -> 🖼️ Uploading image: 2023/09/note34.jpg
+✅ Success: 仕事の概念とは【新しい視点から考える】
+⏳ Processing: "これからの教育に必要なこと"...
+  -> 🖼️ Uploading image: 2023/12/IMG_9534.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9392.jpg
+  -> 🖼️ Uploading image: 2023/09/note36.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9404.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_7750.jpg
+  -> 🖼️ Uploading image: 2023/02/DSC00509.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_1491.jpg
+  -> 🖼️ Uploading image: 2023/08/note13.jpg
+  -> 🖼️ Uploading image: 2023/07/fish.jpg
+  -> 🖼️ Uploading image: 2023/09/note33.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_7970.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00228.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07418.jpg
+  -> 🖼️ Uploading image: 2023/09/note38.jpg
+  -> 🖼️ Uploading image: 2023/09/note40.jpg
+✅ Success: これからの教育に必要なこと
+⏳ Processing: "INDEX投資とETFの違いとは"...
+  -> 🖼️ Uploading image: 2023/06/IMG_1491.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00228.jpg
+  -> 🖼️ Uploading image: 2023/08/note11.jpg
+  -> 🖼️ Uploading image: 2023/08/note12.jpg
+  -> 🖼️ Uploading image: 2023/08/note14.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07418.jpg
+  -> 🖼️ Uploading image: 2023/07/fish.jpg
+✅ Success: INDEX投資とETFの違いとは
+⏳ Processing: "キャリア思考ではなく、ポートフォリオ思考に切り替えると人生楽しめる"...
+  -> 🖼️ Uploading image: 2023/08/note22.jpg
+  -> 🖼️ Uploading image: 2023/07/fish.jpg
+  -> 🖼️ Uploading image: 2023/07/1093989_222023977953341_1845074246_o.jpg
+  -> 🖼️ Uploading image: 2023/09/note28.jpg
+  -> 🖼️ Uploading image: 2023/09/note29.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00228.jpg
+  -> 🖼️ Uploading image: 2023/07/1116114_490004834425289_2143826648_o.jpg
+  -> 🖼️ Uploading image: 2023/09/note30.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_2988.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_2984-2.jpg
+✅ Success: キャリア思考ではなく、ポートフォリオ思考に切り替えると人生楽しめる
+⏳ Processing: "【No.1】末広がりのいい会社をつくる ：塚越寛【読書ログ】"...
+  -> 🖼️ Uploading image: 2023/09/book1.jpg
+  -> 🖼️ Uploading image: 2023/08/note12.jpg
+  -> 🖼️ Uploading image: 2023/02/DSC00509.jpg
+  -> 🖼️ Uploading image: 2023/02/blifeog.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_7410.jpg
+  -> 🖼️ Uploading image: 2023/08/blife.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07418.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_7970.jpg
+  -> 🖼️ Uploading image: 2023/08/note13.jpg
+  -> 🖼️ Uploading image: 2023/06/adv.jpg
+✅ Success: 【No.1】末広がりのいい会社をつくる ：塚越寛【読書ログ】
+⏳ Processing: "【お金を増やすだけではない】投資することの本質とは？"...
+  -> 🖼️ Uploading image: 2023/09/note31.jpg
+  -> 🖼️ Uploading image: 2023/02/blifeog.jpg
+  -> 🖼️ Uploading image: 2023/02/note2.jpg
+  -> 🖼️ Uploading image: 2023/04/DSC00540.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_5684.jpg
+  -> 🖼️ Uploading image: 2023/09/note29.jpg
+  -> 🖼️ Uploading image: 2023/09/note32.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_0589.jpg
+  -> 🖼️ Uploading image: 2023/07/1116114_490004834425289_2143826648_o.jpg
+  -> 🖼️ Uploading image: 2023/09/note33.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_8150.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_7611.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_1491.jpg
+✅ Success: 【お金を増やすだけではない】投資することの本質とは？
+⏳ Processing: "【人生を構築するために必須】やりたいことや自分の理想を見つける方法"...
+  -> 🖼️ Uploading image: 2023/07/DSC00630.jpg
+  -> 🖼️ Uploading image: 2023/07/DSC05858.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07417.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00739.jpg
+  -> 🖼️ Uploading image: 2023/09/note5.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_0589.jpg
+  -> 🖼️ Uploading image: 2023/09/note36.jpg
+  -> 🖼️ Uploading image: 2023/09/note31.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_7410.jpg
+  -> 🖼️ Uploading image: 2023/09/note40.jpg
+  -> 🖼️ Uploading image: 2023/09/note43.jpg
+  -> 🖼️ Uploading image: 2023/09/note32.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_1491.jpg
+✅ Success: 【人生を構築するために必須】やりたいことや自分の理想を見つける方法
+⏳ Processing: "好きなことを仕事にするメリットとデメリット"...
+  -> 🖼️ Uploading image: 2023/09/note42.jpg
+  -> 🖼️ Uploading image: 2023/02/blifeog.jpg
+  -> 🖼️ Uploading image: 2023/08/note13.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_7410.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_1491.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_2672.jpg
+  -> 🖼️ Uploading image: 2023/01/ethic-nyc.jpeg
+  -> 🖼️ Uploading image: 2023/07/swiss.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07417.jpg
+  -> 🖼️ Uploading image: 2023/04/IMG_7390.jpg
+  -> 🖼️ Uploading image: 2023/09/note41.jpg
+  -> 🖼️ Uploading image: 2023/08/note14.jpg
+  -> 🖼️ Uploading image: 2023/09/note38.jpg
+  -> 🖼️ Uploading image: 2023/02/ninja.jpg
+  -> 🖼️ Uploading image: 2023/02/note2.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_5602.jpg
+✅ Success: 好きなことを仕事にするメリットとデメリット
+⏳ Processing: "コンテンツマーケティングは、魚くんになることで上手くいく"...
+  -> 🖼️ Uploading image: 2023/12/IMG_5572.jpg
+  -> 🖼️ Uploading image: 2023/09/note28.jpg
+  -> 🖼️ Uploading image: 2023/06/adv.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_8150.jpg
+  -> 🖼️ Uploading image: 2023/02/blifeog.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_0314.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07418.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07417.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00674.jpg
+  -> 🖼️ Uploading image: 2023/08/note13.jpg
+  -> 🖼️ Uploading image: 2023/09/note41.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9534.jpg
+  -> 🖼️ Uploading image: 2023/06/guitar.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_0589.jpg
+  -> 🖼️ Uploading image: 2023/02/ethic.jpg
+  -> 🖼️ Uploading image: 2023/09/note34.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_5602.jpg
+✅ Success: コンテンツマーケティングは、魚くんになることで上手くいく
+⏳ Processing: "【人生は結論が大事】お金の使い道を考える【ビジネス】"...
+  -> 🖼️ Uploading image: 2023/09/note44.jpg
+  -> 🖼️ Uploading image: 2023/09/note28.jpg
+  -> 🖼️ Uploading image: 2023/08/note22.jpg
+  -> 🖼️ Uploading image: 2023/09/note29.jpg
+  -> 🖼️ Uploading image: 2023/01/ethic-nyc.jpeg
+  -> 🖼️ Uploading image: 2023/07/peking.jpg
+  -> 🖼️ Uploading image: 2023/06/guitar.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_2988.jpg
+  -> 🖼️ Uploading image: 2023/04/DSC00540.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_7100JPG.jpg
+  -> 🖼️ Uploading image: 2023/02/ninja.jpg
+  -> 🖼️ Uploading image: 2023/09/note33.jpg
+  -> 🖼️ Uploading image: 2023/04/blueepok.jpg
+✅ Success: 【人生は結論が大事】お金の使い道を考える【ビジネス】
+⏳ Processing: "【思い出】慶應義塾大学を卒業しました"...
+  -> 🖼️ Uploading image: 2023/10/note45.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_2984-2.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_2839.jpg
+  -> 🖼️ Uploading image: 2023/07/peking.jpg
+  -> 🖼️ Uploading image: 2023/09/note40.jpg
+  -> 🖼️ Uploading image: 2023/10/スクリーンショット-2020-03-06-18.15.22.jpg
+  -> 🖼️ Uploading image: 2023/10/IMG_2986.jpg
+  -> 🖼️ Uploading image: 2023/10/IMG_4982.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_2988.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07418.jpg
+  -> 🖼️ Uploading image: 2023/09/note29.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07417.jpg
+✅ Success: 【思い出】慶應義塾大学を卒業しました
+⏳ Processing: "【観光と写真展】鎌倉に行きました。"...
+  -> 🖼️ Uploading image: 2023/10/note46.jpg
+  -> 🖼️ Uploading image: 2023/10/IMG_8549.jpg
+  -> 🖼️ Uploading image: 2023/10/IMG_8559.jpg
+  -> 🖼️ Uploading image: 2023/10/IMG_8562.jpg
+  -> 🖼️ Uploading image: 2023/10/IMG_8547.jpg
+✅ Success: 【観光と写真展】鎌倉に行きました。
+⏳ Processing: "新ニーサの戦略と考えをまとめてみた"...
+  -> 🖼️ Uploading image: 2024/01/IMG_5601-1.jpg
+  -> 🖼️ Uploading image: 2023/09/note43.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00228.jpg
+  -> 🖼️ Uploading image: 2023/09/note39.jpg
+  -> 🖼️ Uploading image: 2023/08/note22.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_1491.jpg
+  -> 🖼️ Uploading image: 2023/10/IMG_8549.jpg
+  -> 🖼️ Uploading image: 2023/07/fish.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9534.jpg
+  -> 🖼️ Uploading image: 2023/09/note28.jpg
+✅ Success: 新ニーサの戦略と考えをまとめてみた
+⏳ Processing: "【No.3】Plutoを鑑賞しました【映画ログ】"...
+  -> 🖼️ Uploading image: 2024/01/pluto.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07388.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9534.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07418.jpg
+  -> 🖼️ Uploading image: 2023/09/note40.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_1491.jpg
+  -> 🖼️ Uploading image: 2023/08/note11.jpg
+✅ Success: 【No.3】Plutoを鑑賞しました【映画ログ】
+⏳ Processing: "【株主優待活用】ラーメンと温泉に行く"...
+  -> 🖼️ Uploading image: 2024/01/IMG_7495.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9534.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9392.jpg
+  -> 🖼️ Uploading image: 2024/01/IMG_7497.jpg
+  -> 🖼️ Uploading image: 2024/01/IMG_7499.jpg
+  -> 🖼️ Uploading image: 2024/01/IMG_7558.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07418.jpg
+  -> 🖼️ Uploading image: 2023/09/note28.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07388.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_5572.jpg
+✅ Success: 【株主優待活用】ラーメンと温泉に行く
+⏳ Processing: "【戦略付き】投資しているETFについてまとめました"...
+  -> 🖼️ Uploading image: 2024/01/DSC00504.jpg
+  -> 🖼️ Uploading image: 2023/02/DSC00509.jpg
+  -> 🖼️ Uploading image: 2024/02/vym.png
+  -> 🖼️ Uploading image: 2024/02/スクリーンショット-2024-02-03-12.12.01.jpg
+  -> 🖼️ Uploading image: 2024/02/HDV.jpg
+  -> 🖼️ Uploading image: 2024/02/vt.png
+  -> 🖼️ Uploading image: 2024/02/vig.png
+  -> 🖼️ Uploading image: 2023/09/note28.jpg
+  -> 🖼️ Uploading image: 2024/01/IMG_1078.jpg
+  -> 🖼️ Uploading image: 2023/09/note33.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9534.jpg
+  -> 🖼️ Uploading image: 2023/02/note2.jpg
+  -> 🖼️ Uploading image: 2023/07/fish.jpg
+  -> 🖼️ Uploading image: 2023/02/wr.jpg
+✅ Success: 【戦略付き】投資しているETFについてまとめました
+⏳ Processing: "【投資した先の話】欲しいものリストをまとめました"...
+  -> 🖼️ Uploading image: 2024/01/IMG_9668.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_1491.jpg
+  -> 🖼️ Uploading image: 2024/01/IMG_5601-1.jpg
+  -> 🖼️ Uploading image: 2023/09/note34.jpg
+  -> 🖼️ Uploading image: 2023/09/note31.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00739.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_4527.jpg
+  -> 🖼️ Uploading image: 2023/09/note43.jpg
+  -> 🖼️ Uploading image: 2023/09/note28.jpg
+  -> 🖼️ Uploading image: 2023/01/ethic-nyc.jpeg
+  -> 🖼️ Uploading image: 2023/07/fish.jpg
+  -> 🖼️ Uploading image: 2024/01/IMG_9571.jpg
+  -> 🖼️ Uploading image: 2023/10/IMG_8562.jpg
+✅ Success: 【投資した先の話】欲しいものリストをまとめました
+⏳ Processing: "投資するメリット・デメリットについてまとめました"...
+  -> 🖼️ Uploading image: 2024/01/IMG_7759.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9392.jpg
+  -> 🖼️ Uploading image: 2023/09/note36.jpg
+  -> 🖼️ Uploading image: 2023/06/guitar.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00228.jpg
+  -> 🖼️ Uploading image: 2023/08/note12.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC07388.jpg
+  -> 🖼️ Uploading image: 2023/07/fish.jpg
+  -> 🖼️ Uploading image: 2023/02/note2.jpg
+  -> 🖼️ Uploading image: 2023/04/blueepok.jpg
+  -> 🖼️ Uploading image: 2023/02/IMG_3253.jpg
+  -> 🖼️ Uploading image: 2023/09/note43.jpg
+  -> 🖼️ Uploading image: 2023/07/DSCF4807.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9534.jpg
+  -> 🖼️ Uploading image: 2023/08/note22.jpg
+✅ Success: 投資するメリット・デメリットについてまとめました
+⏳ Processing: "Life Article Collection"...
+  -> 🖼️ Uploading image: 2023/12/IMG_9534.jpg
+✅ Success: Life Article Collection
+⏳ Processing: "カメラを始めた理由をまとめてみた"...
+  -> 🖼️ Uploading image: 2024/01/IMG_0967.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9392.jpg
+  -> 🖼️ Uploading image: 2023/09/note33.jpg
+  -> 🖼️ Uploading image: 2024/01/IMG_1078.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_5572.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00739.jpg
+  -> 🖼️ Uploading image: 2023/08/DSC00734.jpg
+  -> 🖼️ Uploading image: 2023/01/IMG_5684.jpg
+  -> 🖼️ Uploading image: 2023/09/note39.jpg
+  -> 🖼️ Uploading image: 2024/01/IMG_9668.jpg
+  -> 🖼️ Uploading image: 2023/07/DSC05858.jpg
+  -> 🖼️ Uploading image: 2024/01/IMG_9571.jpg
+  -> 🖼️ Uploading image: 2023/08/note22.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_0589.jpg
+  -> 🖼️ Uploading image: 2023/02/DSC00509.jpg
+✅ Success: カメラを始めた理由をまとめてみた
+⏳ Processing: "湯河原惣湯についてまとめてみた"...
+  -> 🖼️ Uploading image: 2023/09/note43.jpg
+✅ Success: 湯河原惣湯についてまとめてみた
+⏳ Processing: "人生でやりたいことリスト"...
+  -> 🖼️ Uploading image: 2024/10/IMG_0007.jpg
+  -> 🖼️ Uploading image: 2023/09/note43.jpg
+  -> 🖼️ Uploading image: 2023/10/IMG_8547.jpg
+  -> 🖼️ Uploading image: 2023/12/IMG_9534.jpg
+  -> 🖼️ Uploading image: 2023/10/IMG_8559.jpg
+  -> 🖼️ Uploading image: 2023/08/DSC00734.jpg
+  -> 🖼️ Uploading image: 2023/09/note33.jpg
+  -> 🖼️ Uploading image: 2023/07/IMG_2988.jpg
+  -> 🖼️ Uploading image: 2023/07/peking.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_0853.jpg
+  -> 🖼️ Uploading image: 2023/06/guitar.jpg
+  -> 🖼️ Uploading image: 2023/06/DSC00228.jpg
+  -> 🖼️ Uploading image: 2023/01/DSC00739.jpg
+  -> 🖼️ Uploading image: 2023/06/IMG_4473.jpg
+  -> 🖼️ Uploading image: 2023/09/note35.jpg
+✅ Success: 人生でやりたいことリスト
+⏳ Processing: "AI時代は、読書と体験から学ぶ"...
+  -> 🖼️ Uploading image: 2025/01/1blog.jpg
+  -> 🖼️ Uploading image: 2025/01/2blog.jpg
+  -> 🖼️ Uploading image: 2025/01/4blog.jpg
+  -> 🖼️ Uploading image: 2025/01/3blog.png
+  -> 🖼️ Uploading image: 2025/01/5blog.jpg
+  -> 🖼️ Uploading image: 2025/02/6blog.jpg
+  -> 🖼️ Uploading image: 2025/02/7blog.jpg
+  -> 🖼️ Uploading image: 2024/01/IMG_5601-1.jpg
+  -> 🖼️ Uploading image: 2025/02/8blog.jpg
+  -> 🖼️ Uploading image: 2025/02/9blog.jpg
+  -> 🖼️ Uploading image: 2025/02/10blog.jpg
+  -> 🖼️ Uploading image: 2025/02/11blog.jpg
+  -> 🖼️ Uploading image: 2025/02/12blog.jpg
+  -> 🖼️ Uploading image: 2025/02/13blog.jpg
+  -> 🖼️ Uploading image: 2025/02/14blog.jpg
+  -> 🖼️ Uploading image: 2025/02/15blog.jpg
+  -> 🖼️ Uploading image: 2025/02/16blog.jpg
+  -> 🖼️ Uploading image: 2025/02/17blog.jpg
+  -> 🖼️ Uploading image: 2025/02/18blog.jpg
+✅ Success: AI時代は、読書と体験から学ぶ
+🎉 Migration completed successfully!

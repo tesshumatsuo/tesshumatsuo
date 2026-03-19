@@ -3,7 +3,7 @@
 @theme inline {
   --color-background: #ffffff;
   --color-foreground: #111827; /* gray-900 */
-  --font-sans: var(--font-inter), var(--font-noto-sans-jp), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-noto-serif-jp), "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
   --color-accent: #2563eb; /* blue-600 */
 }
 
@@ -12,6 +12,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-foreground);
   line-height: 1.6;
+  font-family: var(--font-noto-serif-jp), "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
 }
 
 h1, h2, h3, h4, h5, h6 {

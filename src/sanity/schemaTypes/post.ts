@@ -58,11 +58,6 @@ export const postType = defineType({
       type: 'array',
       of: [
         { type: 'block' },
-        { type: 'toc' },
-        { type: 'check' },
-        { type: 'box' },
-        { type: 'kaiwa' },
-        { type: 'youtube' },
         { 
           type: 'image',
           options: { hotspot: true },
@@ -74,6 +69,11 @@ export const postType = defineType({
             }
           ]
         },
+        { type: 'kaiwa' },
+        { type: 'toc' },
+        { type: 'check' },
+        { type: 'box' },
+        { type: 'youtube' },
       ],
     }),
     defineField({

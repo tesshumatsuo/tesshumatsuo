@@ -3,7 +3,7 @@ import { CommentIcon } from '@sanity/icons'
 
 export const kaiwaType = defineType({
   name: 'kaiwa',
-  title: '会話バブル',
+  title: '会話',
   type: 'object',
   icon: CommentIcon,
   fields: [

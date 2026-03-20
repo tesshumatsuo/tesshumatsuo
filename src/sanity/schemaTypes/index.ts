@@ -4,7 +4,8 @@ import { categoryType } from './category'
 import { postType } from './post'
 import { siteSettingsType } from './siteSettings'
 import { tagType } from './tag'
+import { kaiwaType } from './kaiwa'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [authorType, categoryType, tagType, postType, siteSettingsType],
+  types: [authorType, categoryType, tagType, kaiwaType, postType, siteSettingsType],
 }

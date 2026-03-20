@@ -47,7 +47,8 @@ export const postType = defineType({
               title: 'Alternative text',
             }
           ]
-        }
+        },
+        { type: 'kaiwa' },
       ],
     }),
     defineField({

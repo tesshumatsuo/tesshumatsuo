@@ -47,17 +47,20 @@ export default async function Sidebar({ locale }: { locale: string }) {
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
             </svg>
           </a>
+          {/* Apple Podcasts style icon - next to YouTube */}
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full bg-[#9933CC] flex items-center justify-center hover:opacity-80 transition-opacity">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="9" y="2" width="6" height="12" rx="3"/>
+              <path d="M5 11a7 7 0 0 0 14 0"/>
+              <line x1="12" y1="18" x2="12" y2="22"/>
+              <line x1="9" y1="22" x2="15" y2="22"/>
+            </svg>
+          </a>
           <a href="/feed.xml" target="_blank" rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-[#4CAF50] flex items-center justify-center hover:opacity-80 transition-opacity">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
               <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/>
-            </svg>
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full bg-[#9933CC] flex items-center justify-center hover:opacity-80 transition-opacity">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 14.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1-4.49V13h-2v-1.5c0-.55.45-1 1-1 1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 1.86-1.28 3.41-3 3.86v.15zm0 0"/>
-              <path d="M12 3a9 9 0 1 0 0 18A9 9 0 0 0 12 3zm-1 13.5v-2.08A4.006 4.006 0 0 1 8 10.5C8 8.57 9.57 7 11.5 7S15 8.57 15 10.5c0 1.86-1.28 3.41-3 3.86v2.14h-1zm.5-5c-.83 0-1.5-.67-1.5-1.5S11.17 8.5 12 8.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
             </svg>
           </a>
         </div>

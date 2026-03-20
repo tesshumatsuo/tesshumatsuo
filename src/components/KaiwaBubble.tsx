@@ -28,11 +28,11 @@ export default function KaiwaBubble({ value, components }: any) {
         </div>
 
         {/* Chat Bubble */}
-        <div className={`relative w-full max-w-[85%] sm:max-w-[75%] rounded-2xl p-5 sm:p-6 text-gray-800 ${bubbleBg}`}>
+        <div className={`relative w-full max-w-[85%] sm:max-w-[75%] rounded-2xl p-3 sm:p-4 text-gray-800 ${bubbleBg}`}>
           {/* Arrow / Tail */}
           <div className={`absolute top-6 w-5 h-5 transform rotate-45 ${bubbleBg} ${tailPos}`} />
           
-          <div className="relative z-10 prose prose-sm max-w-none leading-relaxed whitespace-pre-wrap prose-p:my-1">
+          <div className="relative z-10 prose prose-sm max-w-none leading-relaxed whitespace-pre-wrap prose-p:my-1 [&_p:last-child]:mb-0">
             <PortableText value={content} components={components} />
           </div>
         </div>

@@ -148,9 +148,12 @@ const ptComponents: any = {
     h2: ({children}: any) => {
       const id = children?.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
       return (
-        <h2 id={id} className="text-[1.2rem] md:text-[1.4rem] font-bold text-white bg-[#397A9F] p-4 md:p-5 mt-12 mb-8 leading-snug">
-          {children}
-        </h2>
+        <div className="relative mt-6 mb-3">
+          <h2 id={id} className="text-base md:text-lg font-bold text-gray-900 pb-2 border-b-2 border-gray-200 leading-snug">
+            {children}
+          </h2>
+          <span className="absolute bottom-0 left-0 w-16 h-0.5 bg-[#4175a4]" />
+        </div>
       )
     },h3: ({children}: any) => {
       const id = children?.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
@@ -196,7 +199,7 @@ export default async function ArticlePage(props: PostPageProps) {
   // Fetch related articles
   // Using a GROQ query that finds other posts sharing at least one category
   const relatedQuery = `*[_type == "post" && slug.current != $slug && count((categories[]->slug.current)[@ in $catSlugs]) > 0] | order(publishedAt desc)[0...2] {
-    title, excerpt, "slug": slug.current, "date": publishedAt, "category": categories[0]->title
+    title, excerpt, "slug": slug.current, "date": publishedAt, "category": categories[0]->title, "imageUrl": body[_type == "image"][0].asset->url
   }`
   const relatedPosts = await client.fetch(relatedQuery, { slug, catSlugs: categorySlugs })
 
@@ -217,27 +220,27 @@ export default async function ArticlePage(props: PostPageProps) {
           <CategoryBadge name={categoryName} />
           {formattedDate && <time dateTime={post.date}>{formattedDate}</time>}
         </div>
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight">
+        <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900 leading-tight">
           {post.title}
         </h1>
       </header>
 
       {/* Featured Image */}
       {post.imageUrl && (
-        <div className="relative w-full mb-6 shadow-sm rounded-sm overflow-hidden bg-gray-50 border border-gray-100 flex justify-center">
+        <div className="relative w-full mb-2 shadow-sm rounded-sm overflow-hidden bg-gray-50 border border-gray-100 flex justify-center">
           <img src={post.imageUrl} alt={post.title} className="w-full h-auto max-h-[600px] object-contain" loading="eager" />
         </div>
       )}
 
       <div className="flex flex-col md:flex-row gap-12 items-start pt-2">
-        <article className="max-w-none md:w-3/4 text-gray-800 leading-loose text-lg">
+        <article className="max-w-none md:w-3/4 text-gray-800 leading-loose text-sm">
           {post.excerpt && (
-            <p className="text-xl md:text-2xl text-gray-500 font-light mb-12 leading-relaxed tracking-wide">
+            <p className="text-sm md:text-base text-gray-500 font-light mb-4 leading-relaxed tracking-wide">
               {post.excerpt}
             </p>
           )}
           
-          <div className="prose prose-blue max-w-none text-lg text-gray-700 leading-loose tracking-wide whitespace-pre-wrap prose-p:mb-6 prose-p:mt-0">
+          <div className="prose prose-blue max-w-none text-sm text-gray-700 leading-loose tracking-wide whitespace-pre-wrap prose-p:mb-6 prose-p:mt-0">
             {post.body ? (() => {
                // bodyの中から最初の画像（_type === 'image'）を探し、重複表示されないように配列から取り除く
                const contentBlocks = [...post.body];

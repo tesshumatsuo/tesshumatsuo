@@ -26,6 +26,12 @@ export const postType = defineType({
       type: 'datetime',
     }),
     defineField({
+      name: 'updatedAt',
+      title: 'Updated at (更新日)',
+      type: 'datetime',
+      description: '空欄にすると、自動で最後に編集した日時が使われます',
+    }),
+    defineField({
       name: 'mainImage',
       title: 'Main Image (アイキャッチ画像)',
       type: 'image',

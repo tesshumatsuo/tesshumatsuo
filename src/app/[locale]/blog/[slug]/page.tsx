@@ -228,6 +228,7 @@ export default async function ArticlePage(props: PostPageProps) {
     title,
     "slug": slug.current,
     "date": publishedAt,
+    "updatedAt": coalesce(updatedAt, _updatedAt),
     excerpt,
     body,
     "categories": categories[]->{title, "slug": slug.current},
@@ -247,6 +248,10 @@ export default async function ArticlePage(props: PostPageProps) {
   
   // Format Date
   const formattedDate = post.date ? new Date(post.date).toLocaleDateString(locale === 'ja' ? 'ja-JP' : 'en-US', {
+    year: 'numeric', month: 'short', day: 'numeric'
+  }) : ''
+
+  const formattedUpdatedDate = post.updatedAt ? new Date(post.updatedAt).toLocaleDateString(locale === 'ja' ? 'ja-JP' : 'en-US', {
     year: 'numeric', month: 'short', day: 'numeric'
   }) : ''
 
@@ -273,9 +278,17 @@ export default async function ArticlePage(props: PostPageProps) {
       </Link>
 
       <header className="space-y-6">
-        <div className="flex items-center gap-3 text-xs font-medium text-gray-500">
-          <CategoryBadge name={categoryName} />
-          {formattedDate && <time dateTime={post.date}>{formattedDate}</time>}
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center gap-3 text-sm font-medium text-gray-500">
+            <CategoryBadge name={categoryName} />
+            {formattedDate && <time dateTime={post.date}>{formattedDate}</time>}
+          </div>
+          {formattedUpdatedDate && formattedUpdatedDate !== formattedDate && (
+             <div className="flex items-center gap-1.5 text-xs font-medium text-gray-400 pl-1 mt-1">
+               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+               <time dateTime={post.updatedAt}>更新日: {formattedUpdatedDate}</time>
+             </div>
+          )}
         </div>
         <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-gray-900 leading-tight">
           {post.title}

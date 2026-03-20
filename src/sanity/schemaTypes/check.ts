@@ -4,7 +4,7 @@ import { CheckmarkIcon } from '@sanity/icons'
 export const checkType = defineType({
   name: 'check',
   type: 'object',
-  title: 'チェックリスト (✅)',
+  title: 'チェック',
   icon: CheckmarkIcon,
   fields: [
     defineField({

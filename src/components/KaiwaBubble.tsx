@@ -32,7 +32,7 @@ export default function KaiwaBubble({ value, components }: any) {
           {/* Arrow / Tail */}
           <div className={`absolute top-6 w-5 h-5 transform rotate-45 ${bubbleBg} ${tailPos}`} />
           
-          <div className="relative z-10 prose prose-sm max-w-none leading-relaxed whitespace-pre-wrap prose-p:my-1 [&_p:last-child]:mb-0">
+          <div className="relative z-10 prose prose-sm max-w-none leading-normal whitespace-pre-wrap prose-p:my-1 [&_p:last-child]:mb-0">
             <PortableText value={content} components={components} />
           </div>
         </div>

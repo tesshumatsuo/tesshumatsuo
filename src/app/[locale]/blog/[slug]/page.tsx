@@ -128,7 +128,7 @@ function processKaiwaBlocks(blocks: any[]) {
 // Custom Portable Text components to add IDs to headings
 const ptComponents: any = {
   types: {
-    kaiwa: ({ value }: any) => <KaiwaBubble value={value} components={ptComponents} />,
+    kaiwa: ({ value }: any) => <KaiwaBubble value={value} components={tightPtComponents} />,
     image: ({ value }: any) => {
       if (!value?.asset?._ref) {
         return null
@@ -184,7 +184,7 @@ const ptComponents: any = {
       return (
         <div className="my-10 border border-gray-300 bg-gray-50/50 p-6 md:p-8 rounded text-gray-800 shadow-sm">
           {/* Note: since components is passed implicitly by PortableText to its children, we just need to render PortableText */}
-          <PortableText value={value.content} components={ptComponents} />
+          <PortableText value={value.content} components={tightPtComponents} />
         </div>
       )
     }
@@ -219,6 +219,15 @@ const ptComponents: any = {
     },
     normal: ({children}: any) => <p className="mb-6 leading-loose">{children}</p>,
     blockquote: ({children}: any) => <blockquote className="border-l-4 border-blue-600 pl-6 italic text-gray-700 my-8 py-2">{children}</blockquote>
+  }
+}
+
+// Tight components for Box and Kaiwa
+const tightPtComponents: any = {
+  ...ptComponents,
+  block: {
+    ...ptComponents.block,
+    normal: ({children}: any) => <p className="mb-2 leading-normal">{children}</p>,
   }
 }
 

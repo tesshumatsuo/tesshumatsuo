@@ -6,7 +6,10 @@ import { siteSettingsType } from './siteSettings'
 import { tagType } from './tag'
 import { kaiwaType } from './kaiwa'
 import { youtubeType } from './youtube'
+import { tocType } from './toc'
+import { checkType } from './check'
+import { boxType } from './box'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [authorType, categoryType, tagType, kaiwaType, youtubeType, postType, siteSettingsType],
+  types: [authorType, categoryType, tagType, kaiwaType, youtubeType, tocType, checkType, boxType, postType, siteSettingsType],
 }

@@ -4,6 +4,7 @@ import { PortableText } from '@portabletext/react'
 import CategoryBadge from '@/components/CategoryBadge'
 import ArticleCard from '@/components/ArticleCard'
 import KaiwaBubble from '@/components/KaiwaBubble'
+import TocBlock from '@/components/TocBlock'
 import { client } from '@/sanity/lib/client'
 import { urlFor } from '@/sanity/lib/image'
 import Image from 'next/image'
@@ -163,6 +164,28 @@ const ptComponents: any = {
           ></iframe>
         </div>
       );
+    },
+    check: ({ value }: any) => {
+      if (!value?.text) return null;
+      return (
+        <div className="flex items-center gap-3 my-8">
+          <div className="w-8 h-8 rounded-full bg-[#fca311] flex items-center justify-center shrink-0 shadow-sm">
+            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+          </div>
+          <span className="text-gray-900 font-bold text-lg md:text-xl leading-snug">
+            {value.text}
+          </span>
+        </div>
+      )
+    },
+    box: ({ value }: any) => {
+      if (!value?.content) return null;
+      return (
+        <div className="my-10 border border-gray-300 bg-gray-50/50 p-6 md:p-8 rounded text-gray-800 shadow-sm">
+          {/* Note: since components is passed implicitly by PortableText to its children, we just need to render PortableText */}
+          <PortableText value={value.content} components={ptComponents} />
+        </div>
+      )
     }
   },
   block: {
@@ -285,7 +308,14 @@ export default async function ArticlePage(props: PostPageProps) {
                    contentBlocks.splice(firstImgIndex, 1);
                  }
                }
-               return <PortableText value={processKaiwaBlocks(contentBlocks)} components={ptComponents} />;
+               const customPtComponents = {
+                 ...ptComponents,
+                 types: {
+                   ...ptComponents.types,
+                   toc: () => <TocBlock headings={headings} />
+                 }
+               };
+               return <PortableText value={processKaiwaBlocks(contentBlocks)} components={customPtComponents} />;
             })() : (
               <p className="text-gray-500 italic">No content available.</p>
             )}

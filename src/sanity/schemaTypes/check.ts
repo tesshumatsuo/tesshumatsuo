@@ -1,0 +1,21 @@
+import { defineType, defineField } from 'sanity'
+
+export const checkType = defineType({
+  name: 'check',
+  type: 'object',
+  title: 'チェックリスト (✅)',
+  fields: [
+    defineField({
+      name: 'text',
+      type: 'string',
+      title: 'テキスト',
+      description: 'チェックマークの横に表示する文章を入力してください',
+    }),
+  ],
+  preview: {
+    select: { title: 'text' },
+    prepare({ title }: any) {
+      return { title: `✅ ${title || 'テキスト未入力'}` }
+    }
+  }
+})

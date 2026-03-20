@@ -65,6 +65,9 @@ export const postType = defineType({
         },
         { type: 'kaiwa' },
         { type: 'youtube' },
+        { type: 'toc' },
+        { type: 'check' },
+        { type: 'box' },
       ],
     }),
     defineField({

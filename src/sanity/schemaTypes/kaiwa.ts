@@ -1,9 +1,11 @@
 import { defineType, defineField, defineArrayMember } from 'sanity'
+import { CommentIcon } from '@sanity/icons'
 
 export const kaiwaType = defineType({
   name: 'kaiwa',
   title: '会話バブル',
   type: 'object',
+  icon: CommentIcon,
   fields: [
     defineField({
       name: 'direction',

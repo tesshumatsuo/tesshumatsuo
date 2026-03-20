@@ -1,9 +1,11 @@
 import { defineType, defineField, defineArrayMember } from 'sanity'
+import { SquareIcon } from '@sanity/icons'
 
 export const boxType = defineType({
   name: 'box',
   type: 'object',
   title: '枠線ボックス (Box)',
+  icon: SquareIcon,
   fields: [
     defineField({
       name: 'content',

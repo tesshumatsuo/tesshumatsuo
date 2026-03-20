@@ -1,9 +1,11 @@
 import { defineType } from 'sanity'
+import { ListIcon } from '@sanity/icons'
 
 export const tocType = defineType({
   name: 'toc',
   type: 'object',
   title: '目次 (TOC)',
+  icon: ListIcon,
   fields: [
     {
       name: 'placeholder',

@@ -299,7 +299,27 @@ export default async function ArticlePage(props: PostPageProps) {
           
           <div className="prose prose-blue max-w-none text-sm text-black leading-loose tracking-wide whitespace-pre-wrap prose-p:text-black prose-p:mb-6 prose-p:mt-0">
             {post.body ? (() => {
-               const contentBlocks = [...post.body];
+               let contentBlocks = [...post.body];
+               
+               // Remove any top-level block that shares a _key with an inner block of a kaiwa
+               // This fixes a migration artifact where the original text block was duplicated
+               const kaiwaInnerKeys = new Set();
+               contentBlocks.forEach(b => {
+                 if (b._type === 'kaiwa' && b.content) {
+                   b.content.forEach((inner: any) => {
+                     if (inner._key) kaiwaInnerKeys.add(inner._key);
+                   });
+                 }
+               });
+               
+               contentBlocks = contentBlocks.filter(b => {
+                 // Skip normal text blocks that are actually inside a kaiwa block
+                 if (b._type === 'block' && b._key && kaiwaInnerKeys.has(b._key)) {
+                   return false; 
+                 }
+                 return true;
+               });
+
                // If there was no mainImage, we assume the first image in the body is the featured image from WP migration.
                // We should remove it from the body only if mainImage was not set.
                if (!post.mainImage) {

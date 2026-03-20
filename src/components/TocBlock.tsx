@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 export default function TocBlock({ headings }: { headings: { id: string, text: string, level: number }[] }) {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   if (!headings || headings.length === 0) return null
 
@@ -37,6 +37,7 @@ export default function TocBlock({ headings }: { headings: { id: string, text: s
         <span className="font-bold text-xl mr-2 text-black">Contents</span>
         <button 
           onClick={() => setIsOpen(!isOpen)}
+          aria-expanded={isOpen}
           className="text-blue-500 hover:text-blue-700 text-sm font-medium"
         >
           [{isOpen ? 'hide' : 'show'}]

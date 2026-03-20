@@ -40,8 +40,9 @@ function processKaiwaBlocks(blocks: any[]) {
       ...rawBlock,
       children: rawBlock.children.map((child: any, index: number) => {
         if (child._type === 'span' && child.text) {
+          // 従来の強制改行をもう少しマイルドに調整
           let updatedText = child.text.replace(/。\s*/g, '。\n').replace(/\n{2,}/g, '\n');
-          if (index === 0) updatedText = updatedText.trimStart(); // ブロック先頭の空白も除去
+          if (index === 0) updatedText = updatedText.trimStart(); 
           return { ...child, text: updatedText };
         }
         return child;
@@ -216,7 +217,7 @@ const ptComponents: any = {
         </h4>
       )
     },
-    normal: ({children}: any) => <p className="mb-6">{children}</p>,
+    normal: ({children}: any) => <p className="mb-6 leading-loose">{children}</p>,
     blockquote: ({children}: any) => <blockquote className="border-l-4 border-blue-600 pl-6 italic text-gray-700 my-8 py-2">{children}</blockquote>
   }
 }
@@ -306,7 +307,7 @@ export default async function ArticlePage(props: PostPageProps) {
         <article className="max-w-none md:w-3/4 text-gray-800 leading-loose text-sm">
           {/* Excerpt was removed here to prevent duplicating the first paragraph of the body */}
           
-          <div className="prose prose-blue max-w-none text-sm text-black leading-loose tracking-wide whitespace-pre-wrap prose-p:text-black prose-p:mb-6 prose-p:mt-0">
+          <div className="prose prose-blue max-w-none text-sm text-black leading-loose tracking-wide whitespace-pre-wrap prose-p:text-black prose-p:mb-6 prose-p:mt-0 prose-li:my-3">
             {post.body ? (() => {
                let contentBlocks = [...post.body];
                
@@ -395,7 +396,7 @@ export default async function ArticlePage(props: PostPageProps) {
           <h2 className="text-2xl font-bold tracking-tight">関連記事</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {relatedPosts.map((article: any) => (
-               <ArticleCard 
+             <ArticleCard 
                key={article.slug} 
                locale={locale}
                title={article.title}
@@ -403,6 +404,7 @@ export default async function ArticlePage(props: PostPageProps) {
                slug={article.slug}
                date={article.date}
                category={article.category}
+               imageUrl={article.imageUrl}
              />
             ))}
           </div>

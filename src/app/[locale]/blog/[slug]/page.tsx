@@ -142,35 +142,43 @@ const ptComponents: any = {
           />
         </figure>
       )
+    },
+    youtube: ({ value }: any) => {
+      if (!value?.url) return null;
+      let videoId = '';
+      try {
+        const url = new URL(value.url);
+        videoId = url.searchParams.get('v') || url.pathname.split('/').pop() || '';
+      } catch (e) {
+        return null;
+      }
+      return (
+        <div className="my-8 aspect-video w-full rounded-2xl overflow-hidden shadow-sm">
+          <iframe
+            src={`https://www.youtube.com/embed/${videoId}`}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full border-0"
+          ></iframe>
+        </div>
+      );
     }
   },
   block: {
     h2: ({children}: any) => {
       const id = children?.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
       return (
-        <h2 id={id} className="text-[1.2rem] md:text-[1.4rem] font-bold text-white bg-[#397A9F] p-4 md:p-5 mt-6 mb-3 leading-snug">
-          {children}
-        </h2>
-      )
-    },
-    h3: ({children}: any) => {
-      const id = children?.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
-      return (
-        <div className="relative mt-5 mb-3">
-          <h3 id={id} className="text-base md:text-lg font-bold text-gray-900 pb-2 border-b-2 border-gray-200 leading-snug scroll-mt-24">
+        <div className="relative mt-6 mb-3">
+          <h2 id={id} className="text-base md:text-lg font-bold text-gray-900 pb-2 border-b-2 border-gray-200 leading-snug">
             {children}
-          </h3>
-          <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#4175a4]" />
+          </h2>
+          <span className="absolute bottom-0 left-0 w-16 h-0.5 bg-[#4175a4]" />
         </div>
       )
-    },
-    h4: ({children}: any) => {
+    },h3: ({children}: any) => {
       const id = children?.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
-      return (
-        <h4 id={id} className="text-sm md:text-base font-bold text-gray-900 border-l-4 border-[#4175a4] bg-blue-50 px-4 py-2 mt-4 mb-2 scroll-mt-24 leading-snug">
-          {children}
-        </h4>
-      )
+      return <h3 id={id} className="text-xl font-bold mt-8 mb-4 scroll-mt-24">{children}</h3>
     },
     normal: ({children}: any) => <p className="mb-6">{children}</p>,
     blockquote: ({children}: any) => <blockquote className="border-l-4 border-blue-600 pl-6 italic text-gray-700 my-8 py-2">{children}</blockquote>
@@ -189,7 +197,7 @@ export default async function ArticlePage(props: PostPageProps) {
     "categories": categories[]->{title, "slug": slug.current},
     "tags": tags[]->{title, "slug": slug.current},
     "author": author->{name, "bio": bio[0].children[0].text, image},
-    "imageUrl": body[_type == "image"][0].asset->url
+    "imageUrl": coalesce(mainImage.asset->url, body[_type == "image"][0].asset->url)
   }`
   
   const post = await client.fetch(query, { slug })
@@ -212,7 +220,7 @@ export default async function ArticlePage(props: PostPageProps) {
   // Fetch related articles
   // Using a GROQ query that finds other posts sharing at least one category
   const relatedQuery = `*[_type == "post" && slug.current != $slug && count((categories[]->slug.current)[@ in $catSlugs]) > 0] | order(publishedAt desc)[0...2] {
-    title, excerpt, "slug": slug.current, "date": publishedAt, "category": categories[0]->title, "imageUrl": body[_type == "image"][0].asset->url
+    title, excerpt, "slug": slug.current, "date": publishedAt, "category": categories[0]->title, "imageUrl": coalesce(mainImage.asset->url, body[_type == "image"][0].asset->url)
   }`
   const relatedPosts = await client.fetch(relatedQuery, { slug, catSlugs: categorySlugs })
 
@@ -255,11 +263,14 @@ export default async function ArticlePage(props: PostPageProps) {
           
           <div className="prose prose-blue max-w-none text-sm text-gray-700 leading-loose tracking-wide whitespace-pre-wrap prose-p:mb-6 prose-p:mt-0">
             {post.body ? (() => {
-               // bodyの中から最初の画像（_type === 'image'）を探し、重複表示されないように配列から取り除く
                const contentBlocks = [...post.body];
-               const firstImgIndex = contentBlocks.findIndex(b => b._type === 'image');
-               if (firstImgIndex !== -1) {
-                 contentBlocks.splice(firstImgIndex, 1);
+               // If there was no mainImage, we assume the first image in the body is the featured image from WP migration.
+               // We should remove it from the body only if mainImage was not set.
+               if (!post.mainImage) {
+                 const firstImgIndex = contentBlocks.findIndex(b => b._type === 'image');
+                 if (firstImgIndex !== -1) {
+                   contentBlocks.splice(firstImgIndex, 1);
+                 }
                }
                return <PortableText value={processKaiwaBlocks(contentBlocks)} components={ptComponents} />;
             })() : (

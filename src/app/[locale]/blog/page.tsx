@@ -23,7 +23,7 @@ export default async function BlogIndex(props: BlogIndexProps) {
     "slug": slug.current,
     "date": publishedAt,
     "category": categories[0]->title,
-    "imageUrl": body[_type == "image"][0].asset->url
+    "imageUrl": coalesce(mainImage.asset->url, body[_type == "image"][0].asset->url)
   }`
   
   const articles = await client.fetch(query, { cat: cat || null })

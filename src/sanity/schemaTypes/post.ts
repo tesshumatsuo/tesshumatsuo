@@ -26,6 +26,21 @@ export const postType = defineType({
       type: 'datetime',
     }),
     defineField({
+      name: 'mainImage',
+      title: 'Main Image (アイキャッチ画像)',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+        }
+      ]
+    }),
+    defineField({
       name: 'excerpt',
       title: 'Excerpt',
       type: 'text',
@@ -49,6 +64,7 @@ export const postType = defineType({
           ]
         },
         { type: 'kaiwa' },
+        { type: 'youtube' },
       ],
     }),
     defineField({

@@ -53,7 +53,7 @@ export default function Header({ locale }: { locale: string }) {
         { label: "ごぼう塾", href: `/${locale}/blog?cat=gobojuku` },
       ]
     },
-    { label: t('profile'), href: `/${locale}/about` },
+    { label: t('profile'), href: `/${locale}/profile` },
   ]
 
   return (

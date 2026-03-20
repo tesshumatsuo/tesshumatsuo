@@ -8,7 +8,7 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Tesshu Matsuo. All rights reserved.
         </p>
         <nav className="flex gap-6">
-          <Link href="/about" className="text-sm font-medium text-gray-600 hover:text-black transition-colors">
+          <Link href="/profile" className="text-sm font-medium text-gray-600 hover:text-black transition-colors">
             About
           </Link>
           <Link href="/#works" className="text-sm font-medium text-gray-600 hover:text-black transition-colors">

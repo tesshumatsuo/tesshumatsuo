@@ -28,6 +28,13 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
+    // /ja/about and /en/about → /profile (301)
+    const aboutRedirects = [
+      { source: '/ja/about', destination: '/ja/profile', permanent: true },
+      { source: '/ja/about/', destination: '/ja/profile', permanent: true },
+      { source: '/en/about', destination: '/en/profile', permanent: true },
+      { source: '/en/about/', destination: '/en/profile', permanent: true },
+    ]
     // Map /slug and /slug/ → /ja/blog/slug (301 permanent)
     const slugRedirects = wpSlugs.flatMap((slug) => [
       {
@@ -41,7 +48,7 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ])
-    return slugRedirects
+    return [...aboutRedirects, ...slugRedirects]
   },
 };
  

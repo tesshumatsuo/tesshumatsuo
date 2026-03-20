@@ -316,7 +316,7 @@ export default async function ArticlePage(props: PostPageProps) {
         <article className="max-w-none md:w-3/4 text-gray-800 leading-loose text-sm">
           {/* Excerpt was removed here to prevent duplicating the first paragraph of the body */}
           
-          <div className="prose prose-blue max-w-none text-sm text-black leading-loose tracking-wide whitespace-pre-wrap prose-p:text-black prose-p:mb-6 prose-p:mt-0 prose-li:my-3">
+          <div className="prose prose-blue max-w-none text-sm text-black leading-loose tracking-wide whitespace-pre-wrap prose-p:text-black prose-headings:text-black prose-li:text-black prose-strong:text-black prose-ol:text-black prose-p:mb-6 prose-p:mt-0 prose-li:my-3">
             {post.body ? (() => {
                let contentBlocks = [...post.body];
                

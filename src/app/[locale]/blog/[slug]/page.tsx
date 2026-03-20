@@ -274,7 +274,7 @@ export default async function ArticlePage(props: PostPageProps) {
             </p>
           )}
           
-          <div className="prose prose-blue max-w-none text-sm text-gray-700 leading-loose tracking-wide whitespace-pre-wrap prose-p:mb-6 prose-p:mt-0">
+          <div className="prose prose-blue max-w-none text-sm text-black leading-loose tracking-wide whitespace-pre-wrap prose-p:text-black prose-p:mb-6 prose-p:mt-0">
             {post.body ? (() => {
                const contentBlocks = [...post.body];
                // If there was no mainImage, we assume the first image in the body is the featured image from WP migration.

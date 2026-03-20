@@ -148,16 +148,29 @@ const ptComponents: any = {
     h2: ({children}: any) => {
       const id = children?.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
       return (
-        <div className="relative mt-6 mb-3">
-          <h2 id={id} className="text-base md:text-lg font-bold text-gray-900 pb-2 border-b-2 border-gray-200 leading-snug">
+        <h2 id={id} className="text-[1.2rem] md:text-[1.4rem] font-bold text-white bg-[#397A9F] p-4 md:p-5 mt-6 mb-3 leading-snug">
+          {children}
+        </h2>
+      )
+    },
+    h3: ({children}: any) => {
+      const id = children?.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+      return (
+        <div className="relative mt-5 mb-3">
+          <h3 id={id} className="text-base md:text-lg font-bold text-gray-900 pb-2 border-b-2 border-gray-200 leading-snug scroll-mt-24">
             {children}
-          </h2>
-          <span className="absolute bottom-0 left-0 w-16 h-0.5 bg-[#4175a4]" />
+          </h3>
+          <span className="absolute bottom-0 left-0 w-12 h-0.5 bg-[#4175a4]" />
         </div>
       )
-    },h3: ({children}: any) => {
+    },
+    h4: ({children}: any) => {
       const id = children?.toString().toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
-      return <h3 id={id} className="text-xl font-bold mt-8 mb-4 scroll-mt-24">{children}</h3>
+      return (
+        <h4 id={id} className="text-sm md:text-base font-bold text-gray-900 border-l-4 border-[#4175a4] bg-blue-50 px-4 py-2 mt-4 mb-2 scroll-mt-24 leading-snug">
+          {children}
+        </h4>
+      )
     },
     normal: ({children}: any) => <p className="mb-6">{children}</p>,
     blockquote: ({children}: any) => <blockquote className="border-l-4 border-blue-600 pl-6 italic text-gray-700 my-8 py-2">{children}</blockquote>

@@ -304,11 +304,7 @@ export default async function ArticlePage(props: PostPageProps) {
 
       <div className="flex flex-col md:flex-row gap-12 items-start pt-2">
         <article className="max-w-none md:w-3/4 text-gray-800 leading-loose text-sm">
-          {post.excerpt && (
-            <p className="text-sm md:text-base text-gray-500 font-light mb-4 leading-relaxed tracking-wide">
-              {post.excerpt}
-            </p>
-          )}
+          {/* Excerpt was removed here to prevent duplicating the first paragraph of the body */}
           
           <div className="prose prose-blue max-w-none text-sm text-black leading-loose tracking-wide whitespace-pre-wrap prose-p:text-black prose-p:mb-6 prose-p:mt-0">
             {post.body ? (() => {

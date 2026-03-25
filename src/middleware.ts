@@ -31,5 +31,5 @@ export default async function middleware(request: NextRequest) {
 export const config = {
   // Match all paths except: api (non-studio), _next, static files, favicon
   // Note: We need to INCLUDE /studio in the matcher now to protect it
-  matcher: ['/((?!api/contact|_next|.*\\..*).*)'],
+  matcher: ['/studio/:path*', '/((?!api|_next|.*\\..*).*)'],
 }

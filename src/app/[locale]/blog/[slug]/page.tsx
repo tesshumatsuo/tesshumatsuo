@@ -166,6 +166,72 @@ const ptComponents: any = {
         </div>
       );
     },
+    instagram: ({ value }: any) => {
+      if (!value?.url) return null;
+      let shortcode = '';
+      try {
+        const url = new URL(value.url);
+        const pathSegments = url.pathname.split('/').filter(Boolean);
+        if (pathSegments[0] === 'p' || pathSegments[0] === 'reels' || pathSegments[0] === 'reel') {
+          shortcode = pathSegments[1];
+        }
+      } catch (e) {
+        return null;
+      }
+      if (!shortcode) return null;
+      return (
+        <div className="my-8 flex justify-center w-full">
+          <div className="w-full max-w-[540px] border border-gray-100 rounded-xl overflow-hidden shadow-sm bg-white">
+            <iframe
+              src={`https://www.instagram.com/p/${shortcode}/embed`}
+              className="w-full"
+              height="600"
+              frameBorder="0"
+              scrolling="no"
+              allowTransparency={true}
+              allow="encrypted-media"
+            ></iframe>
+          </div>
+        </div>
+      );
+    },
+    linkCard: ({ value }: any) => {
+      if (!value?.url) return null;
+      return (
+        <div className="my-10">
+          <a 
+            href={value.url} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex flex-col sm:flex-row gap-0 sm:gap-6 border border-gray-200 rounded-xl overflow-hidden hover:border-blue-400 transition-all group bg-white shadow-sm"
+          >
+            {value.image && (
+              <div className="sm:w-1/3 aspect-[1.91/1] sm:aspect-square relative overflow-hidden bg-gray-100 shrink-0 border-b sm:border-b-0 sm:border-r border-gray-100">
+                <img 
+                  src={value.image} 
+                  alt={value.title || ''} 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            )}
+            <div className="p-5 sm:p-6 flex flex-col justify-center gap-2 flex-1">
+              <h3 className="text-base font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug">
+                {value.title || value.url}
+              </h3>
+              {value.description && (
+                <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed">
+                  {value.description}
+                </p>
+              )}
+              <div className="mt-2 flex items-center gap-1.5 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                <span className="truncate max-w-[200px]">{new URL(value.url).hostname}</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      );
+    },
     check: ({ value }: any) => {
       if (!value?.text) return null;
       return (

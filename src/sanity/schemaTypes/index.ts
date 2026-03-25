@@ -9,7 +9,9 @@ import { youtubeType } from './youtube'
 import { tocType } from './toc'
 import { checkType } from './check'
 import { boxType } from './box'
+import { instagramType } from './instagram'
+import { linkCardType } from './linkCard'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [authorType, categoryType, tagType, kaiwaType, youtubeType, tocType, checkType, boxType, postType, siteSettingsType],
+  types: [authorType, categoryType, tagType, kaiwaType, youtubeType, tocType, checkType, boxType, instagramType, linkCardType, postType, siteSettingsType],
 }

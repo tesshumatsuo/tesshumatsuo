@@ -8,16 +8,20 @@ export async function POST(request: Request) {
   try {
     const { username, password } = await request.json()
 
-    const correctUsername = process.env.STUDIO_LOGIN_NAME
-    const correctPassword = process.env.STUDIO_LOGIN_PASS
+    // Clean up potential accidental quotes or spaces from Vercel ENV
+    const correctUsername = process.env.STUDIO_LOGIN_NAME?.replace(/['"]/g, '')?.trim()
+    const correctPassword = process.env.STUDIO_LOGIN_PASS?.replace(/['"]/g, '')?.trim()
     
-    console.log('--- Login Attempt ---')
-    console.log(`Received username: ${username}`)
-    console.log(`Correct username config exists: ${!!correctUsername}`)
-    console.log(`Correct password config exists: ${!!correctPassword}`)
-    console.log(`Passwords match: ${password === correctPassword}`)
+    const inputUsername = username?.trim()
+    const inputPassword = password?.trim()
 
-    if (username === correctUsername && password === correctPassword) {
+    console.log('--- Login Attempt ---')
+    console.log(`Received username: "${inputUsername}"`)
+    console.log(`Correct username config exists: ${!!correctUsername} (Length: ${correctUsername?.length})`)
+    console.log(`Correct password config exists: ${!!correctPassword} (Length: ${correctPassword?.length})`)
+    console.log(`Passwords match: ${inputPassword === correctPassword}`)
+
+    if (inputUsername === correctUsername && inputPassword === correctPassword) {
       const cookieStore = await cookies()
       cookieStore.set('studio-session', 'authenticated', {
         httpOnly: true,

@@ -50,9 +50,6 @@ const nextConfig: any = {
     ])
     return [...aboutRedirects, ...slugRedirects]
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },

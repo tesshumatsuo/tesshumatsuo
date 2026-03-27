@@ -111,6 +111,7 @@ export const postType = defineType({
         { type: 'youtube' },
         { type: 'instagram' },
         { type: 'linkCard' },
+        { type: 'spotify' },
       ],
     }),
     defineField({

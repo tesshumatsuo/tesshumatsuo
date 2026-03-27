@@ -232,6 +232,36 @@ const ptComponents: any = {
         </div>
       );
     },
+    spotify: ({ value }: any) => {
+      if (!value?.url) return null;
+      let embedId = '';
+      try {
+        const url = new URL(value.url);
+        const parts = url.pathname.split('/').filter(Boolean);
+        if (parts.length >= 2 && ['show', 'episode', 'track', 'playlist'].includes(parts[0])) {
+          embedId = `${parts[0]}/${parts[1]}`;
+        }
+      } catch (e) {
+        return null;
+      }
+      if (!embedId) return null;
+      return (
+        <div className="my-10 w-full flex justify-center">
+          <iframe 
+            style={{ borderRadius: '12px' }} 
+            src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`} 
+            width="100%" 
+            height="352" 
+            lang="en"
+            frameBorder="0" 
+            allowFullScreen={false} 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"
+            className="shadow-sm border border-gray-100 max-w-3xl"
+          ></iframe>
+        </div>
+      );
+    },
     check: ({ value }: any) => {
       if (!value?.text) return null;
       return (

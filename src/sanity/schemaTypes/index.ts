@@ -11,7 +11,8 @@ import { checkType } from './check'
 import { boxType } from './box'
 import { instagramType } from './instagram'
 import { linkCardType } from './linkCard'
+import { spotifyType } from './spotify'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [authorType, categoryType, tagType, kaiwaType, youtubeType, tocType, checkType, boxType, instagramType, linkCardType, postType, siteSettingsType],
+  types: [authorType, categoryType, tagType, kaiwaType, youtubeType, tocType, checkType, boxType, instagramType, linkCardType, spotifyType, postType, siteSettingsType],
 }

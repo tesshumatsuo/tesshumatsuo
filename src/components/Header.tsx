@@ -53,6 +53,7 @@ export default function Header({ locale }: { locale: string }) {
         { label: "ごぼう塾", href: `/${locale}/blog?cat=gobojuku` },
       ]
     },
+    { label: 'Podcast', href: 'https://open.spotify.com/show/1gWAOcd4KWxx5hil36Fs9a?si=73-1jminTby21oyvrkJhtA', target: '_blank' },
     { label: t('profile'), href: `/${locale}/profile` },
   ]
 
@@ -90,7 +91,12 @@ export default function Header({ locale }: { locale: string }) {
                   </div>
                 </>
               ) : (
-                <Link href={item.href || '#'} className="text-sm font-medium text-gray-600 hover:text-black transition-colors">
+                <Link 
+                  href={item.href || '#'} 
+                  target={item.target} 
+                  rel={item.target === '_blank' ? 'noopener noreferrer' : undefined}
+                  className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
+                >
                   {item.label}
                 </Link>
               )}

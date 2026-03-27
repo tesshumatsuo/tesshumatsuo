@@ -48,7 +48,7 @@ export default async function Sidebar({ locale }: { locale: string }) {
             </svg>
           </a>
           {/* Apple Podcasts style icon - next to YouTube */}
-          <a href="#" target="_blank" rel="noopener noreferrer"
+          <a href="https://open.spotify.com/show/1gWAOcd4KWxx5hil36Fs9a?si=73-1jminTby21oyvrkJhtA" target="_blank" rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-[#9933CC] flex items-center justify-center hover:opacity-80 transition-opacity">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <rect x="9" y="2" width="6" height="12" rx="3"/>

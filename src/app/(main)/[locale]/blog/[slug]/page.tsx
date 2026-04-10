@@ -264,18 +264,17 @@ const ptComponents: any = {
       }
       if (!embedId) return null;
       return (
-        <div className="my-4 w-full flex justify-center">
-          <div className="w-full max-w-3xl overflow-hidden" style={{ height: '214px', borderRadius: '12px' }}>
-            <iframe
-              style={{ display: 'block', borderRadius: '12px' }}
-              src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`}
-              width="100%"
-              height="232"
-              frameBorder="0"
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            />
-          </div>
+        <div className="my-6 w-full flex justify-center">
+          <iframe
+            style={{ borderRadius: '12px' }}
+            src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`}
+            width="100%"
+            height="152"
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            className="shadow-sm border border-gray-100 max-w-3xl"
+          />
         </div>
       );
     },
@@ -378,18 +377,17 @@ const ptComponents: any = {
         if (spotifyMatch) {
           const embedId = `${spotifyMatch[1]}/${spotifyMatch[2]}`;
           return (
-            <div className="my-4 w-full flex justify-center">
-              <div className="w-full max-w-3xl overflow-hidden" style={{ height: '214px', borderRadius: '12px' }}>
-                <iframe
-                  style={{ display: 'block', borderRadius: '12px' }}
-                  src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`}
-                  width="100%"
-                  height="232"
-                  frameBorder="0"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                />
-              </div>
+            <div className="my-6 w-full flex justify-center">
+              <iframe
+                style={{ borderRadius: '12px' }}
+                src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`}
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                className="shadow-sm border border-gray-100 max-w-3xl"
+              />
             </div>
           );
         }
@@ -447,18 +445,17 @@ const ptComponents: any = {
         if (spotifyEmbedMatch) {
           const embedId = `${spotifyEmbedMatch[1]}/${spotifyEmbedMatch[2]}`;
           return (
-            <div className="my-4 w-full flex justify-center">
-              <div className="w-full max-w-3xl overflow-hidden" style={{ height: '214px', borderRadius: '12px' }}>
-                <iframe
-                  style={{ display: 'block', borderRadius: '12px' }}
-                  src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`}
-                  width="100%"
-                  height="232"
-                  frameBorder="0"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                />
-              </div>
+            <div className="my-6 w-full flex justify-center">
+              <iframe
+                style={{ borderRadius: '12px' }}
+                src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`}
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                className="shadow-sm border border-gray-100 max-w-3xl"
+              />
             </div>
           );
         }

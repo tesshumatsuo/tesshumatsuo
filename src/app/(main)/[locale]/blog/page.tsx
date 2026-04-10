@@ -16,7 +16,7 @@ export default async function BlogIndex(props: BlogIndexProps) {
   
   const t = await getTranslations({ locale, namespace: 'blog' });
   
-  const langFilter = locale === 'en' ? `language == 'en'` : `(!defined(language) || language == 'ja')`
+  const langFilter = locale === 'ja' ? `(!defined(language) || language == 'ja')` : `language == '${locale}'`
   
   const query = `*[_type == "post" && ${langFilter} ${cat ? '&& $cat in categories[]->slug.current' : ''}] | order(publishedAt desc) {
     _id,

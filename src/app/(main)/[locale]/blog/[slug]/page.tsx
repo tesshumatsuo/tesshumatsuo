@@ -514,7 +514,7 @@ export default async function ArticlePage(props: PostPageProps) {
 
   // Fetch related articles
   // Using a GROQ query that finds other posts sharing at least one category
-  const langFilter = locale === 'en' ? `language == 'en'` : `(!defined(language) || language == 'ja')`
+  const langFilter = locale === 'ja' ? `(!defined(language) || language == 'ja')` : `language == '${locale}'`
   const relatedQuery = `*[_type == "post" && ${langFilter} && slug.current != $slug && count((categories[]->slug.current)[@ in $catSlugs]) > 0] | order(publishedAt desc)[0...2] {
     title, excerpt, "slug": slug.current, "date": publishedAt, "category": categories[0]->title, "imageUrl": coalesce(mainImage.asset->url, body[_type == "image"][0].asset->url)
   }`

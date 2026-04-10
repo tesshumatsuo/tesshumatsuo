@@ -9,7 +9,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'home' })
 
-  const langFilter = locale === 'en' ? `language == 'en'` : `(!defined(language) || language == 'ja')`
+  const langFilter = locale === 'ja' ? `(!defined(language) || language == 'ja')` : `language == '${locale}'`
 
   // Fetch the latest 4 published articles
   const query = `*[_type == "post" && ${langFilter}] | order(publishedAt desc)[0...4] {

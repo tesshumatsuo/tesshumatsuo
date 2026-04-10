@@ -10,10 +10,27 @@ export default function Header({ locale }: { locale: string }) {
   const pathname = usePathname()
   const router = useRouter()
 
-  const otherLocale = locale === 'ja' ? 'en' : 'ja'
+  const languages = [
+    { code: 'ja', name: 'JA' },
+    { code: 'en', name: 'EN' },
+    { code: 'zh', name: 'ZH' },
+    { code: 'hi', name: 'HI' },
+    { code: 'es', name: 'ES' },
+    { code: 'ar', name: 'AR' },
+    { code: 'fr', name: 'FR' },
+    { code: 'bn', name: 'BN' },
+    { code: 'pt', name: 'PT' },
+    { code: 'id', name: 'ID' },
+    { code: 'ur', name: 'UR' },
+    { code: 'ru', name: 'RU' },
+    { code: 'de', name: 'DE' },
+    { code: 'vi', name: 'VI' },
+    { code: 'my', name: 'MY' }
+  ];
 
-  const switchLocale = () => {
-    const newPath = pathname.replace(`/${locale}`, `/${otherLocale}`)
+  const switchLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newLocale = e.target.value
+    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`)
     router.push(newPath)
   }
 
@@ -107,22 +124,28 @@ export default function Header({ locale }: { locale: string }) {
           <div className="w-px h-4 bg-gray-200 mx-3" />
 
           {/* Language toggle */}
-          <button
-            onClick={switchLocale}
-            className="text-[10px] font-bold tracking-widest text-gray-400 hover:text-black border border-gray-200 rounded-md px-2 py-1 transition-colors uppercase ml-2"
+          <select
+            value={locale}
+            onChange={switchLanguage}
+            className="text-[10px] font-bold tracking-widest text-gray-400 hover:text-black border border-gray-200 rounded-md py-1 transition-colors uppercase ml-2 bg-transparent focus:outline-none cursor-pointer"
           >
-            {otherLocale}
-          </button>
+            {languages.map(l => (
+              <option key={l.code} value={l.code} className="text-black uppercase">{l.name}</option>
+            ))}
+          </select>
         </nav>
 
-        {/* Mobile menu button (simple lang switch for now) */}
-        <div className="flex items-center gap-2 md:hidden">
-          <button
-            onClick={switchLocale}
-            className="text-[10px] font-bold tracking-widest text-gray-400 hover:text-black border border-gray-200 rounded-md px-2 py-1 uppercase"
+        {/* Mobile menu button */}
+        <div className="flex items-center gap-1 md:hidden">
+          <select
+            value={locale}
+            onChange={switchLanguage}
+            className="text-[10px] font-bold tracking-widest text-gray-400 hover:text-black border border-gray-200 rounded-md py-1 uppercase bg-transparent focus:outline-none cursor-pointer"
           >
-            {otherLocale}
-          </button>
+            {languages.map(l => (
+              <option key={l.code} value={l.code} className="text-black uppercase">{l.name}</option>
+            ))}
+          </select>
           <button className="p-2 text-gray-600 hover:text-black" aria-label="Menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>

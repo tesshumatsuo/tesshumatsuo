@@ -112,6 +112,7 @@ export const postType = defineType({
         { type: 'instagram' },
         { type: 'linkCard' },
         { type: 'spotify' },
+        { type: 'twitter' },
       ],
     }),
     defineField({

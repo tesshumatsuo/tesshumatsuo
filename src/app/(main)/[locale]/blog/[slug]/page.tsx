@@ -5,6 +5,7 @@ import CategoryBadge from '@/components/CategoryBadge'
 import ArticleCard from '@/components/ArticleCard'
 import KaiwaBubble from '@/components/KaiwaBubble'
 import TocBlock from '@/components/TocBlock'
+import TwitterEmbed from '@/components/TwitterEmbed'
 import { client } from '@/sanity/lib/client'
 import { urlFor } from '@/sanity/lib/image'
 import Image from 'next/image'
@@ -261,6 +262,10 @@ const ptComponents: any = {
           ></iframe>
         </div>
       );
+    },
+    twitter: ({ value }: any) => {
+      if (!value?.url) return null;
+      return <TwitterEmbed url={value.url} />;
     },
     check: ({ value }: any) => {
       if (!value?.text) return null;

@@ -72,5 +72,9 @@ export const blockContentType = defineType({
         }
       ]
     }),
+    defineArrayMember({ type: 'youtube' }),
+    defineArrayMember({ type: 'instagram' }),
+    defineArrayMember({ type: 'spotify' }),
+    defineArrayMember({ type: 'twitter' }),
   ],
 })

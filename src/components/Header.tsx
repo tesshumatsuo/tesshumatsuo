@@ -17,7 +17,8 @@ export default function Header({ locale }: { locale: string }) {
     router.push(newPath)
   }
 
-  const menuConfig = [
+  type MenuItem = { label: string; href?: string; target?: string; dropdown?: { label: string; href: string }[] }
+  const menuConfig: MenuItem[] = [
     { label: t('all'), href: `/${locale}/blog` },
     { 
       label: t('life'), 
@@ -53,7 +54,7 @@ export default function Header({ locale }: { locale: string }) {
         { label: "ごぼう塾", href: `/${locale}/blog?cat=gobojuku` },
       ]
     },
-    { label: 'Podcast', href: 'https://open.spotify.com/show/1gWAOcd4KWxx5hil36Fs9a?si=73-1jminTby21oyvrkJhtA', target: '_blank' },
+    { label: 'Podcast', href: `/${locale}/blog?cat=podcast` },
     { label: t('profile'), href: `/${locale}/profile` },
   ]
 

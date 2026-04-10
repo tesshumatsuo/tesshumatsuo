@@ -246,7 +246,7 @@ const ptComponents: any = {
       }
       if (!embedId) return null;
       return (
-        <div className="my-10 w-full flex justify-center">
+        <div className="my-4 w-full flex justify-center">
           <iframe 
             style={{ borderRadius: '12px' }} 
             src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`} 
@@ -361,7 +361,7 @@ const ptComponents: any = {
         if (spotifyMatch) {
           const embedId = `${spotifyMatch[1]}/${spotifyMatch[2]}`;
           return (
-            <div className="my-10 w-full flex justify-center">
+            <div className="my-4 w-full flex justify-center">
               <iframe
                 style={{ borderRadius: '12px' }}
                 src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`}
@@ -379,6 +379,69 @@ const ptComponents: any = {
         const twitterMatch = rawText.match(/^https?:\/\/(www\.)?(twitter|x)\.com\/.+\/status\/\d+/);
         if (twitterMatch) {
           return <TwitterEmbed url={rawText} />;
+        }
+
+        // --- Embed code detection ---
+        // Twitter blockquote embed code
+        if (rawText.includes('twitter-tweet')) {
+          const tweetCodeUrl = rawText.match(/href="(https:\/\/twitter\.com\/[^"?]+\/status\/\d+)/);
+          if (tweetCodeUrl) {
+            return <TwitterEmbed url={tweetCodeUrl[1]} />;
+          }
+        }
+        // YouTube iframe embed code
+        const ytEmbedMatch = rawText.match(/src="https:\/\/www\.youtube\.com\/embed\/([a-zA-Z0-9_-]+)/);
+        if (ytEmbedMatch) {
+          const videoId = ytEmbedMatch[1];
+          return (
+            <div className="my-8 aspect-video w-full rounded-2xl overflow-hidden shadow-sm">
+              <iframe
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
+            </div>
+          );
+        }
+        // Instagram iframe/blockquote embed code
+        const igEmbedMatch = rawText.match(/instagram\.com\/(p|reel|reels)\/([^/"?]+)/);
+        if (igEmbedMatch) {
+          const shortcode = igEmbedMatch[2];
+          return (
+            <div className="my-8 flex justify-center w-full">
+              <div className="w-full max-w-[540px] border border-gray-100 rounded-xl overflow-hidden shadow-sm bg-white">
+                <iframe
+                  src={`https://www.instagram.com/p/${shortcode}/embed`}
+                  className="w-full"
+                  height="600"
+                  frameBorder="0"
+                  scrolling="no"
+                  allow="encrypted-media"
+                />
+              </div>
+            </div>
+          );
+        }
+        // Spotify iframe embed code
+        const spotifyEmbedMatch = rawText.match(/src="https:\/\/open\.spotify\.com\/embed\/(show|episode|track|playlist)\/([^"?]+)/);
+        if (spotifyEmbedMatch) {
+          const embedId = `${spotifyEmbedMatch[1]}/${spotifyEmbedMatch[2]}`;
+          return (
+            <div className="my-4 w-full flex justify-center">
+              <iframe
+                style={{ borderRadius: '12px' }}
+                src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`}
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                className="shadow-sm border border-gray-100 max-w-3xl"
+              />
+            </div>
+          );
         }
       }
       return <p className="mb-6 leading-loose">{children}</p>;

@@ -7,89 +7,26 @@ export const postType = defineType({
   title: 'Post',
   type: 'document',
   fields: [
+    // ── 主要フィールド（上部） ──────────────────
     defineField({
       name: 'title',
-      title: 'Title',
+      title: 'タイトル',
       type: 'string',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'slug',
-      title: 'Slug',
+      title: 'スラッグ（URL）',
       type: 'slug',
       options: {
         source: 'title',
       },
+      description: '「Generate」を押すとタイトルから自動生成されます',
       validation: (Rule) => Rule.required(),
     }),
-    defineField({
-      name: 'language',
-      title: 'Language (言語)',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Japanese (日本語)', value: 'ja' },
-          { title: 'English (英語)', value: 'en' },
-        ],
-      },
-      initialValue: 'ja',
-      validation: (Rule) => Rule.required(),
-    }),
-    defineField({
-      name: 'previewUrl',
-      title: 'Preview URL',
-      type: 'string',
-      components: {
-        field: (props: any) => React.createElement(UrlDisplay, { ...props, type: 'preview' })
-      },
-      readOnly: true,
-    }),
-    defineField({
-      name: 'publishedUrl',
-      title: 'Published URL',
-      type: 'string',
-      components: {
-        field: (props: any) => React.createElement(UrlDisplay, { ...props, type: 'published' })
-      },
-      readOnly: true,
-    }),
-    defineField({
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    }),
-    defineField({
-      name: 'updatedAt',
-      title: 'Updated at (更新日)',
-      type: 'datetime',
-      description: '空欄にすると、自動で最後に編集した日時が使われます',
-    }),
-    defineField({
-      name: 'mainImage',
-      title: 'Main Image (アイキャッチ画像)',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        {
-          name: 'alt',
-          type: 'string',
-          title: 'Alternative text',
-        }
-      ]
-    }),
-    defineField({
-      name: 'excerpt',
-      title: 'Excerpt (抜粋)',
-      type: 'text',
-      rows: 3,
-      description: '記事の抜粋文です。',
-    }),
-
     defineField({
       name: 'body',
-      title: 'Body',
+      title: '本文',
       type: 'array',
       of: [
         { type: 'block' },
@@ -115,23 +52,89 @@ export const postType = defineType({
         { type: 'twitter' },
       ],
     }),
-    defineField({
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: [{ type: 'author' }],
-    }),
+
+    // ── サイドバー的フィールド（下部） ─────────
     defineField({
       name: 'categories',
-      title: 'Categories',
+      title: 'カテゴリー',
       type: 'array',
       of: [{ type: 'reference', to: { type: 'category' } }],
     }),
     defineField({
       name: 'tags',
-      title: 'Tags',
+      title: 'タグ',
       type: 'array',
       of: [{ type: 'reference', to: { type: 'tag' } }],
+    }),
+    defineField({
+      name: 'mainImage',
+      title: 'アイキャッチ画像',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+        }
+      ]
+    }),
+    defineField({
+      name: 'excerpt',
+      title: '抜粋',
+      type: 'text',
+      rows: 3,
+      description: '記事の抜粋文です。',
+    }),
+    defineField({
+      name: 'language',
+      title: '言語',
+      type: 'string',
+      options: {
+        list: [
+          { title: '日本語', value: 'ja' },
+          { title: 'English', value: 'en' },
+        ],
+      },
+      initialValue: 'ja',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'author',
+      title: '著者',
+      type: 'reference',
+      to: [{ type: 'author' }],
+    }),
+    defineField({
+      name: 'publishedAt',
+      title: '公開日',
+      type: 'datetime',
+    }),
+    defineField({
+      name: 'updatedAt',
+      title: '更新日',
+      type: 'datetime',
+      description: '空欄にすると、自動で最後に編集した日時が使われます',
+    }),
+    defineField({
+      name: 'previewUrl',
+      title: 'プレビューURL',
+      type: 'string',
+      components: {
+        field: (props: any) => React.createElement(UrlDisplay, { ...props, type: 'preview' })
+      },
+      readOnly: true,
+    }),
+    defineField({
+      name: 'publishedUrl',
+      title: '公開URL',
+      type: 'string',
+      components: {
+        field: (props: any) => React.createElement(UrlDisplay, { ...props, type: 'published' })
+      },
+      readOnly: true,
     }),
   ],
 })

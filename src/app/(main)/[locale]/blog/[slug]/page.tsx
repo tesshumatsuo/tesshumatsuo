@@ -128,6 +128,24 @@ function processKaiwaBlocks(blocks: any[]) {
 
 // Custom Portable Text components to add IDs to headings
 const ptComponents: any = {
+  marks: {
+    underline: ({children}: any) => <span style={{ textDecoration: 'underline' }}>{children}</span>,
+    'strike-through': ({children}: any) => <span style={{ textDecoration: 'line-through' }}>{children}</span>,
+    code: ({children}: any) => <code className="bg-gray-100 text-pink-600 px-1.5 py-0.5 rounded text-sm font-mono">{children}</code>,
+    link: ({value, children}: any) => (
+      <a href={value?.href} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800">
+        {children}
+      </a>
+    ),
+  },
+  list: {
+    bullet: ({children}: any) => <ul className="list-disc pl-6 mb-6 space-y-1 leading-loose">{children}</ul>,
+    number: ({children}: any) => <ol className="list-decimal pl-6 mb-6 space-y-1 leading-loose">{children}</ol>,
+  },
+  listItem: {
+    bullet: ({children}: any) => <li className="leading-loose">{children}</li>,
+    number: ({children}: any) => <li className="leading-loose">{children}</li>,
+  },
   types: {
     kaiwa: ({ value }: any) => <KaiwaBubble value={value} components={tightPtComponents} />,
     image: ({ value }: any) => {

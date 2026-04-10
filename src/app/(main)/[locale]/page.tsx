@@ -60,10 +60,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
             Tesshu Matsuo
           </h1>
           <p className="text-[10px] md:text-xs text-gray-700 tracking-wide">
-            起業家 / クリエイター / AI エンジニア
+            {t('tagline')}
           </p>
           <p className="text-[10px] md:text-[11px] text-gray-600 leading-relaxed max-w-sm">
-            ビジネス、テクノロジー、哲学、デザインの交差点を探求する<br />パーソナルメディアとナレッジベース。
+            {t('description1')}<br />{t('description2')}
           </p>
         </div>
       </section>
@@ -113,7 +113,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <section className="space-y-4 pt-4 border-t border-gray-100">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold tracking-tight">Life</h2>
-            <Link href={`/${locale}/blog?cat=life`} className="text-xs text-gray-500 hover:text-[#4175a4]">すべて見る →</Link>
+            <Link href={`/${locale}/blog?cat=life`} className="text-xs text-gray-500 hover:text-[#4175a4]">{t('viewAll')} &rarr;</Link>
           </div>
           <div className="grid grid-cols-1 gap-2">
             {lifeArticles.map((article: any) => (
@@ -128,7 +128,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <section className="space-y-4 pt-4 border-t border-gray-100">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold tracking-tight">Book</h2>
-            <Link href={`/${locale}/blog?cat=book`} className="text-xs text-gray-500 hover:text-[#4175a4]">すべて見る →</Link>
+            <Link href={`/${locale}/blog?cat=book`} className="text-xs text-gray-500 hover:text-[#4175a4]">{t('viewAll')} &rarr;</Link>
           </div>
           <div className="grid grid-cols-1 gap-2">
             {bookArticles.map((article: any) => (
@@ -143,7 +143,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <section className="space-y-4 pt-4 border-t border-gray-100">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold tracking-tight">Movie</h2>
-            <Link href={`/${locale}/blog?cat=movie`} className="text-xs text-gray-500 hover:text-[#4175a4]">すべて見る →</Link>
+            <Link href={`/${locale}/blog?cat=movie`} className="text-xs text-gray-500 hover:text-[#4175a4]">{t('viewAll')} &rarr;</Link>
           </div>
           <div className="grid grid-cols-1 gap-2">
             {movieArticles.map((article: any) => (

@@ -19,8 +19,9 @@
   },
   "home": {
     "greeting": "Hello, I'm",
-    "tagline": "Creator / Innovator / Developer",
-    "description": "Personal media and knowledge base exploring the intersections of Business, Technology, Philosophy, and Design.",
+    "tagline": "Entrepreneur / Creator / AI Engineer",
+    "description1": "Exploring the intersection of Business, Technology, Philosophy, and Design.",
+    "description2": "A personal media and knowledge base.",
     "latestArticles": "Latest Articles",
     "viewAll": "View All",
     "exploreCategory": "Explore by Category",

@@ -88,32 +88,7 @@ export const postType = defineType({
       rows: 3,
       description: '記事の抜粋文です。',
     }),
-    defineField({
-      name: 'language',
-      title: '言語',
-      type: 'string',
-      options: {
-        list: [
-          { title: '日本語', value: 'ja' },
-          { title: 'English', value: 'en' },
-          { title: '中国語（普通話）', value: 'zh' },
-          { title: 'ヒンディー語', value: 'hi' },
-          { title: 'スペイン語', value: 'es' },
-          { title: 'アラビア語（現代標準）', value: 'ar' },
-          { title: 'フランス語', value: 'fr' },
-          { title: 'ベンガル語', value: 'bn' },
-          { title: 'ポルトガル語', value: 'pt' },
-          { title: 'インドネシア語', value: 'id' },
-          { title: 'ウルドゥー語', value: 'ur' },
-          { title: 'ロシア語', value: 'ru' },
-          { title: 'ドイツ語', value: 'de' },
-          { title: 'ベトナム語', value: 'vi' },
-          { title: 'ミャンマー語', value: 'my' },
-        ],
-      },
-      initialValue: 'ja',
-      validation: (Rule) => Rule.required(),
-    }),
+
     defineField({
       name: 'author',
       title: '著者',

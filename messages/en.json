@@ -31,7 +31,17 @@
     "readProfile": "Read Full Profile",
     "selectedWorks": "Selected Works",
     "getInTouch": "Get In Touch",
-    "contactDesc": "Feel free to reach out about new projects or collaborations."
+    "contactDesc": "Feel free to reach out about new projects or collaborations.",
+    "sidebarDesc1": "Creating innovative experiences in the digital and design world.",
+    "sidebarDesc2": "Pursuing modern design that balances beauty and functionality, and developing AI-powered products that move users.",
+    "sidebarProfileBtn": "Read Full Profile",
+    "categoriesTitle": "Categories",
+    "noticeTitle": "Notices",
+    "noticeDesc": "Check out my Twitter for the latest updates.",
+    "sidebarCatAI": "AI (Artificial Intelligence)",
+    "sidebarCatInvest": "Investment Strategy",
+    "sidebarCatBook": "Reading Log",
+    "sidebarCatProg": "Programming"
   },
   "blog": {
     "title": "Writing",

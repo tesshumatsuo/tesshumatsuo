@@ -7,10 +7,10 @@ export default async function Sidebar({ locale }: { locale: string }) {
 
   // Categories placeholder for now (or could fetch dynamically if preferred)
   const categories = [
-    { title: 'AI (人工知能)', slug: 'ai' },
-    { title: '投資戦略', slug: 'investment' },
-    { title: '読書記録', slug: 'book' },
-    { title: 'プログラミング', slug: 'programming' }
+    { title: t('sidebarCatAI'), slug: 'ai' },
+    { title: t('sidebarCatInvest'), slug: 'investment' },
+    { title: t('sidebarCatBook'), slug: 'book' },
+    { title: t('sidebarCatProg'), slug: 'programming' }
   ]
 
   return (
@@ -20,11 +20,11 @@ export default async function Sidebar({ locale }: { locale: string }) {
         <Image src="/avatar.png" alt="Tesshu Matsuo" width={100} height={100} className="w-24 h-24 rounded-full border border-gray-100 object-cover" />
         <div className="space-y-1">
           <h3 className="text-lg font-bold text-gray-900">Tesshu Matsuo</h3>
-          <p className="text-sm text-gray-500 font-medium">起業家 / クリエイター / AI エンジニア</p>
+          <p className="text-sm text-gray-500 font-medium">{t('tagline')}</p>
         </div>
         <p className="text-sm text-gray-600 leading-relaxed text-left">
-          デジタルとデザインの世界で革新的な体験を創り出しています。<br />
-          美しさと機能性を兼ね備えたモダンなデザインを追求し、ユーザーの心を動かすプロダクトをAIで開発しています。
+          {t('sidebarDesc1')}<br />
+          {t('sidebarDesc2')}
         </p>
 
         {/* SNS Icons */}
@@ -69,14 +69,14 @@ export default async function Sidebar({ locale }: { locale: string }) {
           href={`/${locale}/profile`}
           className="w-full inline-block bg-white hover:bg-gray-50 border-2 border-gray-800 !text-black font-bold py-3 px-4 rounded transition-colors text-center"
         >
-          詳しいプロフィールへ
+          {t('sidebarProfileBtn')}
         </Link>
       </div>
 
       {/* Categories Widget */}
       <div className="bg-white shadow-sm border border-gray-100 p-6">
         <h3 className="text-lg font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-100 border-l-4 border-l-[#4175a4] pl-3">
-          カテゴリー
+          {t('categoriesTitle')}
         </h3>
         <ul className="space-y-2">
           {categories.map((cat, idx) => (
@@ -92,10 +92,10 @@ export default async function Sidebar({ locale }: { locale: string }) {
       {/* Recommended/Twitter Widget placeholder */}
       <div className="bg-white shadow-sm border border-gray-100 p-6">
         <h3 className="text-lg font-bold text-gray-800 mb-4 pb-2 border-b-2 border-gray-100 border-l-4 border-l-[#4175a4] pl-3">
-          お知らせ
+          {t('noticeTitle')}
         </h3>
         <div className="text-sm text-gray-600 leading-relaxed">
-          最新の情報はTwitterなどでも発信しています。
+          {t('noticeDesc')}
         </div>
       </div>
     </div>

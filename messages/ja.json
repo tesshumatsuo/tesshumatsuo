@@ -31,7 +31,17 @@
     "readProfile": "プロフィールを読む",
     "selectedWorks": "主なプロジェクト",
     "getInTouch": "お問い合わせ",
-    "contactDesc": "新しいプロジェクトやコラボレーションについて、お気軽にご連絡ください。"
+    "contactDesc": "新しいプロジェクトやコラボレーションについて、お気軽にご連絡ください。",
+    "sidebarDesc1": "デジタルとデザインの世界で革新的な体験を創り出しています。",
+    "sidebarDesc2": "美しさと機能性を兼ね備えたモダンなデザインを追求し、ユーザーの心を動かすプロダクトをAIで開発しています。",
+    "sidebarProfileBtn": "詳しいプロフィールへ",
+    "categoriesTitle": "カテゴリー",
+    "noticeTitle": "お知らせ",
+    "noticeDesc": "最新の情報はTwitterなどでも発信しています。",
+    "sidebarCatAI": "AI (人工知能)",
+    "sidebarCatInvest": "投資戦略",
+    "sidebarCatBook": "読書記録",
+    "sidebarCatProg": "プログラミング"
   },
   "blog": {
     "title": "ブログ",

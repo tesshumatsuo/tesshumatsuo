@@ -189,7 +189,6 @@ const ptComponents: any = {
               height="600"
               frameBorder="0"
               scrolling="no"
-              allowTransparency={true}
               allow="encrypted-media"
             ></iframe>
           </div>
@@ -318,7 +317,72 @@ const ptComponents: any = {
         </h4>
       )
     },
-    normal: ({children}: any) => <p className="mb-6 leading-loose">{children}</p>,
+    normal: ({children, value}: any) => {
+      // Auto-detect bare URLs and render as embeds
+      const rawText = value?.children?.map((c: any) => c.text || '').join('').trim();
+      if (rawText) {
+        // YouTube
+        const ytMatch = rawText.match(/^https?:\/\/(www\.)?(youtube\.com\/watch\?.*v=|youtu\.be\/)([a-zA-Z0-9_-]+)/);
+        if (ytMatch) {
+          const videoId = ytMatch[3];
+          return (
+            <div className="my-8 aspect-video w-full rounded-2xl overflow-hidden shadow-sm">
+              <iframe
+                src={`https://www.youtube.com/embed/${videoId}`}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
+            </div>
+          );
+        }
+        // Instagram
+        const igMatch = rawText.match(/^https?:\/\/(www\.)?instagram\.com\/(p|reels?|reel)\/([^/?]+)/);
+        if (igMatch) {
+          const shortcode = igMatch[3];
+          return (
+            <div className="my-8 flex justify-center w-full">
+              <div className="w-full max-w-[540px] border border-gray-100 rounded-xl overflow-hidden shadow-sm bg-white">
+                <iframe
+                  src={`https://www.instagram.com/p/${shortcode}/embed`}
+                  className="w-full"
+                  height="600"
+                  frameBorder="0"
+                  scrolling="no"
+                  allow="encrypted-media"
+                />
+              </div>
+            </div>
+          );
+        }
+        // Spotify
+        const spotifyMatch = rawText.match(/^https?:\/\/open\.spotify\.com\/(show|episode|track|playlist)\/([^?&\s]+)/);
+        if (spotifyMatch) {
+          const embedId = `${spotifyMatch[1]}/${spotifyMatch[2]}`;
+          return (
+            <div className="my-10 w-full flex justify-center">
+              <iframe
+                style={{ borderRadius: '12px' }}
+                src={`https://open.spotify.com/embed/${embedId}?utm_source=generator`}
+                width="100%"
+                height="352"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                className="shadow-sm border border-gray-100 max-w-3xl"
+              />
+            </div>
+          );
+        }
+        // X / Twitter
+        const twitterMatch = rawText.match(/^https?:\/\/(www\.)?(twitter|x)\.com\/.+\/status\/\d+/);
+        if (twitterMatch) {
+          return <TwitterEmbed url={rawText} />;
+        }
+      }
+      return <p className="mb-6 leading-loose">{children}</p>;
+    },
     blockquote: ({children}: any) => <blockquote className="border-l-4 border-blue-600 pl-6 italic text-gray-700 my-8 py-2">{children}</blockquote>
   }
 }

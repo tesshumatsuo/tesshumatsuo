@@ -31,4 +31,17 @@ export default defineConfig({
     // https://www.sanity.io/docs/the-vision-plugin
     visionTool({defaultApiVersion: apiVersion}),
   ],
+  document: {
+    productionUrl: async (prev, context) => {
+      const { document } = context;
+      if (document._type === 'post') {
+        const slug = (document as any).slug?.current;
+        if (slug) {
+          const origin = typeof location === 'undefined' ? 'http://localhost:3000' : location.origin;
+          return `${origin}/ja/blog/${slug}`;
+        }
+      }
+      return prev;
+    },
+  },
 })

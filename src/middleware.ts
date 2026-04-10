@@ -5,7 +5,7 @@ import { routing } from './i18n/routing'
 
 const handleI18n = createMiddleware(routing)
 
-export async function proxy(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   // Ignore /studio path for i18n handling

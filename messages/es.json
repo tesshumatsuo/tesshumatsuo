@@ -18,10 +18,10 @@
     }
   },
   "home": {
-    "greeting": "Hello, I'm",
-    "tagline": "Entrepreneur / Creator / AI Engineer",
-    "description1": "Exploring the intersection of Business, Technology, Philosophy, and Design.",
-    "description2": "A personal media and knowledge base.",
+    "greeting": "Hola, soy",
+    "tagline": "Emprendedor / Creador / Ingeniero de IA",
+    "description1": "Explorando la intersección de Negocios, Tecnología, Filosofía y Diseño.",
+    "description2": "Un medio personal y base de conocimientos.",
     "latestArticles": "Latest Articles",
     "viewAll": "View All",
     "exploreCategory": "Explore by Category",

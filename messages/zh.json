@@ -18,10 +18,10 @@
     }
   },
   "home": {
-    "greeting": "Hello, I'm",
-    "tagline": "Entrepreneur / Creator / AI Engineer",
-    "description1": "Exploring the intersection of Business, Technology, Philosophy, and Design.",
-    "description2": "A personal media and knowledge base.",
+    "greeting": "你好，我是",
+    "tagline": "企业家 / 创作者 / AI 工程师",
+    "description1": "探索商业、技术、哲学和设计的交汇点。",
+    "description2": "个人媒体和知识库。",
     "latestArticles": "Latest Articles",
     "viewAll": "View All",
     "exploreCategory": "Explore by Category",

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spotify Heights Test 2</title>
+<style>
+  body { font-family: sans-serif; background: #fff; padding: 20px; }
+  .wrapper { margin-bottom: 20px; background: red; display: inline-block; }
+  iframe { display: block; border-radius: 12px; }
+</style>
+</head>
+<body>
+<h1>Testing Spotify Embed Gap Fixes</h1>
+
+<div>
+  <h3>Height 152px in 140px overflow:hidden container</h3>
+  <div class="wrapper" style="height: 140px; overflow: hidden; border-radius: 12px; width: 600px;">
+    <iframe src="https://open.spotify.com/embed/episode/3lKhgne1u3Eu58Fo45R7av?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+</div>
+
+<div>
+  <h3>Height 152px in 144px overflow:hidden container</h3>
+  <div class="wrapper" style="height: 144px; overflow: hidden; border-radius: 12px; width: 600px;">
+    <iframe src="https://open.spotify.com/embed/episode/3lKhgne1u3Eu58Fo45R7av?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+</div>
+
+</body>
+</html>

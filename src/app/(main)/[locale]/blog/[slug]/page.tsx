@@ -560,7 +560,7 @@ export default async function ArticlePage(props: PostPageProps) {
         <article className="max-w-[800px] w-full md:w-3/4">
           {/* Excerpt was removed here to prevent duplicating the first paragraph of the body */}
           
-          <div className="prose prose-blue max-w-none whitespace-pre-wrap text-base md:text-[18px] text-[#333333] leading-[1.8] md:leading-[1.9] tracking-[0.03em] prose-p:text-[#333333] prose-headings:text-gray-900 prose-li:text-[#333333] prose-strong:text-[#333333] prose-ol:text-[#333333] prose-p:mb-8 prose-p:mt-0 prose-li:my-4">
+          <div className="prose prose-blue max-w-none whitespace-pre-wrap text-[15px] md:text-base text-[#333333] leading-[1.8] md:leading-[1.9] tracking-[0.03em] prose-p:text-[#333333] prose-headings:text-gray-900 prose-li:text-[#333333] prose-strong:text-[#333333] prose-ol:text-[#333333] prose-p:mb-8 prose-p:mt-0 prose-li:my-4">
             {post.body ? (() => {
                let contentBlocks = [...post.body];
                

@@ -139,12 +139,12 @@ const ptComponents: any = {
     ),
   },
   list: {
-    bullet: ({children}: any) => <ul className="list-disc pl-6 mb-6 space-y-1 leading-loose">{children}</ul>,
-    number: ({children}: any) => <ol className="list-decimal pl-6 mb-6 space-y-1 leading-loose">{children}</ol>,
+    bullet: ({children}: any) => <ul className="list-disc pl-6 mb-6 space-y-1">{children}</ul>,
+    number: ({children}: any) => <ol className="list-decimal pl-6 mb-6 space-y-1">{children}</ol>,
   },
   listItem: {
-    bullet: ({children}: any) => <li className="leading-loose">{children}</li>,
-    number: ({children}: any) => <li className="leading-loose">{children}</li>,
+    bullet: ({children}: any) => <li>{children}</li>,
+    number: ({children}: any) => <li>{children}</li>,
   },
   types: {
     kaiwa: ({ value }: any) => <KaiwaBubble value={value} components={tightPtComponents} />,
@@ -557,10 +557,10 @@ export default async function ArticlePage(props: PostPageProps) {
       )}
 
       <div className="flex flex-col md:flex-row gap-12 items-start pt-2">
-        <article className="max-w-none md:w-3/4 text-gray-800 leading-loose text-sm">
+        <article className="max-w-[800px] w-full md:w-3/4">
           {/* Excerpt was removed here to prevent duplicating the first paragraph of the body */}
           
-          <div className="prose prose-blue max-w-none text-sm text-black leading-loose tracking-wide whitespace-pre-wrap prose-p:text-black prose-headings:text-black prose-li:text-black prose-strong:text-black prose-ol:text-black prose-p:mb-6 prose-p:mt-0 prose-li:my-3">
+          <div className="prose prose-blue max-w-none whitespace-pre-wrap text-base md:text-[18px] text-[#333333] leading-[1.8] md:leading-[1.9] tracking-[0.03em] prose-p:text-[#333333] prose-headings:text-gray-900 prose-li:text-[#333333] prose-strong:text-[#333333] prose-ol:text-[#333333] prose-p:mb-8 prose-p:mt-0 prose-li:my-4">
             {post.body ? (() => {
                let contentBlocks = [...post.body];
                

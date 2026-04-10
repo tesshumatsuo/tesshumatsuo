@@ -9,8 +9,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'home' })
 
+  const langFilter = locale === 'en' ? `language == 'en'` : `(!defined(language) || language == 'ja')`
+
   // Fetch the latest 4 published articles
-  const query = `*[_type == "post"] | order(publishedAt desc)[0...4] {
+  const query = `*[_type == "post" && ${langFilter}] | order(publishedAt desc)[0...4] {
     title,
     excerpt,
     "slug": slug.current,
@@ -21,19 +23,19 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const latestArticles = await client.fetch(query)
 
   // Fetch Life category articles
-  const lifeQuery = `*[_type == "post" && "life" in categories[]->slug.current] | order(publishedAt desc)[0...5] {
+  const lifeQuery = `*[_type == "post" && ${langFilter} && "life" in categories[]->slug.current] | order(publishedAt desc)[0...5] {
     title, excerpt, "slug": slug.current, "date": publishedAt, "category": categories[0]->title, "imageUrl": coalesce(mainImage.asset->url, body[_type == "image"][0].asset->url)
   }`
   const lifeArticles = await client.fetch(lifeQuery)
 
   // Fetch Book category articles
-  const bookQuery = `*[_type == "post" && "book" in categories[]->slug.current] | order(publishedAt desc)[0...5] {
+  const bookQuery = `*[_type == "post" && ${langFilter} && "book" in categories[]->slug.current] | order(publishedAt desc)[0...5] {
     title, excerpt, "slug": slug.current, "date": publishedAt, "category": categories[0]->title, "imageUrl": coalesce(mainImage.asset->url, body[_type == "image"][0].asset->url)
   }`
   const bookArticles = await client.fetch(bookQuery)
 
   // Fetch Movie category articles
-  const movieQuery = `*[_type == "post" && "movie" in categories[]->slug.current] | order(publishedAt desc)[0...5] {
+  const movieQuery = `*[_type == "post" && ${langFilter} && "movie" in categories[]->slug.current] | order(publishedAt desc)[0...5] {
     title, excerpt, "slug": slug.current, "date": publishedAt, "category": categories[0]->title, "imageUrl": coalesce(mainImage.asset->url, body[_type == "image"][0].asset->url)
   }`
   const movieArticles = await client.fetch(movieQuery)

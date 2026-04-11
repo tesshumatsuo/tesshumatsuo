@@ -22,10 +22,12 @@ export default function Header({ locale }: { locale: string }) {
     { code: 'pt', name: 'PT' },
     { code: 'id', name: 'ID' },
     { code: 'ur', name: 'UR' },
-    { code: 'ru', name: 'RU' },
-    { code: 'de', name: 'DE' },
-    { code: 'vi', name: 'VI' },
-    { code: 'my', name: 'MY' }
+    { code: 'ru', name: 'Русский' },
+    { code: 'de', name: 'Deutsch' },
+    { code: 'vi', name: 'Tiếng Việt' },
+    { code: 'my', name: 'ဗမာစာ' },
+    { code: 'ko', name: '한국어' },
+    { code: 'it', name: 'Italiano' }
   ];
 
   const switchLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {

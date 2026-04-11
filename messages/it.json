@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Tutto",
+    "life": "Vita",
+    "it": "Tecnologia",
+    "language": "Lingua",
+    "project": "Progetti",
+    "profile": "Profilo",
+    "categories": {
+      "investment": "Investimenti",
+      "book": "Libri",
+      "movie": "Film",
+      "camera": "Fotocamere",
+      "travel": "Viaggi",
+      "programming": "Programmazione",
+      "marketing": "Marketing",
+      "english": "Inglese"
+    }
+  },
+  "home": {
+    "greeting": "Ciao, sono",
+    "tagline": "Imprenditore / Creatore / Ingegnere IA",
+    "description1": "Esplorando l'intersezione tra Affari, Tecnologia e Design.",
+    "description2": "Media personale e base di conoscenza.",
+    "latestArticles": "Ultimi Articoli",
+    "viewAll": "Vedi Tutti",
+    "exploreCategory": "Esplora per Categoria",
+    "aboutMe": "Su di me",
+    "aboutDesc1": "Creazione di esperienze digitali.",
+    "aboutDesc2": "Le ultime tecnologie.",
+    "readProfile": "Leggi Profilo",
+    "selectedWorks": "Progetti Selezionati",
+    "getInTouch": "Contatti",
+    "contactDesc": "Sentiti libero di contattarmi.",
+    "sidebarDesc1": "Esperienze digitali.",
+    "sidebarDesc2": "Design e intelligenza artificiale.",
+    "sidebarProfileBtn": "Profilo Completo",
+    "categoriesTitle": "Categorie",
+    "noticeTitle": "Avvisi",
+    "noticeDesc": "Controlla il mio Twitter.",
+    "sidebarCatAI": "Intelligenza Artificiale",
+    "sidebarCatInvest": "Investimenti",
+    "sidebarCatBook": "Libri",
+    "sidebarCatProg": "Programmazione"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Saggi e pensieri.",
+    "all": "Tutto"
+  },
+  "about": {
+    "tagline": "Imprenditore",
+    "experience": "Esperienza",
+    "skills": "Competenze",
+    "getInTouch": "Contatti"
+  },
+  "contact": {
+    "title": "Contattami",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "send": "Invia",
+    "sending": "Invio in corso...",
+    "successTitle": "Inviato",
+    "successDesc": "Grazie!",
+    "sendAnother": "Invia un altro",
+    "error": "Errore.",
+    "namePlaceholder": "John Doe",
+    "messagePlaceholder": "Messaggio..."
+  }
+}

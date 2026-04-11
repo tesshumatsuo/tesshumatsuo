@@ -40,6 +40,8 @@ export default defineConfig({
         { id: 'de', title: 'ドイツ語' },
         { id: 'vi', title: 'ベトナム語' },
         { id: 'my', title: 'ミャンマー語' },
+        { id: 'ko', title: '韓国語' },
+        { id: 'it', title: 'イタリア語' },
       ],
       schemaTypes: ['post'],
     }),

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "전체",
+    "life": "라이프",
+    "it": "IT",
+    "language": "디자인",
+    "project": "프로젝트",
+    "profile": "프로필",
+    "categories": {
+      "investment": "투자",
+      "book": "독서",
+      "movie": "영화",
+      "camera": "카메라",
+      "travel": "여행",
+      "programming": "프로그래밍",
+      "marketing": "마케팅",
+      "english": "영어"
+    }
+  },
+  "home": {
+    "greeting": "안녕하세요, 저는",
+    "tagline": "창업가 / 크리에이터 / AI 엔지니어",
+    "description1": "비즈니스, 기술, 철학 및 디자인의 교차점을 탐구합니다.",
+    "description2": "개인 미디어 및 지식 창고.",
+    "latestArticles": "최신 아티클",
+    "viewAll": "모두 보기",
+    "exploreCategory": "카테고리별 탐색",
+    "aboutMe": "소개",
+    "aboutDesc1": "디지털 세계에서 혁신적인 경험을 창조합니다.",
+    "aboutDesc2": "항상 최신 기술과 트렌드를 접목합니다.",
+    "readProfile": "전체 프로필 읽기",
+    "selectedWorks": "선정된 프로젝트",
+    "getInTouch": "연락하기",
+    "contactDesc": "새로운 프로젝트에 대해 자유롭게 질문해주세요.",
+    "sidebarDesc1": "디지털 및 디자인 세계에서 혁신을 창조합니다.",
+    "sidebarDesc2": "아름다움과 기능의 균형, 감동을 주는 AI 제품 개발.",
+    "sidebarProfileBtn": "프로필 읽기",
+    "categoriesTitle": "카테고리",
+    "noticeTitle": "공지사항",
+    "noticeDesc": "최신 업데이트는 Twitter를 확인하세요.",
+    "sidebarCatAI": "AI (인공지능)",
+    "sidebarCatInvest": "투자 전략",
+    "sidebarCatBook": "독서 기록",
+    "sidebarCatProg": "프로그래밍"
+  },
+  "blog": {
+    "title": "글",
+    "description": "기술 변화와 제품 개발에 대한 생각.",
+    "all": "전체"
+  },
+  "about": {
+    "tagline": "창업가",
+    "experience": "경험",
+    "skills": "스킬",
+    "getInTouch": "연락하기"
+  },
+  "contact": {
+    "title": "연락하기",
+    "name": "이름",
+    "email": "이메일",
+    "message": "메시지",
+    "send": "보내기",
+    "sending": "전송 중...",
+    "successTitle": "성공",
+    "successDesc": "감사합니다!",
+    "sendAnother": "다른 메시지 보내기",
+    "error": "오류 발생.",
+    "namePlaceholder": "이름",
+    "messagePlaceholder": "메시지..."
+  }
+}

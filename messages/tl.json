@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Lahat",
+    "life": "Buhay",
+    "it": "IT",
+    "language": "Wika",
+    "project": "Proyekto",
+    "profile": "Profile",
+    "categories": {
+      "investment": "Puhunan",
+      "book": "Aklat",
+      "movie": "Pelikula",
+      "camera": "Kamera",
+      "travel": "Paglalakbay",
+      "programming": "Programming",
+      "marketing": "Marketing",
+      "english": "English"
+    }
+  },
+  "home": {
+    "greeting": "Kamusta, ako si",
+    "tagline": "Negosyante / Creator / AI Engineer",
+    "description1": "Nag-e-explore sa Negosyo, Teknolohiya, Pilosopiya, at Disenyo.",
+    "description2": "Personal na media at kaalaman.",
+    "latestArticles": "Pinakabagong Artikulo",
+    "viewAll": "Tingnan Lahat",
+    "exploreCategory": "Mga Kategorya",
+    "aboutMe": "Tungkol Sakin",
+    "aboutDesc1": "Gumagawa ng mga inobasyon sa digital.",
+    "aboutDesc2": "Palaging may dalang bagong teknolohiya.",
+    "readProfile": "Buong Profile",
+    "selectedWorks": "Mga Proyekto",
+    "getInTouch": "Makipag-ugnayan",
+    "contactDesc": "Mensahe ka lang.",
+    "sidebarDesc1": "Digital na Inobasyon.",
+    "sidebarDesc2": "Modernong disenyo at AI.",
+    "sidebarProfileBtn": "Buong Profile",
+    "categoriesTitle": "Mga Kategorya",
+    "noticeTitle": "Abiso",
+    "noticeDesc": "Tingnan ang Twitter ko.",
+    "sidebarCatAI": "Artificial Intelligence",
+    "sidebarCatInvest": "Estratehiya sa Puhunan",
+    "sidebarCatBook": "Talaan ng Pagbasa",
+    "sidebarCatProg": "Programming"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Mga Inisip",
+    "all": "Lahat"
+  },
+  "about": {
+    "tagline": "Negosyante",
+    "experience": "Karanasan",
+    "skills": "Kasanayan",
+    "getInTouch": "Makipag-ugnayan"
+  },
+  "contact": {
+    "title": "Makipag-ugnayan",
+    "name": "Pangalan",
+    "email": "Email",
+    "message": "Mensahe",
+    "send": "Ipadala",
+    "sending": "Ipinapadala...",
+    "successTitle": "Tagumpay",
+    "successDesc": "Salamat!",
+    "sendAnother": "Magpadala Muli",
+    "error": "May Error.",
+    "namePlaceholder": "John Doe",
+    "messagePlaceholder": "Mensahe..."
+  }
+}

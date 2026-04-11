@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Alles",
+    "life": "Leven",
+    "it": "IT",
+    "language": "Taal",
+    "project": "Project",
+    "profile": "Profiel",
+    "categories": {
+      "investment": "Investering",
+      "book": "Boek",
+      "movie": "Film",
+      "camera": "Camera",
+      "travel": "Reizen",
+      "programming": "Programmeren",
+      "marketing": "Marketing",
+      "english": "Engels"
+    }
+  },
+  "home": {
+    "greeting": "Hallo, ik ben",
+    "tagline": "Ondernemer / Creator / AI-ingenieur",
+    "description1": "Het kruispunt van business, technologie, filosofie en design ontdekken.",
+    "description2": "Persoonlijke media en kennisbank.",
+    "latestArticles": "Laatste artikelen",
+    "viewAll": "Alles bekijken",
+    "exploreCategory": "Categoriëen",
+    "aboutMe": "Over Mij",
+    "aboutDesc1": "Innovatieve ervaringen creëren in de digitale wereld.",
+    "aboutDesc2": "Altijd de nieuwste technologie integreren.",
+    "readProfile": "Volledig Profiel",
+    "selectedWorks": "Projecten",
+    "getInTouch": "Contact",
+    "contactDesc": "Voel je vrij om contact op te nemen.",
+    "sidebarDesc1": "Digitale innovatie.",
+    "sidebarDesc2": "Modern design en AI-producten.",
+    "sidebarProfileBtn": "Volledig Profiel",
+    "categoriesTitle": "Categoriëen",
+    "noticeTitle": "Updates",
+    "noticeDesc": "Volg mij op Twitter.",
+    "sidebarCatAI": "AI (Kunstmatige Intelligentie)",
+    "sidebarCatInvest": "Investeringsstrategie",
+    "sidebarCatBook": "Leeslogboek",
+    "sidebarCatProg": "Programmeren"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Gedachten en essays.",
+    "all": "Alles"
+  },
+  "about": {
+    "tagline": "Ondernemer",
+    "experience": "Ervaring",
+    "skills": "Vaardigheden",
+    "getInTouch": "Contact"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Naam",
+    "email": "E-mail",
+    "message": "Bericht",
+    "send": "Verzenden",
+    "sending": "Bezig met verzenden...",
+    "successTitle": "Gelukt",
+    "successDesc": "Bedankt!",
+    "sendAnother": "Nog een bericht",
+    "error": "Fout",
+    "namePlaceholder": "John Doe",
+    "messagePlaceholder": "Bericht..."
+  }
+}

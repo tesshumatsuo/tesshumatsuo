@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "همه",
+    "life": "زندگی",
+    "it": "فناوری",
+    "language": "زبان",
+    "project": "پروژه‌ها",
+    "profile": "پروفایل",
+    "categories": {
+      "investment": "سرمایه‌گذاری",
+      "book": "کتاب",
+      "movie": "فیلم",
+      "camera": "دوربین",
+      "travel": "سفر",
+      "programming": "برنامه‌نویسی",
+      "marketing": "بازاریابی",
+      "english": "انگلیسی"
+    }
+  },
+  "home": {
+    "greeting": "سلام، من",
+    "tagline": "کارآفرین / خالق / مهندس هوش مصنوعی",
+    "description1": "پیدا کردن تقاطع بین تجارت، فناوری، فلسفه و طراحی.",
+    "description2": "رسانه شخصی و پایگاه دانش.",
+    "latestArticles": "آخرین مقالات",
+    "viewAll": "مشاهده همه",
+    "exploreCategory": "دسته‌بندی‌ها",
+    "aboutMe": "درباره من",
+    "aboutDesc1": "ایجاد تجربیات دیجیتال.",
+    "aboutDesc2": "فناوری‌های مدرن.",
+    "readProfile": "پروفایل کامل",
+    "selectedWorks": "پروژه‌های انتخابی",
+    "getInTouch": "تماس",
+    "contactDesc": "برای همکاری با من تماس بگیرید.",
+    "sidebarDesc1": "نوآوری‌های دیجیتال.",
+    "sidebarDesc2": "هوش مصنوعی و طراحی.",
+    "sidebarProfileBtn": "پروفایل کامل",
+    "categoriesTitle": "دسته‌بندی‌ها",
+    "noticeTitle": "اخبار",
+    "noticeDesc": "توییتر من را ببینید.",
+    "sidebarCatAI": "هوش مصنوعی (AI)",
+    "sidebarCatInvest": "استراتژی سرمایه‌گذاری",
+    "sidebarCatBook": "کتاب‌ها",
+    "sidebarCatProg": "برنامه‌نویسی"
+  },
+  "blog": {
+    "title": "وبلاگ",
+    "description": "مقالات.",
+    "all": "همه"
+  },
+  "about": {
+    "tagline": "کارآفرین",
+    "experience": "تجربه",
+    "skills": "مهارت‌ها",
+    "getInTouch": "تماس"
+  },
+  "contact": {
+    "title": "تماس",
+    "name": "نام",
+    "email": "ایمیل",
+    "message": "پیام",
+    "send": "ارسال",
+    "sending": "در حال ارسال...",
+    "successTitle": "موفق",
+    "successDesc": "ممنون!",
+    "sendAnother": "ارسال پیام دیگر",
+    "error": "خطا.",
+    "namePlaceholder": "جان دو",
+    "messagePlaceholder": "پیام..."
+  }
+}

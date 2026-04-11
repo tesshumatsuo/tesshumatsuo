@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "ทั้งหมด",
+    "life": "ชีวิต",
+    "it": "ไอที",
+    "language": "ภาษา",
+    "project": "โปรเจกต์",
+    "profile": "โปรไฟล์",
+    "categories": {
+      "investment": "การลงทุน",
+      "book": "หนังสือ",
+      "movie": "ภาพยนตร์",
+      "camera": "กล้อง",
+      "travel": "ท่องเที่ยว",
+      "programming": "โปรแกรมมิ่ง",
+      "marketing": "การตลาด",
+      "english": "ภาษาอังกฤษ"
+    }
+  },
+  "home": {
+    "greeting": "สวัสดี ฉันคือ",
+    "tagline": "ผู้ประกอบการ / ครีเอเตอร์ / วิศวกร AI",
+    "description1": "สำรวจจุดบรรจบของธุรกิจ เทคโนโลยี ปรัชญา และดีไซน์",
+    "description2": "สื่อส่วนตัวและฐานข้อมูลความรู้",
+    "latestArticles": "บทความล่าสุด",
+    "viewAll": "ดูทั้งหมด",
+    "exploreCategory": "หมวดหมู่",
+    "aboutMe": "เกี่ยวกับฉัน",
+    "aboutDesc1": "สร้างประสบการณ์นวัตกรรมในโลกดิจิทัล",
+    "aboutDesc2": "นำเทรนด์และเทคโนโลยีล่าสุดมาใช้เสมอ",
+    "readProfile": "ดูโปรไฟล์เต็ม",
+    "selectedWorks": "ผลงานเด่น",
+    "getInTouch": "ติดต่อ",
+    "contactDesc": "สอบถามโปรเจกต์หรือร่วมงานได้เสมอ",
+    "sidebarDesc1": "สร้างนวัตกรรมดิจิทัล",
+    "sidebarDesc2": "มุ่งมั่นออกแบบผลงานและ AI ที่มีคุณภาพ",
+    "sidebarProfileBtn": "ดูโปรไฟล์เต็ม",
+    "categoriesTitle": "หมวดหมู่",
+    "noticeTitle": "ประกาศ",
+    "noticeDesc": "ติดตามอัปเดตทาง Twitter",
+    "sidebarCatAI": "AI (ปัญญาประดิษฐ์)",
+    "sidebarCatInvest": "กลยุทธ์การลงทุน",
+    "sidebarCatBook": "บันทึกการอ่าน",
+    "sidebarCatProg": "โปรแกรมมิ่ง"
+  },
+  "blog": {
+    "title": "บทความ",
+    "description": "เรียงความและความคิดเห็น",
+    "all": "ทั้งหมด"
+  },
+  "about": {
+    "tagline": "ผู้ประกอบการ",
+    "experience": "ประสบการณ์",
+    "skills": "ทักษะ",
+    "getInTouch": "ติดต่อ"
+  },
+  "contact": {
+    "title": "ติดต่อฉัน",
+    "name": "ชื่อ",
+    "email": "อีเมล",
+    "message": "ข้อความ",
+    "send": "ส่งข้อความ",
+    "sending": "กำลังส่ง...",
+    "successTitle": "ส่งสำเร็จ",
+    "successDesc": "ขอบคุณที่ติดต่อ",
+    "sendAnother": "ส่งข้อความอื่น",
+    "error": "เกิดข้อผิดพลาด",
+    "namePlaceholder": "John Doe",
+    "messagePlaceholder": "ข้อความ..."
+  }
+}

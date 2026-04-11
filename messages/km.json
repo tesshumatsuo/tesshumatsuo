@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "ទាំងអស់",
+    "life": "ជីវិត",
+    "it": "ព័ត៌មានវិទ្យា",
+    "language": "ភាសា",
+    "project": "គម្រោង",
+    "profile": "ប្រវត្តិរូប",
+    "categories": {
+      "investment": "ហិរញ្ញវត្ថុ",
+      "book": "សៀវភៅ",
+      "movie": "ភាពយន្ត",
+      "camera": "កាមេរ៉ា",
+      "travel": "ទេសចរណ៍",
+      "programming": "សរសេរកូដ",
+      "marketing": "ទីផ្សារ",
+      "english": "អង់គ្លេស"
+    }
+  },
+  "home": {
+    "greeting": "សួស្តី ខ្ញុំគឺ",
+    "tagline": "សហគ្រិន / អ្នកបង្កើត / វិស្វករ AI",
+    "description1": "ការរុករកនូវពាណិជ្ជកម្ម បច្ចេកវិទ្យា ទស្សនវិជ្ជា និងរចនា។",
+    "description2": "ប្រព័ន្ធផ្សព្វផ្សាយនិងចំណេះដឹង។",
+    "latestArticles": "អត្ថបទថ្មីៗ",
+    "viewAll": "មើលទាំងអស់",
+    "exploreCategory": "ប្រភេទ",
+    "aboutMe": "អំពីខ្ញុំ",
+    "aboutDesc1": "បង្កើតបទពិសោធន៍ឌីជីថល។",
+    "aboutDesc2": "ការរចនាទាន់សម័យ។",
+    "readProfile": "មើលប្រវត្តិរូបទីពេញ",
+    "selectedWorks": "គម្រោង",
+    "getInTouch": "ទំនាក់ទំនង",
+    "contactDesc": "សូមទំនាក់ទំនងមកខ្ញុំ។",
+    "sidebarDesc1": "បង្កើតការច្នៃប្រឌិត។",
+    "sidebarDesc2": "បញ្ញាសិប្បនិម្មិតនិងការរចនា។",
+    "sidebarProfileBtn": "ប្រវត្តិរូប",
+    "categoriesTitle": "ប្រភេទ",
+    "noticeTitle": "សេចក្តីជូនដំណឹង",
+    "noticeDesc": "មើល Twitter របស់ខ្ញុំ។",
+    "sidebarCatAI": "បញ្ញាសិប្បនិម្មិត (AI)",
+    "sidebarCatInvest": "ការវិនិយោគ",
+    "sidebarCatBook": "កំណត់ហេតុអានសៀវភៅ",
+    "sidebarCatProg": "សរសេរកូដ"
+  },
+  "blog": {
+    "title": "អត្ថបទ",
+    "description": "គំនិត និងទស្សនៈ។",
+    "all": "ទាំងអស់"
+  },
+  "about": {
+    "tagline": "សហគ្រិន",
+    "experience": "បទពិសោធន៍",
+    "skills": "ជំនាញ",
+    "getInTouch": "ទំនាក់ទំនង"
+  },
+  "contact": {
+    "title": "ទំនាក់ទំនង",
+    "name": "ឈ្មោះ",
+    "email": "អ៊ីមែល",
+    "message": "សារ",
+    "send": "ផ្ញើ",
+    "sending": "កំពុងបញ្ជូន...",
+    "successTitle": "ជោគជ័យ",
+    "successDesc": "សូមអរគុណ!",
+    "sendAnother": "ផ្ញើមួយទៀត",
+    "error": "មានបញ្ហា។",
+    "namePlaceholder": "ឈ្មោះ",
+    "messagePlaceholder": "សារ..."
+  }
+}

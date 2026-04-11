@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "सबै",
+    "life": "जीवन",
+    "it": "आईटी",
+    "language": "भाषा",
+    "project": "परियोजना",
+    "profile": "प्रोफाइल",
+    "categories": {
+      "investment": "लगानी",
+      "book": "किताब",
+      "movie": "चलचित्र",
+      "camera": "क्यामेरा",
+      "travel": "यात्रा",
+      "programming": "प्रोग्रामिङ",
+      "marketing": "मार्केटिङ",
+      "english": "अंग्रेजी"
+    }
+  },
+  "home": {
+    "greeting": "नमस्ते, म हुँ",
+    "tagline": "उद्यमी / क्रिएटर / एआई इन्जिनियर",
+    "description1": "व्यापार, प्रविधि, दर्शन र डिजाइनको अन्वेषण।",
+    "description2": "व्यक्तिगत मिडिया र ज्ञान भण्डार।",
+    "latestArticles": "नयाँ लेखहरू",
+    "viewAll": "सबै हेर्नुहोस्",
+    "exploreCategory": "वर्गहरू",
+    "aboutMe": "मेरो बारेमा",
+    "aboutDesc1": "डिजिटल संसारमा नवीन अनुभव सिर्जना गर्दै।",
+    "aboutDesc2": "सधैं नयाँ प्रविधि समावेश गर्न लक्ष्य।",
+    "readProfile": "पूरा प्रोफाइल",
+    "selectedWorks": "परियोजनाहरू",
+    "getInTouch": "सम्पर्क",
+    "contactDesc": "कुनै प्रश्न भए सोध्न नहिचकिचाउनुहोस्।",
+    "sidebarDesc1": "डिजिटल आविष्कार।",
+    "sidebarDesc2": "एआई र आधुनिक डिजाइन।",
+    "sidebarProfileBtn": "प्रोफाइल",
+    "categoriesTitle": "वर्गहरू",
+    "noticeTitle": "सूचना",
+    "noticeDesc": "ट्विटरमा हेर्नुहोस्।",
+    "sidebarCatAI": "एआई (आर्टिफिसियल इन्टेलिजेन्स)",
+    "sidebarCatInvest": "लगानी रणनीति",
+    "sidebarCatBook": "किताब रेकर्ड",
+    "sidebarCatProg": "प्रोग्रामिङ"
+  },
+  "blog": {
+    "title": "ब्लग",
+    "description": "विचार र निबन्ध।",
+    "all": "सबै"
+  },
+  "about": {
+    "tagline": "उद्यमी",
+    "experience": "अनुभव",
+    "skills": "सीप",
+    "getInTouch": "सम्पर्क"
+  },
+  "contact": {
+    "title": "सम्पर्क",
+    "name": "नाम",
+    "email": "इमेल",
+    "message": "सन्देश",
+    "send": "पठाउनुहोस्",
+    "sending": "पठाउँदै...",
+    "successTitle": "सफल",
+    "successDesc": "धन्यवाद!",
+    "sendAnother": "फेरि पठाउनुहोस्",
+    "error": "त्रुटि।",
+    "namePlaceholder": "नाम",
+    "messagePlaceholder": "सन्देश..."
+  }
+}

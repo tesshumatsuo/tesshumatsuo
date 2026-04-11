@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Tümü",
+    "life": "Yaşam",
+    "it": "Bilişim",
+    "language": "Dil",
+    "project": "Proje",
+    "profile": "Profil",
+    "categories": {
+      "investment": "Yatırım",
+      "book": "Kitap",
+      "movie": "Film",
+      "camera": "Kamera",
+      "travel": "Seyahat",
+      "programming": "Yazılım",
+      "marketing": "Pazarlama",
+      "english": "İngilizce"
+    }
+  },
+  "home": {
+    "greeting": "Merhaba, Ben",
+    "tagline": "Girişimci / İçerik Üreticisi / Yapay Zeka Mühendisi",
+    "description1": "İş, Teknoloji, Felsefe ve Tasarım'ın kesişimini keşfediyorum.",
+    "description2": "Kişisel medya ve bilgi tabanı.",
+    "latestArticles": "Son Yazılar",
+    "viewAll": "Tümünü Gör",
+    "exploreCategory": "Kategoriler",
+    "aboutMe": "Hakkımda",
+    "aboutDesc1": "Dijital dünyada yenilikçi deneyimler oluşturuyorum.",
+    "aboutDesc2": "Her zaman en son teknolojiyi birleştiririm.",
+    "readProfile": "Tam Profil",
+    "selectedWorks": "Projeler",
+    "getInTouch": "İletişim",
+    "contactDesc": "Bağlantıya geçmekten çekinmeyin.",
+    "sidebarDesc1": "Dijital inovasyon.",
+    "sidebarDesc2": "Modern tasarım ve yapay zeka ürünleri.",
+    "sidebarProfileBtn": "Tam Profil",
+    "categoriesTitle": "Kategoriler",
+    "noticeTitle": "Duyuru",
+    "noticeDesc": "Beni Twitter'da takip edin.",
+    "sidebarCatAI": "Yapay Zeka (AI)",
+    "sidebarCatInvest": "Yatırım Stratejisi",
+    "sidebarCatBook": "Okuma Notları",
+    "sidebarCatProg": "Yazılım"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Düşünceler ve makaleler.",
+    "all": "Tümü"
+  },
+  "about": {
+    "tagline": "Girişimci",
+    "experience": "Deneyim",
+    "skills": "Yetenekler",
+    "getInTouch": "İletişim"
+  },
+  "contact": {
+    "title": "İletişim",
+    "name": "İsim",
+    "email": "E-posta",
+    "message": "Mesaj",
+    "send": "Gönder",
+    "sending": "Gönderiliyor...",
+    "successTitle": "Başarılı",
+    "successDesc": "Teşekkürler!",
+    "sendAnother": "Tekrar gönder",
+    "error": "Hata oluştu.",
+    "namePlaceholder": "İsim",
+    "messagePlaceholder": "Mesaj..."
+  }
+}

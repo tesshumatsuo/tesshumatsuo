@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Alla",
+    "life": "Livet",
+    "it": "IT",
+    "language": "Språk",
+    "project": "Projekt",
+    "profile": "Profil",
+    "categories": {
+      "investment": "Investering",
+      "book": "Bok",
+      "movie": "Film",
+      "camera": "Kamera",
+      "travel": "Resor",
+      "programming": "Programmering",
+      "marketing": "Marknadsföring",
+      "english": "Engelska"
+    }
+  },
+  "home": {
+    "greeting": "Hej, jag är",
+    "tagline": "Entreprenör / Skapare / AI-ingenjör",
+    "description1": "Utforskar snittet mellan affärer, teknik, filosofi och design.",
+    "description2": "Personlig media.",
+    "latestArticles": "Senaste inläggen",
+    "viewAll": "Visa alla",
+    "exploreCategory": "Kategorier",
+    "aboutMe": "Om mig",
+    "aboutDesc1": "Skapar digitala upplevelser.",
+    "aboutDesc2": "Integrerar alltid den senaste ekniken.",
+    "readProfile": "Hela profilen",
+    "selectedWorks": "Projekt",
+    "getInTouch": "Kontakt",
+    "contactDesc": "Hör gärna av dig.",
+    "sidebarDesc1": "Digital innovation.",
+    "sidebarDesc2": "Modern design och AI.",
+    "sidebarProfileBtn": "Hela profilen",
+    "categoriesTitle": "Kategorier",
+    "noticeTitle": "Notiser",
+    "noticeDesc": "Kolla min Twitter.",
+    "sidebarCatAI": "AI (Artificiell Intelligens)",
+    "sidebarCatInvest": "Investeringsstrategi",
+    "sidebarCatBook": "Läsdagbok",
+    "sidebarCatProg": "Programmering"
+  },
+  "blog": {
+    "title": "Blogg",
+    "description": "Tankar och essäer.",
+    "all": "Alla"
+  },
+  "about": {
+    "tagline": "Entreprenör",
+    "experience": "Erfarenhet",
+    "skills": "Färdigheter",
+    "getInTouch": "Kontakt"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "name": "Namn",
+    "email": "E-post",
+    "message": "Meddelande",
+    "send": "Skicka",
+    "sending": "Skickar...",
+    "successTitle": "Skickat!",
+    "successDesc": "Tack!",
+    "sendAnother": "Skicka till",
+    "error": "Fel.",
+    "namePlaceholder": "Namn",
+    "messagePlaceholder": "Meddelande..."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Semua",
+    "life": "Kehidupan",
+    "it": "IT",
+    "language": "Bahasa",
+    "project": "Projek",
+    "profile": "Profil",
+    "categories": {
+      "investment": "Pelaburan",
+      "book": "Buku",
+      "movie": "Filem",
+      "camera": "Kamera",
+      "travel": "Perjalanan",
+      "programming": "Pengaturcaraan",
+      "marketing": "Pemasaran",
+      "english": "Inggeris"
+    }
+  },
+  "home": {
+    "greeting": "Hai, saya",
+    "tagline": "Usahawan / Pencipta / Jurutera AI",
+    "description1": "Meneroka Persilangan Perniagaan, Teknologi, Falsafah, dan Reka Bentuk.",
+    "description2": "Media peribadi dan pangkalan pengetahuan.",
+    "latestArticles": "Artikel Terkini",
+    "viewAll": "Lihat Semua",
+    "exploreCategory": "Kategori",
+    "aboutMe": "Tentang Saya",
+    "aboutDesc1": "Mencipta pengalaman inovatif di dunia digital.",
+    "aboutDesc2": "Sentiasa menggabungkan teknologi terkini.",
+    "readProfile": "Profil Penuh",
+    "selectedWorks": "Projek Terpilih",
+    "getInTouch": "Hubungi",
+    "contactDesc": "Sila hubungi saya.",
+    "sidebarDesc1": "Inovasi digital.",
+    "sidebarDesc2": "Reka bentuk moden dan AI.",
+    "sidebarProfileBtn": "Profil Penuh",
+    "categoriesTitle": "Kategori",
+    "noticeTitle": "Notis",
+    "noticeDesc": "Semak Twitter saya.",
+    "sidebarCatAI": "AI (Kecerdasan Buatan)",
+    "sidebarCatInvest": "Strategi Pelaburan",
+    "sidebarCatBook": "Log Membaca",
+    "sidebarCatProg": "Pengaturcaraan"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Esei dan pandangan.",
+    "all": "Semua"
+  },
+  "about": {
+    "tagline": "Usahawan",
+    "experience": "Pengalaman",
+    "skills": "Kemahiran",
+    "getInTouch": "Hubungi"
+  },
+  "contact": {
+    "title": "Hubungi",
+    "name": "Nama",
+    "email": "E-mel",
+    "message": "Mesej",
+    "send": "Hantar",
+    "sending": "Menghantar...",
+    "successTitle": "Berjaya",
+    "successDesc": "Terima kasih!",
+    "sendAnother": "Hantar lagi",
+    "error": "Ralat.",
+    "namePlaceholder": "John Doe",
+    "messagePlaceholder": "Mesej..."
+  }
+}

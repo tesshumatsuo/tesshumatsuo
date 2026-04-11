@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Wszystko",
+    "life": "Życie",
+    "it": "IT",
+    "language": "Język",
+    "project": "Projekt",
+    "profile": "Profil",
+    "categories": {
+      "investment": "Inwestycje",
+      "book": "Książki",
+      "movie": "Film",
+      "camera": "Aparat",
+      "travel": "Podróże",
+      "programming": "Programowanie",
+      "marketing": "Marketing",
+      "english": "Angielski"
+    }
+  },
+  "home": {
+    "greeting": "Cześć, jestem",
+    "tagline": "Przedsiębiorca / Twórca / Inżynier AI",
+    "description1": "Odkrywanie punktu przecięcia biznesu, technologii, filozofii i designu.",
+    "description2": "Osobiste medium i baza wiedzy.",
+    "latestArticles": "Najnowsze wpisy",
+    "viewAll": "Zobacz wszystkie",
+    "exploreCategory": "Kategorie",
+    "aboutMe": "O Mnie",
+    "aboutDesc1": "Tworzenie innowacji w świecie cyfrowym.",
+    "aboutDesc2": "Zawsze najnowsze technologie.",
+    "readProfile": "Pełny profil",
+    "selectedWorks": "Projekty",
+    "getInTouch": "Kontakt",
+    "contactDesc": "Napisz do mnie.",
+    "sidebarDesc1": "Innowacje cyfrowe.",
+    "sidebarDesc2": "Nowoczesny design i AI.",
+    "sidebarProfileBtn": "Pełny profil",
+    "categoriesTitle": "Kategorie",
+    "noticeTitle": "Nowości",
+    "noticeDesc": "Sprawdź mój Twitter.",
+    "sidebarCatAI": "Sztuczna Inteligencja (AI)",
+    "sidebarCatInvest": "Inwestycje",
+    "sidebarCatBook": "Notatki z czytania",
+    "sidebarCatProg": "Programowanie"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Eseje",
+    "all": "Wszystko"
+  },
+  "about": {
+    "tagline": "Przedsiębiorca",
+    "experience": "Doświadczenie",
+    "skills": "Umiejętności",
+    "getInTouch": "Kontakt"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "name": "Imię",
+    "email": "E-mail",
+    "message": "Wiadomość",
+    "send": "Wyślij",
+    "sending": "Wysyłanie...",
+    "successTitle": "Sukces",
+    "successDesc": "Dziękuję!",
+    "sendAnother": "Wyślij jeszcze raz",
+    "error": "Błąd.",
+    "namePlaceholder": "Jan Kowalski",
+    "messagePlaceholder": "Wiadomość..."
+  }
+}

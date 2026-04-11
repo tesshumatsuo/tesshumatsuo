@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "அனைத்தும்",
+    "life": "வாழ்க்கை",
+    "it": "தகவல் தொழில்நுட்பம்",
+    "language": "மொழி",
+    "project": "திட்டம்",
+    "profile": "சுயவிவரம்",
+    "categories": {
+      "investment": "முதலீடு",
+      "book": "புத்தகம்",
+      "movie": "படம்",
+      "camera": "கேமரா",
+      "travel": "பயணம்",
+      "programming": "நிரலாக்கம்",
+      "marketing": "மார்க்கெட்டிங்",
+      "english": "ஆங்கிலம்"
+    }
+  },
+  "home": {
+    "greeting": "வணக்கம், நான்",
+    "tagline": "தொழில்முனைவோர் / படைப்பாளி / AI பொறியாளர்",
+    "description1": "வணிகம், வணிகம் மற்றும் தொழில்நுட்பத்தின் சந்திப்பை ஆராய்கிறேன்.",
+    "description2": "தனிப்பட்ட ஊடகம்.",
+    "latestArticles": "சமீபத்திய கட்டுரைகள்",
+    "viewAll": "அனைத்தும் காண்க",
+    "exploreCategory": "பிரிவுகள்",
+    "aboutMe": "என்னை பற்றி",
+    "aboutDesc1": "டிஜிட்டல் அனுபவங்கள்.",
+    "aboutDesc2": "நவீன தொழில்நுட்பம்.",
+    "readProfile": "முழு சுயவிவரம்",
+    "selectedWorks": "திட்டங்கள்",
+    "getInTouch": "தொடர்பு",
+    "contactDesc": "தொடர்பு கொள்ளவும்.",
+    "sidebarDesc1": "டிஜிட்டல் கண்டுபிடிப்புகள்.",
+    "sidebarDesc2": "AI வடிவமைப்பு.",
+    "sidebarProfileBtn": "சுயவிவரம் காண்க",
+    "categoriesTitle": "பிரிவுகள்",
+    "noticeTitle": "அறிவிப்புகள்",
+    "noticeDesc": "என் ட்விட்டரைப் பார்க்கவும்.",
+    "sidebarCatAI": "செயற்கை நுண்ணறிவு (AI)",
+    "sidebarCatInvest": "முதலீடு",
+    "sidebarCatBook": "புத்தகங்கள்",
+    "sidebarCatProg": "நிரலாக்கம்"
+  },
+  "blog": {
+    "title": "வலைப்பதிவு",
+    "description": "சிந்தனைகள்.",
+    "all": "அனைத்தும்"
+  },
+  "about": {
+    "tagline": "தொழில்முனைவோர்",
+    "experience": "அனுபவம்",
+    "skills": "திறன்கள்",
+    "getInTouch": "தொடர்பு"
+  },
+  "contact": {
+    "title": "தொடர்பு",
+    "name": "பெயர்",
+    "email": "மின்னஞ்சல்",
+    "message": "செய்தி",
+    "send": "அனுப்பு",
+    "sending": "அனுப்பப்படுகிறது...",
+    "successTitle": "வெற்றி",
+    "successDesc": "நன்றி!",
+    "sendAnother": "மீண்டும் அனுப்பு",
+    "error": "பிழை.",
+    "namePlaceholder": "பெயர்",
+    "messagePlaceholder": "செய்தி..."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Yote",
+    "life": "Maisha",
+    "it": "IT",
+    "language": "Lugha",
+    "project": "Miradi",
+    "profile": "Wasifu",
+    "categories": {
+      "investment": "Uwekezaji",
+      "book": "Kitabu",
+      "movie": "Filamu",
+      "camera": "Kamera",
+      "travel": "Usafiri",
+      "programming": "Uprogramu",
+      "marketing": "Masoko",
+      "english": "Kiingereza"
+    }
+  },
+  "home": {
+    "greeting": "Hujambo, mimi ni",
+    "tagline": "Mjasiriamali / Muundaji / Mhandisi wa AI",
+    "description1": "Kuchunguza Biashara, Teknolojia na Usanifu.",
+    "description2": "Media ya binafsi.",
+    "latestArticles": "Makala Mpya",
+    "viewAll": "Tazama Yote",
+    "exploreCategory": "Kategoria",
+    "aboutMe": "Kunihusu",
+    "aboutDesc1": "Ubunifu wa dijitali.",
+    "aboutDesc2": "Teknolojia mpya.",
+    "readProfile": "Wasifu Kamili",
+    "selectedWorks": "Miradi",
+    "getInTouch": "Mawasiliano",
+    "contactDesc": "Wasiliana nami.",
+    "sidebarDesc1": "Ubunifu dijitali.",
+    "sidebarDesc2": "AI na Ubunifu.",
+    "sidebarProfileBtn": "Wasifu",
+    "categoriesTitle": "Kategoria",
+    "noticeTitle": "Taarifa",
+    "noticeDesc": "Angalia Twitter yangu.",
+    "sidebarCatAI": "AI (Akili Bandia)",
+    "sidebarCatInvest": "Uwekezaji",
+    "sidebarCatBook": "Vitabu",
+    "sidebarCatProg": "Uprogramu"
+  },
+  "blog": {
+    "title": "Blogu",
+    "description": "Mawazo.",
+    "all": "Yote"
+  },
+  "about": {
+    "tagline": "Mjasiriamali",
+    "experience": "Uzoefu",
+    "skills": "Ujuzi",
+    "getInTouch": "Mawasiliano"
+  },
+  "contact": {
+    "title": "Mawasiliano",
+    "name": "Jina",
+    "email": "Barua pepe",
+    "message": "Ujumbe",
+    "send": "Tuma",
+    "sending": "Inatuma...",
+    "successTitle": "Imefanikiwa",
+    "successDesc": "Asante!",
+    "sendAnother": "Tuma tena",
+    "error": "Hitilafu.",
+    "namePlaceholder": "Jina",
+    "messagePlaceholder": "Ujumbe..."
+  }
+}

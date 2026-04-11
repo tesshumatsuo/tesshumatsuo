@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Всі",
+    "life": "Життя",
+    "it": "ІТ",
+    "language": "Мова",
+    "project": "Проєкт",
+    "profile": "Профіль",
+    "categories": {
+      "investment": "Інвестиції",
+      "book": "Книга",
+      "movie": "Фільм",
+      "camera": "Камера",
+      "travel": "Подорожі",
+      "programming": "Програмування",
+      "marketing": "Маркетинг",
+      "english": "Англійська"
+    }
+  },
+  "home": {
+    "greeting": "Привіт, я",
+    "tagline": "Підприємець / Творець / ШІ-інженер",
+    "description1": "Досліджуємо перетин бізнесу, технологій, філософії та дизайну.",
+    "description2": "Особисте медіа.",
+    "latestArticles": "Останні статті",
+    "viewAll": "Дивитись всі",
+    "exploreCategory": "Категорії",
+    "aboutMe": "Про мене",
+    "aboutDesc1": "Створення інноваційних цифрових рішень.",
+    "aboutDesc2": "Завжди новітні технології.",
+    "readProfile": "Повний профіль",
+    "selectedWorks": "Проєкти",
+    "getInTouch": "Зв'язок",
+    "contactDesc": "Пишіть мені.",
+    "sidebarDesc1": "Цифрові інновації.",
+    "sidebarDesc2": "Сучасний дизайн та ШІ.",
+    "sidebarProfileBtn": "Повний профіль",
+    "categoriesTitle": "Категорії",
+    "noticeTitle": "Новини",
+    "noticeDesc": "Слідкуйте за моїм Twitter.",
+    "sidebarCatAI": "ШІ (Штучний інтелект)",
+    "sidebarCatInvest": "Інвестиції",
+    "sidebarCatBook": "Книги",
+    "sidebarCatProg": "Програмування"
+  },
+  "blog": {
+    "title": "Блог",
+    "description": "Есе та думки.",
+    "all": "Всі"
+  },
+  "about": {
+    "tagline": "Підприємець",
+    "experience": "Досвід",
+    "skills": "Навички",
+    "getInTouch": "Зв'язок"
+  },
+  "contact": {
+    "title": "Контакти",
+    "name": "Ім'я",
+    "email": "Email",
+    "message": "Повідомлення",
+    "send": "Надіслати",
+    "sending": "Відправка...",
+    "successTitle": "Успіх",
+    "successDesc": "Дякую!",
+    "sendAnother": "Ще одне",
+    "error": "Помилка.",
+    "namePlaceholder": "Ім'я",
+    "messagePlaceholder": "Повідомлення..."
+  }
+}

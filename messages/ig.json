@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Niile",
+    "life": "Ndụ",
+    "it": "IT",
+    "language": "Asụsụ",
+    "project": "Ọrụ",
+    "profile": "Profaịlụ",
+    "categories": {
+      "investment": "Ịtinye ego",
+      "book": "Akwụkwọ",
+      "movie": "Ihe nkiri",
+      "camera": "Igwefoto",
+      "travel": "Njem",
+      "programming": "Mmemme",
+      "marketing": "Ahịa",
+      "english": "Bekee"
+    }
+  },
+  "home": {
+    "greeting": "Nnọọ, abụ m",
+    "tagline": "Onye ọchụ azụmahịa / Onye okike / Injinia AI",
+    "description1": "Ịchọpụta azụmahịa, teknụzụ, na nhazi.",
+    "description2": "Mgbasa ozi nkeonwe.",
+    "latestArticles": "Edemede Ọhụụ",
+    "viewAll": "Lee Niile",
+    "exploreCategory": "Ọrụ isiokwu",
+    "aboutMe": "Banyere m",
+    "aboutDesc1": "Ịmepụta ahụmịhe dijitalụ.",
+    "aboutDesc2": "Teknụzụ ọgbara ọhụụ.",
+    "readProfile": "Profaịlụ zuru oke",
+    "selectedWorks": "Ọrụ",
+    "getInTouch": "Kpọtụrụ m",
+    "contactDesc": "Zite ozi.",
+    "sidebarDesc1": "Nchepụta dijitalụ.",
+    "sidebarDesc2": "AI na nhazi.",
+    "sidebarProfileBtn": "Profaịlụ",
+    "categoriesTitle": "Ọrụ isiokwu",
+    "noticeTitle": "Ọkwa",
+    "noticeDesc": "Lee Twitter m.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "Ịtinye ego",
+    "sidebarCatBook": "Akwụkwọ",
+    "sidebarCatProg": "Mmemme"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Echiche.",
+    "all": "Niile"
+  },
+  "about": {
+    "tagline": "Onye ọchụ azụmahịa",
+    "experience": "Ahụmịhe",
+    "skills": "Nka",
+    "getInTouch": "Kpọtụrụ m"
+  },
+  "contact": {
+    "title": "Kpọtụrụ m",
+    "name": "Aha",
+    "email": "Email",
+    "message": "Ozi",
+    "send": "Ziga",
+    "sending": "Na-eziga...",
+    "successTitle": "Ihe ịga nke ọma",
+    "successDesc": "Daalụ!",
+    "sendAnother": "Ziga ọzọ",
+    "error": "Njehie.",
+    "namePlaceholder": "Aha",
+    "messagePlaceholder": "Ozi..."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "ທັງໝົດ",
+    "life": "ຊີວິດ",
+    "it": "IT",
+    "language": "ພາສາ",
+    "project": "ໂຄງການ",
+    "profile": "ໂປຣໄຟລ໌",
+    "categories": {
+      "investment": "ການລົງທຶນ",
+      "book": "ໜັງສື",
+      "movie": "ໜັງ",
+      "camera": "ກ້ອງ",
+      "travel": "ການທ່ອງທ່ຽວ",
+      "programming": "ການຂຽນໂປຣແກຣມ",
+      "marketing": "ການຕະຫຼາດ",
+      "english": "ອັງກິດ"
+    }
+  },
+  "home": {
+    "greeting": "ສະ​ບາຍ​ດີ, ຂ້ອຍ​ແມ່ນ",
+    "tagline": "ຜູ້ປະກອບການ / ຜູ້ສ້າງ / AI Engineer",
+    "description1": "ທຸລະກິດ, ເທັກໂນໂລຈີ ແລະ ດີໄຊ.",
+    "description2": "ສື່ສ່ວນຕົວ.",
+    "latestArticles": "ບົດຄວາມຫຼ້າສຸດ",
+    "viewAll": "ເບິ່ງທັງໝົດ",
+    "exploreCategory": "ໝວດໝູ່",
+    "aboutMe": "ກ່ຽວກັບຂ້ອຍ",
+    "aboutDesc1": "ປະສົບການດິຈິຕອລ.",
+    "aboutDesc2": "ເທັກໂນໂລຈີ.",
+    "readProfile": "ໂປຣໄຟລ໌ເຕັມ",
+    "selectedWorks": "ໂຄງການ",
+    "getInTouch": "ຕິດຕໍ່",
+    "contactDesc": "ສົ່ງຂໍ້ຄວາມ.",
+    "sidebarDesc1": "ດິຈິຕອລ.",
+    "sidebarDesc2": "AI.",
+    "sidebarProfileBtn": "ໂປຣໄຟລ໌",
+    "categoriesTitle": "ໝວດ",
+    "noticeTitle": "ປະກາດ",
+    "noticeDesc": "Twitter.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "ລົງທຶນ",
+    "sidebarCatBook": "ໜັງສື",
+    "sidebarCatProg": "ໂປຣແກຣມ"
+  },
+  "blog": {
+    "title": "ບລັອກ",
+    "description": "ຄວາມຄິດ.",
+    "all": "ທັງໝົດ"
+  },
+  "about": {
+    "tagline": "ຜູ້ປະກອບການ",
+    "experience": "ປະສົບການ",
+    "skills": "ທັກສະ",
+    "getInTouch": "ຕິດຕໍ່"
+  },
+  "contact": {
+    "title": "ຕິດຕໍ່",
+    "name": "ຊື່",
+    "email": "ອີເມວ",
+    "message": "ຂໍ້ຄວາມ",
+    "send": "ສົ່ງ",
+    "sending": "ກຳລັງສົ່ງ...",
+    "successTitle": "ສຳເລັດ",
+    "successDesc": "ຂອບໃຈ!",
+    "sendAnother": "ສົ່ງອີກ",
+    "error": "ຜິດພາດ.",
+    "namePlaceholder": "ຊື່",
+    "messagePlaceholder": "ຂໍ້ຄວາມ..."
+  }
+}

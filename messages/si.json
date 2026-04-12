@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "සියල්ල",
+    "life": "ජීවිතය",
+    "it": "IT",
+    "language": "භාෂාව",
+    "project": "ව්‍යාපෘතිය",
+    "profile": "පැතිකඩ",
+    "categories": {
+      "investment": "ආයෝජනය",
+      "book": "පොත",
+      "movie": "චිත්‍රපටය",
+      "camera": "කැමරාව",
+      "travel": "සංචාරය",
+      "programming": "ක්‍රමලේඛනය",
+      "marketing": "අලෙවිකරණය",
+      "english": "ඉංග්‍රීසි"
+    }
+  },
+  "home": {
+    "greeting": "හෙලෝ, මම",
+    "tagline": "ව්‍යවසායකයා / නිර්මාතෘ / AI ඉංජිනේරු",
+    "description1": "ව්‍යාපාර, තාක්ෂණය සහ සැලසුම.",
+    "description2": "පෞද්ගලික මාධ්‍ය.",
+    "latestArticles": "නවතම ලිපි",
+    "viewAll": "සියල්ල බලන්න",
+    "exploreCategory": "කොටස්",
+    "aboutMe": "මැ ගැන",
+    "aboutDesc1": "ඩිජිටල් අත්දැකීම්.",
+    "aboutDesc2": "නවීන තාක්ෂණය.",
+    "readProfile": "සම්පූර්ණ පැතිකඩ",
+    "selectedWorks": "ව්‍යාපෘති",
+    "getInTouch": "සම්බන්ධ වන්න",
+    "contactDesc": "පණිවිඩ යවන්න.",
+    "sidebarDesc1": "ඩිජිටල් නවෝත්පාදනය.",
+    "sidebarDesc2": "AI සැලසුම.",
+    "sidebarProfileBtn": "පැතිකඩ",
+    "categoriesTitle": "කොටස්",
+    "noticeTitle": "දැනුම්දීම",
+    "noticeDesc": "Twitter බලන්න.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "ආයෝජනය",
+    "sidebarCatBook": "පොත්",
+    "sidebarCatProg": "ක්‍රමලේඛනය"
+  },
+  "blog": {
+    "title": "බ්ලොග්",
+    "description": "සිතුවිලි.",
+    "all": "සියල්ල"
+  },
+  "about": {
+    "tagline": "ව්‍යවසායකයා",
+    "experience": "අත්දැකීම",
+    "skills": "කුසලතා",
+    "getInTouch": "සම්බන්ධ"
+  },
+  "contact": {
+    "title": "සම්බන්ධ",
+    "name": "නම",
+    "email": "ඊමේල්",
+    "message": "පණිවිඩය",
+    "send": "යවන්න",
+    "sending": "යවමින්...",
+    "successTitle": "සාර්ථකයි",
+    "successDesc": "ස්තූතියි!",
+    "sendAnother": "තවත් යවන්න",
+    "error": "දෝෂය.",
+    "namePlaceholder": "නම",
+    "messagePlaceholder": "පණිවිඩය..."
+  }
+}

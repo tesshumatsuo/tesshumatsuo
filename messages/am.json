@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "ሁሉም",
+    "life": "ህይወት",
+    "it": "ቴክኖሎጂ",
+    "language": "ቋንቋ",
+    "project": "ፕሮጀክት",
+    "profile": "መገለጫ",
+    "categories": {
+      "investment": "ኢንቨስትመንት",
+      "book": "መጽሐፍ",
+      "movie": "ፊልም",
+      "camera": "ካሜራ",
+      "travel": "ጉዞ",
+      "programming": "ፕሮግራሚንግ",
+      "marketing": "ግብይት",
+      "english": "እንግሊዝኛ"
+    }
+  },
+  "home": {
+    "greeting": "ሰላም፣ እኔ ነኝ",
+    "tagline": "ስራ ፈጣሪ / ፈጣሪ / AI መሐንዲስ",
+    "description1": "የቢዝነስ፣ ቴክኖሎጂ እና ዲዛይን ትስስርን አሰሳ።",
+    "description2": "የግል ሚዲያ።",
+    "latestArticles": "የቅርብ ጊዜ ጽሑፎች",
+    "viewAll": "ሁሉም ይመልከቱ",
+    "exploreCategory": "ምድቦች",
+    "aboutMe": "ስለ እኔ",
+    "aboutDesc1": "ዲጂታል ልምዶችን ይፍጠሩ።",
+    "aboutDesc2": "ዘመናዊ ቴክኖሎጂ።",
+    "readProfile": "ሙሉ መገለጫ",
+    "selectedWorks": "ፕሮጀክቶች",
+    "getInTouch": "ያግኙን",
+    "contactDesc": "መልዕክት ይላኩ።",
+    "sidebarDesc1": "ዲጂታል ፈጠራ።",
+    "sidebarDesc2": "AI እና ዲዛይን።",
+    "sidebarProfileBtn": "መገለጫ",
+    "categoriesTitle": "ምድቦች",
+    "noticeTitle": "ማሳወቅ",
+    "noticeDesc": "ትዊተሬን ይከታተሉ።",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "ኢንቨስትመንት",
+    "sidebarCatBook": "መጻሕፍት",
+    "sidebarCatProg": "ፕሮግራሚንግ"
+  },
+  "blog": {
+    "title": "ብሎግ",
+    "description": "ሀሳቦች።",
+    "all": "ሁሉም"
+  },
+  "about": {
+    "tagline": "ስራ ፈጣሪ",
+    "experience": "ልምድ",
+    "skills": "ክህሎቶች",
+    "getInTouch": "ያግኙን"
+  },
+  "contact": {
+    "title": "ያግኙን",
+    "name": "ስም",
+    "email": "ኢሜይል",
+    "message": "መልዕክት",
+    "send": "ላክ",
+    "sending": "እየተላከ...",
+    "successTitle": "ተሳክቷል",
+    "successDesc": "አመሰግናለሁ!",
+    "sendAnother": "ሌላ ላክ",
+    "error": "ስህተት።",
+    "namePlaceholder": "ስም",
+    "messagePlaceholder": "መልዕክት..."
+  }
+}

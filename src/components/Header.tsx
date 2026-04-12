@@ -40,7 +40,27 @@ export default function Header({ locale }: { locale: string }) {
     { code: 'uk', name: 'Українська' },
     { code: 'fa', name: 'فارسی' },
     { code: 'ta', name: 'தமிழ்' },
-    { code: 'sw', name: 'Kiswahili' }
+    { code: 'sw', name: 'Kiswahili' },
+    { code: 'am', name: 'አማርኛ' },
+    { code: 'ha', name: 'Hausa' },
+    { code: 'yo', name: 'Yorùbá' },
+    { code: 'ig', name: 'Igbo' },
+    { code: 'zu', name: 'isiZulu' },
+    { code: 'so', name: 'Soomaali' },
+    { code: 'gu', name: 'ગુજરાતી' },
+    { code: 'ml', name: 'മലയാളം' },
+    { code: 'kn', name: 'ಕನ್ನಡ' },
+    { code: 'pa', name: 'ਪੰਜਾਬੀ' },
+    { code: 'kk', name: 'Қазақша' },
+    { code: 'az', name: 'Azərbaycanca' },
+    { code: 'ka', name: 'ქართული' },
+    { code: 'uz', name: "O'zbek" },
+    { code: 'gl', name: 'Galego' },
+    { code: 'ca', name: 'Català' },
+    { code: 'lo', name: 'ລາວ' },
+    { code: 'si', name: 'සිංහල' },
+    { code: 'mn', name: 'Монгол' },
+    { code: 'qu', name: 'Runasimi' }
   ];
 
   const switchLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Hamısı",
+    "life": "Həyat",
+    "it": "İT",
+    "language": "Dil",
+    "project": "Layihə",
+    "profile": "Profil",
+    "categories": {
+      "investment": "İnvestisiya",
+      "book": "Kitab",
+      "movie": "Film",
+      "camera": "Kamera",
+      "travel": "Səyahət",
+      "programming": "Proqramlaşdırma",
+      "marketing": "Marketinq",
+      "english": "İngilis"
+    }
+  },
+  "home": {
+    "greeting": "Salam, mən",
+    "tagline": "Sahibkar / Yaradıcı / AI Mühəndisi",
+    "description1": "Biznes, Texnologiya və Dizayn.",
+    "description2": "Şəxsi media.",
+    "latestArticles": "Son Məqalələr",
+    "viewAll": "Hamısına Bax",
+    "exploreCategory": "Kateqoriyalar",
+    "aboutMe": "Haqqımda",
+    "aboutDesc1": "Rəqəmsal təcrübələr.",
+    "aboutDesc2": "Müasir texnologiya.",
+    "readProfile": "Tam Profil",
+    "selectedWorks": "Layihələr",
+    "getInTouch": "Əlaqə",
+    "contactDesc": "Mesaj göndərin.",
+    "sidebarDesc1": "Rəqəmsal innovasiya.",
+    "sidebarDesc2": "AI dizayn.",
+    "sidebarProfileBtn": "Profil",
+    "categoriesTitle": "Kateqoriyalar",
+    "noticeTitle": "Elanlar",
+    "noticeDesc": "Twitter-ə baxın.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "İnvestisiya",
+    "sidebarCatBook": "Kitablar",
+    "sidebarCatProg": "Proqramlaşdırma"
+  },
+  "blog": {
+    "title": "Bloq",
+    "description": "Fikirlər.",
+    "all": "Hamısı"
+  },
+  "about": {
+    "tagline": "Sahibkar",
+    "experience": "Təcrübə",
+    "skills": "Bacarıqlar",
+    "getInTouch": "Əlaqə"
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "name": "Ad",
+    "email": "E-poçt",
+    "message": "Mesaj",
+    "send": "Göndər",
+    "sending": "Göndərilir...",
+    "successTitle": "Uğur",
+    "successDesc": "Təşəkkür!",
+    "sendAnother": "Daha göndər",
+    "error": "Xəta.",
+    "namePlaceholder": "Ad",
+    "messagePlaceholder": "Mesaj..."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Duka",
+    "life": "Rayuwa",
+    "it": "IT",
+    "language": "Harshe",
+    "project": "Aiki",
+    "profile": "Bayani",
+    "categories": {
+      "investment": "Saka Hannun Jari",
+      "book": "Littafi",
+      "movie": "Fim",
+      "camera": "Kyamara",
+      "travel": "Tafiya",
+      "programming": "Shirye-shirye",
+      "marketing": "Kasuwanci",
+      "english": "Turanci"
+    }
+  },
+  "home": {
+    "greeting": "Sannu, ni ne",
+    "tagline": "Mai Kasuwanci / Mawallafi / Injiniyan AI",
+    "description1": "Binciken kasuwanci, fasaha, da zane-zane.",
+    "description2": "Kafar watsa labarai ta mutum.",
+    "latestArticles": "Sabbin Labarai",
+    "viewAll": "Duba Duka",
+    "exploreCategory": "Rukunoni",
+    "aboutMe": "Game da Ni",
+    "aboutDesc1": "Ƙirƙirar ƙwarewa na dijital.",
+    "aboutDesc2": "Fasahar zamani.",
+    "readProfile": "Cikakken Bayani",
+    "selectedWorks": "Ayyuka",
+    "getInTouch": "Tuntuɓe Ni",
+    "contactDesc": "Aiko da saƙo.",
+    "sidebarDesc1": "Ƙirƙira ta dijital.",
+    "sidebarDesc2": "Zane-zane da AI.",
+    "sidebarProfileBtn": "Bayani",
+    "categoriesTitle": "Rukunoni",
+    "noticeTitle": "Sanarwa",
+    "noticeDesc": "Duba Twitter na.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "Saka Hannun Jari",
+    "sidebarCatBook": "Littattafai",
+    "sidebarCatProg": "Shirye-shirye"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Tunanina.",
+    "all": "Duka"
+  },
+  "about": {
+    "tagline": "Mai Kasuwanci",
+    "experience": "Gogewa",
+    "skills": "Ƙwarewa",
+    "getInTouch": "Tuntuɓe Ni"
+  },
+  "contact": {
+    "title": "Tuntuɓe Ni",
+    "name": "Suna",
+    "email": "Imel",
+    "message": "Saƙo",
+    "send": "Aika",
+    "sending": "Ana aikawa...",
+    "successTitle": "Ya yi nasara",
+    "successDesc": "Na gode!",
+    "sendAnother": "Aika wani",
+    "error": "Kuskure.",
+    "namePlaceholder": "Suna",
+    "messagePlaceholder": "Saƙo..."
+  }
+}

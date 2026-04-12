@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Dhammaan",
+    "life": "Nolosha",
+    "it": "IT",
+    "language": "Luuqadda",
+    "project": "Mashruuca",
+    "profile": "Xogta",
+    "categories": {
+      "investment": "Maalgashiga",
+      "book": "Buugga",
+      "movie": "Filimka",
+      "camera": "Kamarada",
+      "travel": "Safarku",
+      "programming": "Barnaamijyada",
+      "marketing": "Suuqgeynta",
+      "english": "Ingiriisi"
+    }
+  },
+  "home": {
+    "greeting": "Salaan, anigaa ahay",
+    "tagline": "Ganacsade / Abuur / Injineer AI",
+    "description1": "Sahaminta ganacsiga, tknoolajiyada, iyo naqshadeynta.",
+    "description2": "Warbaahinta shakhsi ahaaneed.",
+    "latestArticles": "Maqaallada Ugu Dambeeyay",
+    "viewAll": "Arag Dhammaan",
+    "exploreCategory": "Qaybaha",
+    "aboutMe": "Ku saabsan",
+    "aboutDesc1": "Khibradaha dijitaalka.",
+    "aboutDesc2": "Tknoolajiyada casriga ah.",
+    "readProfile": "Xog Buuxda",
+    "selectedWorks": "Mashaariicdu",
+    "getInTouch": "Iila Xiriir",
+    "contactDesc": "Dir fariinta.",
+    "sidebarDesc1": "Hal-abuurka dijitaalka.",
+    "sidebarDesc2": "AI iyo naqshadeynta.",
+    "sidebarProfileBtn": "Xogta",
+    "categoriesTitle": "Qaybaha",
+    "noticeTitle": "Ogeysiisyada",
+    "noticeDesc": "Eeg Twitter-kayga.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "Maalgashiga",
+    "sidebarCatBook": "Buugaagta",
+    "sidebarCatProg": "Barnaamijyada"
+  },
+  "blog": {
+    "title": "Blooga",
+    "description": "Fikradaha.",
+    "all": "Dhammaan"
+  },
+  "about": {
+    "tagline": "Ganacsade",
+    "experience": "Khibradda",
+    "skills": "Xirfadaha",
+    "getInTouch": "Iila Xiriir"
+  },
+  "contact": {
+    "title": "Iila Xiriir",
+    "name": "Magaca",
+    "email": "Iimayl",
+    "message": "Farriinta",
+    "send": "Dir",
+    "sending": "Waxaa la dirayaa...",
+    "successTitle": "Guul",
+    "successDesc": "Mahadsanid!",
+    "sendAnother": "Dir mid kale",
+    "error": "Khalad.",
+    "namePlaceholder": "Magaca",
+    "messagePlaceholder": "Farriinta..."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Барлығы",
+    "life": "Өмір",
+    "it": "АТ",
+    "language": "Тіл",
+    "project": "Жоба",
+    "profile": "Профиль",
+    "categories": {
+      "investment": "Инвестиция",
+      "book": "Кітап",
+      "movie": "Фильм",
+      "camera": "Камера",
+      "travel": "Саяхат",
+      "programming": "Бағдарлама",
+      "marketing": "Маркетинг",
+      "english": "Ағылшын"
+    }
+  },
+  "home": {
+    "greeting": "Сәлем, мен",
+    "tagline": "Кәсіпкер / Жасаушы / ЖИ Инженері",
+    "description1": "Бизнес, технология және дизайн.",
+    "description2": "Жеке медиа.",
+    "latestArticles": "Соңғы Мақалалар",
+    "viewAll": "Барлығын Көру",
+    "exploreCategory": "Санаттар",
+    "aboutMe": "Мен Туралы",
+    "aboutDesc1": "Цифрлық тәжірибелер.",
+    "aboutDesc2": "Заманауи технология.",
+    "readProfile": "Толық Профиль",
+    "selectedWorks": "Жобалар",
+    "getInTouch": "Байланыс",
+    "contactDesc": "Хабарлама жіберіңіз.",
+    "sidebarDesc1": "Цифрлық инновация.",
+    "sidebarDesc2": "ЖИ дизайны.",
+    "sidebarProfileBtn": "Профиль",
+    "categoriesTitle": "Санаттар",
+    "noticeTitle": "Хабарландыру",
+    "noticeDesc": "Twitter-ті қараңыз.",
+    "sidebarCatAI": "ЖИ",
+    "sidebarCatInvest": "Инвестиция",
+    "sidebarCatBook": "Кітаптар",
+    "sidebarCatProg": "Бағдарлама"
+  },
+  "blog": {
+    "title": "Блог",
+    "description": "Ойлар.",
+    "all": "Барлығы"
+  },
+  "about": {
+    "tagline": "Кәсіпкер",
+    "experience": "Тәжірибе",
+    "skills": "Дағдылар",
+    "getInTouch": "Байланыс"
+  },
+  "contact": {
+    "title": "Байланыс",
+    "name": "Аты",
+    "email": "Эл. пошта",
+    "message": "Хабарлама",
+    "send": "Жіберу",
+    "sending": "Жіберілуде...",
+    "successTitle": "Сәтті",
+    "successDesc": "Рахмет!",
+    "sendAnother": "Тағы жіберу",
+    "error": "Қате.",
+    "namePlaceholder": "Аты",
+    "messagePlaceholder": "Хабарлама..."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Konke",
+    "life": "Ukuphila",
+    "it": "IT",
+    "language": "Ulimi",
+    "project": "Iporojekthi",
+    "profile": "Iphrofayili",
+    "categories": {
+      "investment": "Ukutshalwa Kwezimali",
+      "book": "Incwadi",
+      "movie": "Ifilimu",
+      "camera": "Ikhamera",
+      "travel": "Ukuhamba",
+      "programming": "Ukuphrogramha",
+      "marketing": "Ukuthengisa",
+      "english": "IsiNgisi"
+    }
+  },
+  "home": {
+    "greeting": "Sawubona, nginguye",
+    "tagline": "Usomabhizinisi / Umдali / Unjiniyela we-AI",
+    "description1": "Ukuhlola ukuxhumana kweBhizinisi, ubuchwepheshe, noMklamo.",
+    "description2": "Izithangami zobunikazi.",
+    "latestArticles": "Izindaba Zakamuva",
+    "viewAll": "Bona Konke",
+    "exploreCategory": "Izigaba",
+    "aboutMe": "Mayelana Nami",
+    "aboutDesc1": "Ukudala amava aphuma ku-dijithali.",
+    "aboutDesc2": "Ubuchwepheshe banamuhla.",
+    "readProfile": "Iphrofayili Ephelele",
+    "selectedWorks": "Amaphrojekthi",
+    "getInTouch": "Xhumana Nami",
+    "contactDesc": "Thumela umlayezo.",
+    "sidebarDesc1": "Ubuchwepheshe be-dijithali.",
+    "sidebarDesc2": "AI noMklamo.",
+    "sidebarProfileBtn": "Iphrofayili",
+    "categoriesTitle": "Izigaba",
+    "noticeTitle": "Izaziso",
+    "noticeDesc": "Bheka i-Twitter yami.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "Ukutshalwa Kwezimali",
+    "sidebarCatBook": "Izincwadi",
+    "sidebarCatProg": "Ukuphrogramha"
+  },
+  "blog": {
+    "title": "Ibhulogi",
+    "description": "Imicabango.",
+    "all": "Konke"
+  },
+  "about": {
+    "tagline": "Usomabhizinisi",
+    "experience": "Ulwazi",
+    "skills": "Amakhono",
+    "getInTouch": "Xhumana Nami"
+  },
+  "contact": {
+    "title": "Xhumana Nami",
+    "name": "Igama",
+    "email": "I-imeyili",
+    "message": "Umlayezo",
+    "send": "Thumela",
+    "sending": "Ithumela...",
+    "successTitle": "Impumelelo",
+    "successDesc": "Ngiyabonga!",
+    "sendAnother": "Thumela Omunye",
+    "error": "Iphutha.",
+    "namePlaceholder": "Igama",
+    "messagePlaceholder": "Umlayezo..."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Tot",
+    "life": "Vida",
+    "it": "TI",
+    "language": "Idioma",
+    "project": "Projecte",
+    "profile": "Perfil",
+    "categories": {
+      "investment": "Inversió",
+      "book": "Llibre",
+      "movie": "Pel·lícula",
+      "camera": "Càmera",
+      "travel": "Viatge",
+      "programming": "Programació",
+      "marketing": "Màrqueting",
+      "english": "Anglès"
+    }
+  },
+  "home": {
+    "greeting": "Hola, soc",
+    "tagline": "Empresari / Creador / Enginyer d'IA",
+    "description1": "Explorar els negocis, la tecnologia i el disseny.",
+    "description2": "Mitjà personal.",
+    "latestArticles": "Darrers articles",
+    "viewAll": "Veure-ho tot",
+    "exploreCategory": "Categories",
+    "aboutMe": "Sobre mi",
+    "aboutDesc1": "Experiències digitals.",
+    "aboutDesc2": "Tecnologia moderna.",
+    "readProfile": "Perfil complet",
+    "selectedWorks": "Projectes",
+    "getInTouch": "Contacte",
+    "contactDesc": "Envia'm un missatge.",
+    "sidebarDesc1": "Innovació digital.",
+    "sidebarDesc2": "IA i disseny.",
+    "sidebarProfileBtn": "Perfil",
+    "categoriesTitle": "Categories",
+    "noticeTitle": "Avisos",
+    "noticeDesc": "Mira el meu Twitter.",
+    "sidebarCatAI": "IA",
+    "sidebarCatInvest": "Inversió",
+    "sidebarCatBook": "Llibres",
+    "sidebarCatProg": "Programació"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Pensaments.",
+    "all": "Tot"
+  },
+  "about": {
+    "tagline": "Empresari",
+    "experience": "Experiència",
+    "skills": "Habilitats",
+    "getInTouch": "Contacte"
+  },
+  "contact": {
+    "title": "Contacte",
+    "name": "Nom",
+    "email": "Correu-e",
+    "message": "Missatge",
+    "send": "Enviar",
+    "sending": "Enviant...",
+    "successTitle": "Èxit",
+    "successDesc": "Gràcies!",
+    "sendAnother": "Enviar un altre",
+    "error": "Error.",
+    "namePlaceholder": "Nom",
+    "messagePlaceholder": "Missatge..."
+  }
+}

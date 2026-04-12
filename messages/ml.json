@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "എല്ലാം",
+    "life": "ജീവിതം",
+    "it": "IT",
+    "language": "ഭാഷ",
+    "project": "പ്രോജക്ട്",
+    "profile": "പ്രൊഫൈൽ",
+    "categories": {
+      "investment": "നിക്ഷേപം",
+      "book": "പുസ്തകം",
+      "movie": "സിനിമ",
+      "camera": "ക്യാമറ",
+      "travel": "യാത്ര",
+      "programming": "പ്രോഗ്രാമിംഗ്",
+      "marketing": "മാർക്കറ്റിംഗ്",
+      "english": "ഇംഗ്ലീഷ്"
+    }
+  },
+  "home": {
+    "greeting": "ഹലോ, ഞാൻ",
+    "tagline": "സംരംഭകൻ / സ്രഷ്ടാവ് / AI എഞ്ചിനീയർ",
+    "description1": "ബിസിനസ്, സാങ്കേതികവിദ്യ, ഡിസൈൻ.",
+    "description2": "വ്യക്തിഗത മാധ്യമം.",
+    "latestArticles": "പ്രധാന ലേഖനങ്ങൾ",
+    "viewAll": "എല്ലാം കാണുക",
+    "exploreCategory": "വിഭാഗങ്ങൾ",
+    "aboutMe": "എന്നെക്കുറിച്ച്",
+    "aboutDesc1": "ഡിജിറ്റൽ അനുഭവങ്ങൾ.",
+    "aboutDesc2": "ആധുനിക സാങ്കേതിക.",
+    "readProfile": "പ്രൊഫൈൽ",
+    "selectedWorks": "പ്രോജക്ടുകൾ",
+    "getInTouch": "ബന്ധപ്പെടുക",
+    "contactDesc": "സന്ദേശം അയക്കുക.",
+    "sidebarDesc1": "ഡിജിറ്റൽ.",
+    "sidebarDesc2": "AI ഡിസൈൻ.",
+    "sidebarProfileBtn": "പ്രൊഫൈൽ",
+    "categoriesTitle": "വിഭാഗ",
+    "noticeTitle": "അറിയിപ്പ്",
+    "noticeDesc": "Twitter കാണ്",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "നിക്ഷ.",
+    "sidebarCatBook": "പുസ്ത.",
+    "sidebarCatProg": "പ്രോഗ."
+  },
+  "blog": {
+    "title": "ബ്ലോഗ്",
+    "description": "ചിന്തകൾ.",
+    "all": "എല്ലാം"
+  },
+  "about": {
+    "tagline": "സം.",
+    "experience": "അനു.",
+    "skills": "കഴ.",
+    "getInTouch": "ബ."
+  },
+  "contact": {
+    "title": "ബ.",
+    "name": "പേ.",
+    "email": "ഇ.",
+    "message": "സ.",
+    "send": "അ.",
+    "sending": "...",
+    "successTitle": "വ.",
+    "successDesc": "ന!",
+    "sendAnother": "മ.",
+    "error": "ത.",
+    "namePlaceholder": "പേ.",
+    "messagePlaceholder": "സ..."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "બધા",
+    "life": "જીવન",
+    "it": "IT",
+    "language": "ભાષા",
+    "project": "પ્રોજેક્ટ",
+    "profile": "પ્રોફાઇલ",
+    "categories": {
+      "investment": "રોકાણ",
+      "book": "પુસ્તક",
+      "movie": "ફિલ્મ",
+      "camera": "કૅમેરા",
+      "travel": "પ્રવાસ",
+      "programming": "પ્રોગ્રામિંગ",
+      "marketing": "માર્કેટિંગ",
+      "english": "અંગ્રેજી"
+    }
+  },
+  "home": {
+    "greeting": "નમસ્તે, હું છું",
+    "tagline": "ઉદ્યોગસાહસિક / સર્જક / AI એન્જિનિયર",
+    "description1": "વ્યવસાય, ટેક્નોલોજી અને ડિઝાઇનનો સ્પર્શ.",
+    "description2": "વ્યક્તિગત મીડિયા.",
+    "latestArticles": "નવીનતમ લેખો",
+    "viewAll": "બધા જુઓ",
+    "exploreCategory": "શ્રેણીઓ",
+    "aboutMe": "મારા વિશે",
+    "aboutDesc1": "ડિજિટલ અનુભવ.",
+    "aboutDesc2": "આધુનિક ટેક્નોલ.",
+    "readProfile": "સંપૂર્ણ પ્રોફાઇલ",
+    "selectedWorks": "પ્રોજેક્ટ",
+    "getInTouch": "સંપર્ક",
+    "contactDesc": "સંદેશ મોકલો.",
+    "sidebarDesc1": "ડિજિટલ ઇ.",
+    "sidebarDesc2": "AI ડિઝાઇન.",
+    "sidebarProfileBtn": "પ્રોફ",
+    "categoriesTitle": "શ્રેણ",
+    "noticeTitle": "જાહેરાત",
+    "noticeDesc": "Twitter જુઓ.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "રોકાણ",
+    "sidebarCatBook": "પુસ્ત",
+    "sidebarCatProg": "પ્રોગ"
+  },
+  "blog": {
+    "title": "બ્લૉગ",
+    "description": "વિચારો.",
+    "all": "બધા"
+  },
+  "about": {
+    "tagline": "ઉ. સા.",
+    "experience": "અ",
+    "skills": "ક",
+    "getInTouch": "સ"
+  },
+  "contact": {
+    "title": "સ",
+    "name": "ન",
+    "email": "ઇ",
+    "message": "સ",
+    "send": "મ",
+    "sending": "...",
+    "successTitle": "સ",
+    "successDesc": "ધ!",
+    "sendAnother": "ફ",
+    "error": "ભ",
+    "namePlaceholder": "ન",
+    "messagePlaceholder": "સ..."
+  }
+}

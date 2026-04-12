@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Hammasi",
+    "life": "Hayot",
+    "it": "IT",
+    "language": "Til",
+    "project": "Loyiha",
+    "profile": "Profil",
+    "categories": {
+      "investment": "Investitsiya",
+      "book": "Kitob",
+      "movie": "Film",
+      "camera": "Kamera",
+      "travel": "Sayohat",
+      "programming": "Dasturlash",
+      "marketing": "Marketing",
+      "english": "Ingliz"
+    }
+  },
+  "home": {
+    "greeting": "Salom, men",
+    "tagline": "Tadbirkor / Ijodkor / AI muhandisi",
+    "description1": "Biznes, texnologiya va dizayn.",
+    "description2": "Shaxsiy media.",
+    "latestArticles": "So'nggi maqolalar",
+    "viewAll": "Hammasini ko'rish",
+    "exploreCategory": "Toifalar",
+    "aboutMe": "Men haqimda",
+    "aboutDesc1": "Raqamli tajribalar.",
+    "aboutDesc2": "Zamonaviy texnologiya.",
+    "readProfile": "To'liq profil",
+    "selectedWorks": "Loyihalar",
+    "getInTouch": "Aloqa",
+    "contactDesc": "Xabar yuboring.",
+    "sidebarDesc1": "Raqamli innovatsiya.",
+    "sidebarDesc2": "AI dizayn.",
+    "sidebarProfileBtn": "Profil",
+    "categoriesTitle": "Toifalar",
+    "noticeTitle": "E'lon",
+    "noticeDesc": "Twitter ko'ring.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "Investitsiya",
+    "sidebarCatBook": "Kitoblar",
+    "sidebarCatProg": "Dasturlash"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Fikrlar.",
+    "all": "Hammasi"
+  },
+  "about": {
+    "tagline": "Tadbirkor",
+    "experience": "Tajriba",
+    "skills": "Ko'nikmalar",
+    "getInTouch": "Aloqa"
+  },
+  "contact": {
+    "title": "Aloqa",
+    "name": "Ism",
+    "email": "Elektron pochta",
+    "message": "Xabar",
+    "send": "Yuborish",
+    "sending": "Yuborilmoqda...",
+    "successTitle": "Muvaffaqiyat",
+    "successDesc": "Rahmat!",
+    "sendAnother": "Yana yuborish",
+    "error": "Xato.",
+    "namePlaceholder": "Ism",
+    "messagePlaceholder": "Xabar..."
+  }
+}

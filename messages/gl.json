@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Todo",
+    "life": "Vida",
+    "it": "TI",
+    "language": "Lingua",
+    "project": "Proxecto",
+    "profile": "Perfil",
+    "categories": {
+      "investment": "Investimento",
+      "book": "Libro",
+      "movie": "Película",
+      "camera": "Cámara",
+      "travel": "Viaxe",
+      "programming": "Programación",
+      "marketing": "Márketing",
+      "english": "Inglés"
+    }
+  },
+  "home": {
+    "greeting": "Ola, son",
+    "tagline": "Empresario / Creador / Enxeñeiro IA",
+    "description1": "Explorar os negocios, a tecnoloxía e o deseño.",
+    "description2": "Medio persoal.",
+    "latestArticles": "Últimos artigos",
+    "viewAll": "Ver todo",
+    "exploreCategory": "Categorías",
+    "aboutMe": "Sobre min",
+    "aboutDesc1": "Experiencias dixitais.",
+    "aboutDesc2": "Tecnoloxía moderna.",
+    "readProfile": "Perfil completo",
+    "selectedWorks": "Proxectos",
+    "getInTouch": "Contacto",
+    "contactDesc": "Envíame unha mensaxe.",
+    "sidebarDesc1": "Innovación dixital.",
+    "sidebarDesc2": "IA e deseño.",
+    "sidebarProfileBtn": "Perfil",
+    "categoriesTitle": "Categorías",
+    "noticeTitle": "Avisos",
+    "noticeDesc": "Mira o meu Twitter.",
+    "sidebarCatAI": "IA",
+    "sidebarCatInvest": "Investimento",
+    "sidebarCatBook": "Libros",
+    "sidebarCatProg": "Programación"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Pensamentos.",
+    "all": "Todo"
+  },
+  "about": {
+    "tagline": "Empresario",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "getInTouch": "Contacto"
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nome",
+    "email": "Correo-e",
+    "message": "Mensaxe",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "successTitle": "Éxito",
+    "successDesc": "Grazas!",
+    "sendAnother": "Enviar outra",
+    "error": "Erro.",
+    "namePlaceholder": "Nome",
+    "messagePlaceholder": "Mensaxe..."
+  }
+}

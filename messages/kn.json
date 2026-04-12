@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "ಎಲ್ಲಾ",
+    "life": "ಜೀವನ",
+    "it": "IT",
+    "language": "ಭಾಷೆ",
+    "project": "ಯೋಜನೆ",
+    "profile": "ಪ್ರೊಫೈಲ್",
+    "categories": {
+      "investment": "ಹೂಡಿಕೆ",
+      "book": "ಪುಸ್ತಕ",
+      "movie": "ಚಲನಚಿತ್ರ",
+      "camera": "ಕ್ಯಾಮರಾ",
+      "travel": "ಪ್ರಯಾಣ",
+      "programming": "ಪ್ರೋಗ್ರಾಮಿಂಗ್",
+      "marketing": "ಮಾರ್ಕೆಟಿಂಗ್",
+      "english": "ಆಂಗ್ಲ"
+    }
+  },
+  "home": {
+    "greeting": "ಹಲೋ, ನಾನು",
+    "tagline": "ಉದ್ಯಮಿ / ಸೃಷ್ಟಿಕರ್ತ / AI ಇಂಜಿನಿಯರ್",
+    "description1": "ವ್ಯಾಪಾರ, ತಂತ್ರಜ್ಞಾನ, ವಿನ್ಯಾಸ.",
+    "description2": "ವೈಯಕ್ತಿಕ ಮಾಧ್ಯಮ.",
+    "latestArticles": "ಇತ್ತೀಚಿನ ಲೇಖನಗಳು",
+    "viewAll": "ಎಲ್ಲ ನೋಡಿ",
+    "exploreCategory": "ವಿಭಾಗಗಳು",
+    "aboutMe": "ನನ್ನ ಬಗ್ಗೆ",
+    "aboutDesc1": "ಡಿಜಿಟಲ್ ಅನುಭವಗಳು.",
+    "aboutDesc2": "ಆಧುನಿಕ ತಂತ್ರಜ್ಞಾನ.",
+    "readProfile": "ಪ್ರೊಫೈಲ್",
+    "selectedWorks": "ಯೋಜನೆಗಳು",
+    "getInTouch": "ಸಂಪರ್ಕಿಸಿ",
+    "contactDesc": "ಸಂದೇಶ ಕಳುಹಿಸಿ.",
+    "sidebarDesc1": "ಡಿಜಿಟಲ್.",
+    "sidebarDesc2": "AI ವಿನ್ಯಾಸ.",
+    "sidebarProfileBtn": "ಪ್ರೊಫೈಲ್",
+    "categoriesTitle": "ವಿಭಾ.",
+    "noticeTitle": "ಸೂಚನೆ",
+    "noticeDesc": "Twitter ನೋಡಿ.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "ಹೂ.",
+    "sidebarCatBook": "ಪುಸ್ತ.",
+    "sidebarCatProg": "ಪ್ರೋ."
+  },
+  "blog": {
+    "title": "ಬ್ಲಾಗ್",
+    "description": "ವಿಚಾರಗಳು.",
+    "all": "ಎಲ್ಲಾ"
+  },
+  "about": {
+    "tagline": "ಉ.",
+    "experience": "ಅ.",
+    "skills": "ಕ.",
+    "getInTouch": "ಸ."
+  },
+  "contact": {
+    "title": "ಸ.",
+    "name": "ಹೆ.",
+    "email": "ಇ.",
+    "message": "ಸ.",
+    "send": "ಕ.",
+    "sending": "...",
+    "successTitle": "ಯ.",
+    "successDesc": "ಧ!",
+    "sendAnother": "ಮ.",
+    "error": "ದ.",
+    "namePlaceholder": "ಹೆ.",
+    "messagePlaceholder": "ಸ..."
+  }
+}

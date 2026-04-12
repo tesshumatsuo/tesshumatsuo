@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "ਸਭ",
+    "life": "ਜ਼ਿੰਦਗੀ",
+    "it": "IT",
+    "language": "ਭਾਸ਼ਾ",
+    "project": "ਪ੍ਰੋਜੈਕਟ",
+    "profile": "ਪ੍ਰੋਫਾਈਲ",
+    "categories": {
+      "investment": "ਨਿਵੇਸ਼",
+      "book": "ਕਿਤਾਬ",
+      "movie": "ਫ਼ਿਲਮ",
+      "camera": "ਕੈਮਰਾ",
+      "travel": "ਯਾਤਰਾ",
+      "programming": "ਪ੍ਰੋਗਰਾਮਿੰਗ",
+      "marketing": "ਮਾਰਕੀਟਿੰਗ",
+      "english": "ਅੰਗਰੇਜ਼ੀ"
+    }
+  },
+  "home": {
+    "greeting": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ, ਮੈਂ ਹਾਂ",
+    "tagline": "ਉੱਦਮੀ / ਸਿਰਜਣਹਾਰ / AI ਇੰਜੀਨੀਅਰ",
+    "description1": "ਕਾਰੋਬਾਰ, ਤਕਨਾਲੋਜੀ, ਡਿਜ਼ਾਈਨ।",
+    "description2": "ਨਿੱਜੀ ਮੀਡੀਆ।",
+    "latestArticles": "ਤਾਜ਼ੇ ਲੇਖ",
+    "viewAll": "ਸਭ ਦੇਖੋ",
+    "exploreCategory": "ਸ਼੍ਰੇਣੀਆਂ",
+    "aboutMe": "ਮੇਰੇ ਬਾਰੇ",
+    "aboutDesc1": "ਡਿਜੀਟਲ ਤਜ਼ਰਬੇ।",
+    "aboutDesc2": "ਆਧੁਨਿਕ ਤਕਨਾਲੋਜੀ।",
+    "readProfile": "ਪੂਰੀ ਪ੍ਰੋਫਾਈਲ",
+    "selectedWorks": "ਪ੍ਰੋਜੈਕਟ",
+    "getInTouch": "ਸੰਪਰਕ",
+    "contactDesc": "ਸੁਨੇਹਾ ਭੇਜੋ।",
+    "sidebarDesc1": "ਡਿਜੀਟਲ।",
+    "sidebarDesc2": "AI ਡਿਜ਼ਾਈਨ।",
+    "sidebarProfileBtn": "ਪ੍ਰੋਫਾਈਲ",
+    "categoriesTitle": "ਸ਼੍ਰੇਣੀ",
+    "noticeTitle": "ਸੂਚਨਾ",
+    "noticeDesc": "Twitter ਦੇਖੋ।",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "ਨਿਵੇਸ਼",
+    "sidebarCatBook": "ਕਿਤਾਬਾਂ",
+    "sidebarCatProg": "ਪ੍ਰੋਗਰਾਮਿੰਗ"
+  },
+  "blog": {
+    "title": "ਬਲੌਗ",
+    "description": "ਵਿਚਾਰ।",
+    "all": "ਸਭ"
+  },
+  "about": {
+    "tagline": "ਉੱਦਮੀ",
+    "experience": "ਅਨੁਭਵ",
+    "skills": "ਹੁਨਰ",
+    "getInTouch": "ਸੰਪਰਕ"
+  },
+  "contact": {
+    "title": "ਸੰਪਰਕ",
+    "name": "ਨਾਮ",
+    "email": "ਈਮੇਲ",
+    "message": "ਸੁਨੇਹਾ",
+    "send": "ਭੇਜੋ",
+    "sending": "ਭੇਜਿਆ ਜਾ ਰਿਹਾ...",
+    "successTitle": "ਸਫਲ",
+    "successDesc": "ਧੰਨਵਾਦ!",
+    "sendAnother": "ਹੋਰ ਭੇਜੋ",
+    "error": "ਗਲਤੀ।",
+    "namePlaceholder": "ਨਾਮ",
+    "messagePlaceholder": "ਸੁਨੇਹਾ..."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "ყველა",
+    "life": "ცხოვრება",
+    "it": "IT",
+    "language": "ენა",
+    "project": "პროექტი",
+    "profile": "პროფილი",
+    "categories": {
+      "investment": "ინვესტიცია",
+      "book": "წიგნი",
+      "movie": "ფილმი",
+      "camera": "კამერა",
+      "travel": "მოგზაურობა",
+      "programming": "პროგრამირება",
+      "marketing": "მარკეტინგი",
+      "english": "ინგლისური"
+    }
+  },
+  "home": {
+    "greeting": "გამარჯობა, მე ვარ",
+    "tagline": "მეწარმე / შემქმნელი / AI ინჟინერი",
+    "description1": "ბიზნესის, ტექნოლოგიისა და დიზაინის გადაკვეთა.",
+    "description2": "პირადი მედია.",
+    "latestArticles": "ბოლო სტატიები",
+    "viewAll": "ყველა ნახვა",
+    "exploreCategory": "კატეგორიები",
+    "aboutMe": "ჩემ შესახებ",
+    "aboutDesc1": "ციფრული გამოცდილება.",
+    "aboutDesc2": "თანამედროვე ტექნოლოგია.",
+    "readProfile": "სრული პროფილი",
+    "selectedWorks": "პროექტები",
+    "getInTouch": "კონტაქტი",
+    "contactDesc": "შეტყობინება გამოაგზავნეთ.",
+    "sidebarDesc1": "ციფრული ინოვაცია.",
+    "sidebarDesc2": "AI დიზაინი.",
+    "sidebarProfileBtn": "პროფილი",
+    "categoriesTitle": "კატეგ.",
+    "noticeTitle": "განცხადება",
+    "noticeDesc": "Twitter-ი ნახეთ.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "ინვ.",
+    "sidebarCatBook": "წიგნ.",
+    "sidebarCatProg": "პროგ."
+  },
+  "blog": {
+    "title": "ბლოგი",
+    "description": "ფიქრები.",
+    "all": "ყველა"
+  },
+  "about": {
+    "tagline": "მეწარმე",
+    "experience": "გამოცდილება",
+    "skills": "უნარები",
+    "getInTouch": "კონტაქტი"
+  },
+  "contact": {
+    "title": "კონტაქტი",
+    "name": "სახელი",
+    "email": "ელ-ფოსტა",
+    "message": "შეტყობინება",
+    "send": "გაგზავნა",
+    "sending": "იგზავნება...",
+    "successTitle": "წარმატება",
+    "successDesc": "გმადლობ!",
+    "sendAnother": "კიდევ გაგზავნა",
+    "error": "შეცდომა.",
+    "namePlaceholder": "სახელი",
+    "messagePlaceholder": "შეტყობინება..."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Gbogbo",
+    "life": "Igbesi aye",
+    "it": "IT",
+    "language": "Ede",
+    "project": "Iṣẹ akanṣe",
+    "profile": "Profaili",
+    "categories": {
+      "investment": "Idokowo",
+      "book": "Iwe",
+      "movie": "Fiimu",
+      "camera": "Kamẹra",
+      "travel": "Irin-ajo",
+      "programming": "Eto",
+      "marketing": "Titaja",
+      "english": "Gẹẹsi"
+    }
+  },
+  "home": {
+    "greeting": "Ẹ ku ijọ, mo jẹ",
+    "tagline": "Olóṣèlú / Afẹlẹgbẹ / Onimọ-ẹrọ AI",
+    "description1": "Ṣiṣaṣeyọri Iṣowo, Imọ-ẹrọ, ati Apẹrẹ.",
+    "description2": "Ẹrọ media ti ara ẹni.",
+    "latestArticles": "Awọn Nkan Tuntun",
+    "viewAll": "Wo Gbogbo",
+    "exploreCategory": "Awọn Ẹka",
+    "aboutMe": "Nipa Mi",
+    "aboutDesc1": "Ṣiṣẹda awọn iriri dijital.",
+    "aboutDesc2": "Imọ-ẹrọ ode oni.",
+    "readProfile": "Profaili Kikun",
+    "selectedWorks": "Awọn Iṣẹ akanṣe",
+    "getInTouch": "Kan si Mi",
+    "contactDesc": "Fi ifiranṣẹ ranṣẹ.",
+    "sidebarDesc1": "Imọ-ẹrọ dijital.",
+    "sidebarDesc2": "AI ati Apẹrẹ.",
+    "sidebarProfileBtn": "Profaili",
+    "categoriesTitle": "Awọn Ẹka",
+    "noticeTitle": "Awọn Ikede",
+    "noticeDesc": "Wo Twitter mi.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "Idokowo",
+    "sidebarCatBook": "Awọn Iwe",
+    "sidebarCatProg": "Eto"
+  },
+  "blog": {
+    "title": "Bulọọgi",
+    "description": "Awọn ero.",
+    "all": "Gbogbo"
+  },
+  "about": {
+    "tagline": "Olóṣèlú",
+    "experience": "Iriri",
+    "skills": "Awọn Ọgbọn",
+    "getInTouch": "Kan si Mi"
+  },
+  "contact": {
+    "title": "Kan si Mi",
+    "name": "Orukọ",
+    "email": "Imeeli",
+    "message": "Ifiranṣẹ",
+    "send": "Fi Ranṣẹ",
+    "sending": "N firanṣẹ...",
+    "successTitle": "Aṣeyọri",
+    "successDesc": "O ṣeun!",
+    "sendAnother": "Fi omiran ranṣẹ",
+    "error": "Aṣiṣe.",
+    "namePlaceholder": "Orukọ",
+    "messagePlaceholder": "Ifiranṣẹ..."
+  }
+}

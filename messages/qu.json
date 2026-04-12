@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Llapan",
+    "life": "Kawsay",
+    "it": "IT",
+    "language": "Simi",
+    "project": "Llamkay",
+    "profile": "Rikuchiy",
+    "categories": {
+      "investment": "Chuqulliy",
+      "book": "Qillqa",
+      "movie": "Rikuchiy",
+      "camera": "Qhawana",
+      "travel": "Puriy",
+      "programming": "Rimachiy",
+      "marketing": "Qhatuy",
+      "english": "Inlis simi"
+    }
+  },
+  "home": {
+    "greeting": "Rimaykullayki, nuqam kani",
+    "tagline": "Rantiyniyuq / Ruray / AI Inkiliru",
+    "description1": "Qhatu, yachay, ruray.",
+    "description2": "Huk sapa midiya.",
+    "latestArticles": "Kaypi qillqasqa",
+    "viewAll": "Llapanta qhaway",
+    "exploreCategory": "Tupuykuna",
+    "aboutMe": "Nuqamanta",
+    "aboutDesc1": "Dijital kawsay.",
+    "aboutDesc2": "Musuq yachay.",
+    "readProfile": "Tukuy rikuchiy",
+    "selectedWorks": "Llamkaykuna",
+    "getInTouch": "Rimariykuway",
+    "contactDesc": "Willayta apachiway.",
+    "sidebarDesc1": "Dijital.",
+    "sidebarDesc2": "AI.",
+    "sidebarProfileBtn": "Rikuchiy",
+    "categoriesTitle": "Tupuykuna",
+    "noticeTitle": "Willakuy",
+    "noticeDesc": "Twitter qhaway.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "Chuqulliy",
+    "sidebarCatBook": "Qillqakuna",
+    "sidebarCatProg": "Rimachiy"
+  },
+  "blog": {
+    "title": "Qillqa",
+    "description": "Yuyaykuna.",
+    "all": "Llapan"
+  },
+  "about": {
+    "tagline": "Rantiyniyuq",
+    "experience": "Yachay",
+    "skills": "Atiy",
+    "getInTouch": "Rimariykuway"
+  },
+  "contact": {
+    "title": "Rimariykuway",
+    "name": "Suti",
+    "email": "Kachay",
+    "message": "Willakuy",
+    "send": "Apachiy",
+    "sending": "Apachiykuchkaspa...",
+    "successTitle": "Allinmi",
+    "successDesc": "Yusulpayki!",
+    "sendAnother": "Waktaykuy",
+    "error": "Pantay.",
+    "namePlaceholder": "Suti",
+    "messagePlaceholder": "Willakuy..."
+  }
+}

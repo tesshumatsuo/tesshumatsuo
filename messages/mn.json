@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "all": "Бүгд",
+    "life": "Амьдрал",
+    "it": "IT",
+    "language": "Хэл",
+    "project": "Төсөл",
+    "profile": "Профайл",
+    "categories": {
+      "investment": "Хөрөнгө оруулалт",
+      "book": "Ном",
+      "movie": "Кино",
+      "camera": "Камер",
+      "travel": "Аялал",
+      "programming": "Програмчлал",
+      "marketing": "Маркетинг",
+      "english": "Англи"
+    }
+  },
+  "home": {
+    "greeting": "Сайн уу, би бол",
+    "tagline": "Бизнесмен / Бүтээгч / AI Инженер",
+    "description1": "Бизнес, технологи болон дизайны огтлолцол.",
+    "description2": "Хувийн медиа.",
+    "latestArticles": "Сүүлийн нийтлэлүүд",
+    "viewAll": "Бүгдийг харах",
+    "exploreCategory": "Ангилал",
+    "aboutMe": "Миний тухай",
+    "aboutDesc1": "Дижитал туршлага.",
+    "aboutDesc2": "Орчин үеийн технологи.",
+    "readProfile": "Бүтэн профайл",
+    "selectedWorks": "Төслүүд",
+    "getInTouch": "Холбоо барих",
+    "contactDesc": "Мессеж илгээнэ үү.",
+    "sidebarDesc1": "Дижитал инноваци.",
+    "sidebarDesc2": "AI дизайн.",
+    "sidebarProfileBtn": "Профайл",
+    "categoriesTitle": "Ангилал",
+    "noticeTitle": "Мэдэгдэл",
+    "noticeDesc": "Twitter харна уу.",
+    "sidebarCatAI": "AI",
+    "sidebarCatInvest": "Хөрөнгө оруулалт",
+    "sidebarCatBook": "Номууд",
+    "sidebarCatProg": "Програмчлал"
+  },
+  "blog": {
+    "title": "Блог",
+    "description": "Бодол.",
+    "all": "Бүгд"
+  },
+  "about": {
+    "tagline": "Бизнесмен",
+    "experience": "Туршлага",
+    "skills": "Ур чадвар",
+    "getInTouch": "Холбоо барих"
+  },
+  "contact": {
+    "title": "Холбоо барих",
+    "name": "Нэр",
+    "email": "Имэйл",
+    "message": "Мессеж",
+    "send": "Илгээх",
+    "sending": "Илгээж байна...",
+    "successTitle": "Амжилт",
+    "successDesc": "Баярлалаа!",
+    "sendAnother": "Дахин илгээх",
+    "error": "Алдаа.",
+    "namePlaceholder": "Нэр",
+    "messagePlaceholder": "Мессеж..."
+  }
+}

@@ -14,6 +14,7 @@ import {apiVersion, dataset, projectId} from './src/sanity/env'
 import {schema} from './src/sanity/schemaTypes'
 import {documentInternationalization} from '@sanity/document-internationalization'
 import {structure} from './src/sanity/structure'
+import {TranslateAction} from './src/sanity/actions/TranslateAction'
 
 export default defineConfig({
   basePath: '/studio',
@@ -98,6 +99,12 @@ export default defineConfig({
         }
       }
       return prev;
+    },
+    actions: (prev, context) => {
+      if (context.schemaType === 'post') {
+        return [TranslateAction, ...prev]
+      }
+      return prev
     },
   },
 })

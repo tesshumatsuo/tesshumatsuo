@@ -2,6 +2,14 @@ import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@sanity/client'
 import { translationTargetLocales } from '@/i18n/locales'
 
+type PortableTextSpan = { _type: 'span'; text?: string }
+type PortableTextBlock = { _type: string; children?: PortableTextSpan[]; text?: string; speaker?: string; title?: string }
+type TranslationDoc = {
+  _id: string
+  translationLock?: boolean
+  translationStatus?: string
+}
+
 const sanityClient = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
@@ -11,11 +19,11 @@ const sanityClient = createClient({
 })
 
 // Recursively extract all text spans from a PortableText body
-function extractTextBlocks(body: any[]): { path: string; text: string }[] {
+function extractTextBlocks(body: PortableTextBlock[]): { path: string; text: string }[] {
   const result: { path: string; text: string }[] = []
   body.forEach((block, bi) => {
     if (block._type === 'block' && Array.isArray(block.children)) {
-      block.children.forEach((child: any, ci: number) => {
+      block.children.forEach((child, ci: number) => {
         if (child._type === 'span' && typeof child.text === 'string' && child.text.trim()) {
           result.push({ path: `${bi}.${ci}`, text: child.text })
         }
@@ -41,12 +49,12 @@ function extractTextBlocks(body: any[]): { path: string; text: string }[] {
 }
 
 // Rebuild translated body with new text inserted
-function applyTranslations(body: any[], translations: Record<string, string>): any[] {
+function applyTranslations(body: PortableTextBlock[], translations: Record<string, string>): PortableTextBlock[] {
   return body.map((block, bi) => {
     if (block._type === 'block' && Array.isArray(block.children)) {
       return {
         ...block,
-        children: block.children.map((child: any, ci: number) => {
+        children: block.children.map((child, ci: number) => {
           const key = `${bi}.${ci}`
           return translations[key] ? { ...child, text: translations[key] } : child
         })
@@ -121,7 +129,7 @@ async function translateBatch(
 
 export async function POST(req: NextRequest) {
   try {
-    const { documentId, targetLanguages } = await req.json()
+    const { documentId, targetLanguages, overwriteMode = 'preserveLocked' } = await req.json()
     const apiKey = process.env.OPENAI_API_KEY
 
     if (!apiKey) {
@@ -147,9 +155,10 @@ export async function POST(req: NextRequest) {
 
     const langs: string[] = targetLanguages || translationTargetLocales
     const results: { lang: string; status: string; docId?: string; error?: string }[] = []
+    let skippedLanguages = 0
 
     // Extract texts to translate once
-    const body: any[] = sourceDoc.body || []
+    const body: PortableTextBlock[] = sourceDoc.body || []
     const textBlocks = extractTextBlocks(body)
     const textsToTranslate = [
       sourceDoc.title || '',
@@ -171,6 +180,18 @@ export async function POST(req: NextRequest) {
 
         const translatedBody = applyTranslations(body, bodyTranslations)
 
+        // Check if a translated version already exists
+        const existingDoc = await sanityClient.fetch<TranslationDoc | null>(
+          `*[_type == "post" && __i18n_lang == $lang && (__i18n_base._ref == $baseId || _id == $baseId)][0]{_id, translationLock, translationStatus}`,
+          { lang, baseId: documentId }
+        )
+
+        if (existingDoc?.translationLock && overwriteMode !== 'force') {
+          skippedLanguages += 1
+          results.push({ lang, status: 'skipped', docId: existingDoc._id })
+          continue
+        }
+
         // Build the translated document
         // Use the same slug as the source
         const newDoc = {
@@ -181,7 +202,10 @@ export async function POST(req: NextRequest) {
           body: translatedBody,
           __i18n_lang: lang,
           __i18n_base: { _type: 'reference', _ref: documentId },
-          translationStatus: 'reviewing',
+          translationStatus: existingDoc?.translationStatus === 'published' ? 'published' : 'reviewing',
+          translationLock: existingDoc?.translationLock ?? false,
+          lastTranslatedAt: new Date().toISOString(),
+          sourceUpdatedAtAtTranslation: sourceDoc._updatedAt || sourceDoc.updatedAt || new Date().toISOString(),
           publishedAt: sourceDoc.publishedAt,
           updatedAt: new Date().toISOString(),
           ...(sourceDoc.categories && { categories: sourceDoc.categories }),
@@ -189,12 +213,6 @@ export async function POST(req: NextRequest) {
           ...(sourceDoc.author && { author: sourceDoc.author }),
           ...(sourceDoc.mainImage && { mainImage: sourceDoc.mainImage }),
         }
-
-        // Check if a translated version already exists
-        const existingDoc = await sanityClient.fetch(
-          `*[_type == "post" && __i18n_lang == $lang && (__i18n_base._ref == $baseId || _id == $baseId)][0]._id`,
-          { lang, baseId: documentId }
-        )
 
         let savedDocId: string
         if (existingDoc) {
@@ -205,14 +223,15 @@ export async function POST(req: NextRequest) {
             .commit({ autoGenerateArrayKeys: true })
           savedDocId = updated._id
         } else {
-          // Create new published document
+          // Create new translated document
           const created = await sanityClient.create(newDoc, { autoGenerateArrayKeys: true })
           savedDocId = created._id
         }
 
         results.push({ lang, status: 'success', docId: savedDocId })
-      } catch (langError: any) {
-        results.push({ lang, status: 'error', error: langError.message })
+      } catch (langError: unknown) {
+        const message = langError instanceof Error ? langError.message : 'Unknown translation error'
+        results.push({ lang, status: 'error', error: message })
       }
     }
 
@@ -220,9 +239,11 @@ export async function POST(req: NextRequest) {
       success: true,
       sourceDocumentId: documentId,
       translatedLanguages: results.filter(r => r.status === 'success').length,
+      skippedLanguages,
       results,
     })
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 })
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : 'Unknown server error'
+    return NextResponse.json({ error: message }, { status: 500 })
   }
 }

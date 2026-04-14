@@ -18,7 +18,7 @@ export function TranslateAction({ id, type, draft, published }: TranslateActionP
   if (type !== 'post') return null
   if (doc?.__i18n_lang && doc.__i18n_lang !== 'ja') return null
 
-  const handleTranslate = async () => {
+  const handleTranslate = async (overwriteMode: 'preserveLocked' | 'force') => {
     setIsTranslating(true)
     setResult(null)
 
@@ -26,7 +26,7 @@ export function TranslateAction({ id, type, draft, published }: TranslateActionP
       const response = await fetch('/api/translate-article', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ documentId: id }),
+        body: JSON.stringify({ documentId: id, overwriteMode }),
       })
 
       const data = await response.json()
@@ -37,9 +37,10 @@ export function TranslateAction({ id, type, draft, published }: TranslateActionP
           message: data.error || '翻訳中にエラーが発生しました。',
         })
       } else {
+        const skipped = data.skippedLanguages || 0
         setResult({
           success: true,
-          message: `✅ ${data.translatedLanguages}言語への翻訳が完了しました。\n各言語の記事が自動で保存されました。`,
+          message: `✅ ${data.translatedLanguages}言語への翻訳が完了しました。\n${skipped > 0 ? `上書き保護された ${skipped} 言語はスキップしました。\n` : ''}各言語の記事が自動で保存されました。`,
         })
       }
     } catch (err: any) {
@@ -52,7 +53,7 @@ export function TranslateAction({ id, type, draft, published }: TranslateActionP
 
   return {
     label: isTranslating ? '🔄 翻訳中...' : '🌍 20言語に一括翻訳',
-    title: `日本語の記事を${translationTargetLocales.length}言語に自動翻訳して保存します`,
+    title: `日本語の記事を親にして${translationTargetLocales.length}言語を一括生成・更新します`,
     disabled: isTranslating,
     dialog: dialogOpen
       ? {
@@ -66,6 +67,9 @@ export function TranslateAction({ id, type, draft, published }: TranslateActionP
                 whiteSpace: 'pre-line'
               }}>
                 {result.message}
+              </p>
+              <p style={{ color: '#6b7280', fontSize: '14px', marginTop: '12px' }}>
+                普段は日本語記事を更新してから、この画面で一括再翻訳するだけで運用できます。
               </p>
               <button
                 onClick={() => {
@@ -89,12 +93,13 @@ export function TranslateAction({ id, type, draft, published }: TranslateActionP
             <div style={{ padding: '20px', lineHeight: 1.6 }}>
               <p>この記事を<strong>{translationTargetLocales.length}言語</strong>に自動翻訳します。</p>
               <p style={{ color: '#6b7280', fontSize: '14px' }}>
-                ⚠️ 既存の翻訳があれば上書きされます。<br />
+                通常は日本語記事を親にして全言語を一括更新できます。<br />
+                各翻訳記事で「自動翻訳の上書き保護」をオンにすると、その言語だけ再翻訳時にスキップされます。<br />
                 翻訳には30秒〜1分ほどかかります。
               </p>
-              <div style={{ display: 'flex', gap: '8px', marginTop: '16px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '16px' }}>
                 <button
-                  onClick={handleTranslate}
+                  onClick={() => handleTranslate('preserveLocked')}
                   disabled={isTranslating}
                   style={{
                     padding: '8px 16px',
@@ -105,7 +110,21 @@ export function TranslateAction({ id, type, draft, published }: TranslateActionP
                     cursor: isTranslating ? 'not-allowed' : 'pointer',
                   }}
                 >
-                  {isTranslating ? '🔄 翻訳中...' : '🚀 翻訳を開始する'}
+                  {isTranslating ? '🔄 翻訳中...' : '🚀 一括翻訳・更新を開始する'}
+                </button>
+                <button
+                  onClick={() => handleTranslate('force')}
+                  disabled={isTranslating}
+                  style={{
+                    padding: '8px 16px',
+                    background: 'white',
+                    color: '#2563eb',
+                    border: '1px solid #93c5fd',
+                    borderRadius: '6px',
+                    cursor: isTranslating ? 'not-allowed' : 'pointer',
+                  }}
+                >
+                  {isTranslating ? '🔄 翻訳中...' : '↻ 保護設定も含めて全言語を再翻訳する'}
                 </button>
                 <button
                   onClick={() => setDialogOpen(false)}

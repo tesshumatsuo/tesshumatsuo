@@ -9,8 +9,7 @@ interface UrlDisplayProps {
 export function UrlDisplay(props: UrlDisplayProps) {
   const { type } = props
   const slug = useFormValue(['slug', 'current']) as string
-  // Default to 'ja' if no language field is found yet
-  const language = (useFormValue(['language']) as string) || 'ja'
+  const language = (useFormValue(['__i18n_lang']) as string) || 'ja'
 
   if (!slug) {
     return (

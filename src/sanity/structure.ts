@@ -1,5 +1,11 @@
 import type {StructureResolver} from 'sanity/structure'
 import { Iframe } from 'sanity-plugin-iframe-pane'
+import { defaultLocale } from '@/i18n/locales'
+
+type PreviewDocument = {
+  slug?: { current?: string }
+  __i18n_lang?: string
+}
 
 // https://www.sanity.io/docs/structure-builder-cheat-sheet
 export const structure: StructureResolver = (S) =>
@@ -20,10 +26,10 @@ export const structure: StructureResolver = (S) =>
                   S.view
                     .component(Iframe)
                     .options({
-                      url: (doc: any) =>
+                      url: (doc: PreviewDocument | null) =>
                         doc?.slug?.current
-                          ? `/ja/blog/${doc.slug.current}`
-                          : `/ja/blog`,
+                          ? `/${doc?.__i18n_lang || defaultLocale}/blog/${doc.slug.current}`
+                          : `/${defaultLocale}/blog`,
                       reload: { button: true },
                     })
                     .title('Preview'),

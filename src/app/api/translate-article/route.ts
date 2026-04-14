@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createClient } from '@sanity/client'
+import { translationTargetLocales } from '@/i18n/locales'
 
 const sanityClient = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
@@ -8,12 +9,6 @@ const sanityClient = createClient({
   token: process.env.SANITY_API_TOKEN,
   useCdn: false,
 })
-
-const ALL_LANGUAGES = [
-  'en','zh','hi','es','ar','fr','bn','pt','id','ur','ru','de','vi','my','ko','it',
-  'th','tl','ms','ne','km','tr','nl','pl','sv','uk','fa','ta','sw','am','ha','yo',
-  'ig','zu','so','gu','ml','kn','pa','kk','az','ka','uz','gl','ca','lo','si','mn','qu'
-]
 
 // Recursively extract all text spans from a PortableText body
 function extractTextBlocks(body: any[]): { path: string; text: string }[] {
@@ -150,7 +145,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Source document not found' }, { status: 404 })
     }
 
-    const langs: string[] = targetLanguages || ALL_LANGUAGES
+    const langs: string[] = targetLanguages || translationTargetLocales
     const results: { lang: string; status: string; docId?: string; error?: string }[] = []
 
     // Extract texts to translate once
@@ -186,6 +181,7 @@ export async function POST(req: NextRequest) {
           body: translatedBody,
           __i18n_lang: lang,
           __i18n_base: { _type: 'reference', _ref: documentId },
+          translationStatus: 'reviewing',
           publishedAt: sourceDoc.publishedAt,
           updatedAt: new Date().toISOString(),
           ...(sourceDoc.categories && { categories: sourceDoc.categories }),
@@ -196,7 +192,7 @@ export async function POST(req: NextRequest) {
 
         // Check if a translated version already exists
         const existingDoc = await sanityClient.fetch(
-          `*[_type == "post" && __i18n_lang == $lang && __i18n_base._ref == $baseId][0]._id`,
+          `*[_type == "post" && __i18n_lang == $lang && (__i18n_base._ref == $baseId || _id == $baseId)][0]._id`,
           { lang, baseId: documentId }
         )
 

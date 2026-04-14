@@ -15,10 +15,8 @@ export default async function BlogIndex(props: BlogIndexProps) {
   const { locale } = params;
   
   const t = await getTranslations({ locale, namespace: 'blog' });
-  
-  const langFilter = locale === 'ja' ? `(!defined(language) || language == 'ja')` : `language == '${locale}'`
-  
-  const query = `*[_type == "post" && ${langFilter} ${cat ? '&& $cat in categories[]->slug.current' : ''}] | order(publishedAt desc) {
+
+  const query = `*[_type == "post" && coalesce(__i18n_lang, "ja") == $locale ${cat ? '&& $cat in categories[]->slug.current' : ''}] | order(publishedAt desc) {
     _id,
     title,
     excerpt,
@@ -28,7 +26,7 @@ export default async function BlogIndex(props: BlogIndexProps) {
     "imageUrl": coalesce(mainImage.asset->url, body[_type == "image"][0].asset->url)
   }`
   
-  const articles = await client.fetch(query, { cat: cat || null })
+  const articles = await client.fetch(query, { cat: cat || null, locale })
 
   const categoryTitles: Record<string, string> = {
     'investment': 'Investment',

@@ -15,6 +15,21 @@ export const postType = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'translationStatus',
+      title: '翻訳ステータス',
+      type: 'string',
+      initialValue: 'draft',
+      options: {
+        list: [
+          { title: 'Draft', value: 'draft' },
+          { title: 'Reviewing', value: 'reviewing' },
+          { title: 'Published', value: 'published' },
+        ],
+        layout: 'radio',
+      },
+      description: '各言語版の記事の翻訳進行状況を管理します。',
+    }),
+    defineField({
       name: 'slug',
       title: 'スラッグ（URL）',
       type: 'slug',
@@ -125,4 +140,27 @@ export const postType = defineType({
       readOnly: true,
     }),
   ],
+  preview: {
+    select: {
+      title: 'title',
+      media: 'mainImage',
+      language: '__i18n_lang',
+      status: 'translationStatus',
+    },
+    prepare({
+      title,
+      media,
+      language,
+      status,
+    }: {
+      title?: string
+      media?: unknown
+      language?: string
+      status?: string
+    }) {
+      const locale = language || 'ja'
+      const subtitle = [locale.toUpperCase(), status || 'draft'].join(' | ')
+      return { title, media, subtitle }
+    },
+  },
 })

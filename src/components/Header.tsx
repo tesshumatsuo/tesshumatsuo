@@ -3,65 +3,12 @@
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { usePathname, useRouter } from 'next/navigation'
-import { useState } from 'react'
+import { supportedLocales } from '@/i18n/locales'
 
 export default function Header({ locale }: { locale: string }) {
   const t = useTranslations('nav')
   const pathname = usePathname()
   const router = useRouter()
-
-  const languages = [
-    { code: 'ja', name: 'JA' },
-    { code: 'en', name: 'EN' },
-    { code: 'zh', name: 'ZH' },
-    { code: 'hi', name: 'HI' },
-    { code: 'es', name: 'ES' },
-    { code: 'ar', name: 'AR' },
-    { code: 'fr', name: 'FR' },
-    { code: 'bn', name: 'BN' },
-    { code: 'pt', name: 'PT' },
-    { code: 'id', name: 'ID' },
-    { code: 'ur', name: 'UR' },
-    { code: 'ru', name: 'Русский' },
-    { code: 'de', name: 'Deutsch' },
-    { code: 'vi', name: 'Tiếng Việt' },
-    { code: 'my', name: 'ဗမာစာ' },
-    { code: 'ko', name: '한국어' },
-    { code: 'it', name: 'Italiano' },
-    { code: 'th', name: 'ภาษาไทย' },
-    { code: 'tl', name: 'Tagalog' },
-    { code: 'ms', name: 'Bahasa Melayu' },
-    { code: 'ne', name: 'नेपाली' },
-    { code: 'km', name: 'ភាសាខ្មែร' },
-    { code: 'tr', name: 'Türkçe' },
-    { code: 'nl', name: 'Nederlands' },
-    { code: 'pl', name: 'Polski' },
-    { code: 'sv', name: 'Svenska' },
-    { code: 'uk', name: 'Українська' },
-    { code: 'fa', name: 'فارسی' },
-    { code: 'ta', name: 'தமிழ்' },
-    { code: 'sw', name: 'Kiswahili' },
-    { code: 'am', name: 'አማርኛ' },
-    { code: 'ha', name: 'Hausa' },
-    { code: 'yo', name: 'Yorùbá' },
-    { code: 'ig', name: 'Igbo' },
-    { code: 'zu', name: 'isiZulu' },
-    { code: 'so', name: 'Soomaali' },
-    { code: 'gu', name: 'ગુજરાતી' },
-    { code: 'ml', name: 'മലയാളം' },
-    { code: 'kn', name: 'ಕನ್ನಡ' },
-    { code: 'pa', name: 'ਪੰਜਾਬੀ' },
-    { code: 'kk', name: 'Қазақша' },
-    { code: 'az', name: 'Azərbaycanca' },
-    { code: 'ka', name: 'ქართული' },
-    { code: 'uz', name: "O'zbek" },
-    { code: 'gl', name: 'Galego' },
-    { code: 'ca', name: 'Català' },
-    { code: 'lo', name: 'ລາວ' },
-    { code: 'si', name: 'සිංහල' },
-    { code: 'mn', name: 'Монгол' },
-    { code: 'qu', name: 'Runasimi' }
-  ];
 
   const switchLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value
@@ -164,8 +111,8 @@ export default function Header({ locale }: { locale: string }) {
             onChange={switchLanguage}
             className="text-[10px] font-bold tracking-widest text-gray-400 hover:text-black border border-gray-200 rounded-md py-1 transition-colors uppercase ml-2 bg-transparent focus:outline-none cursor-pointer"
           >
-            {languages.map(l => (
-              <option key={l.code} value={l.code} className="text-black uppercase">{l.name}</option>
+            {supportedLocales.map((language) => (
+              <option key={language.code} value={language.code} className="text-black uppercase">{language.label}</option>
             ))}
           </select>
         </nav>
@@ -177,8 +124,8 @@ export default function Header({ locale }: { locale: string }) {
             onChange={switchLanguage}
             className="text-[10px] font-bold tracking-widest text-gray-400 hover:text-black border border-gray-200 rounded-md py-1 uppercase bg-transparent focus:outline-none cursor-pointer"
           >
-            {languages.map(l => (
-              <option key={l.code} value={l.code} className="text-black uppercase">{l.name}</option>
+            {supportedLocales.map((language) => (
+              <option key={language.code} value={language.code} className="text-black uppercase">{language.label}</option>
             ))}
           </select>
           <button className="p-2 text-gray-600 hover:text-black" aria-label="Menu">
@@ -191,5 +138,4 @@ export default function Header({ locale }: { locale: string }) {
     </header>
   )
 }
-
 

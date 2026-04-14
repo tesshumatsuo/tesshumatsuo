@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useDocumentOperation } from 'sanity'
+import { translationTargetLocales } from '@/i18n/locales'
 
 interface TranslateActionProps {
   id: string
@@ -39,24 +39,25 @@ export function TranslateAction({ id, type, draft, published }: TranslateActionP
       } else {
         setResult({
           success: true,
-          message: `✅ ${data.translatedLanguages}カ国語への翻訳が完了しました！\n各言語の記事が自動で保存されました。`,
+          message: `✅ ${data.translatedLanguages}言語への翻訳が完了しました。\n各言語の記事が自動で保存されました。`,
         })
       }
     } catch (err: any) {
-      setResult({ success: false, message: `ネットワークエラー: ${err.message}` })
+      const message = err instanceof Error ? err.message : 'unknown error'
+      setResult({ success: false, message: `ネットワークエラー: ${message}` })
     } finally {
       setIsTranslating(false)
     }
   }
 
   return {
-    label: isTranslating ? '🔄 翻訳中...' : '🌍 全言語に一括翻訳',
-    title: '日本語の記事を49カ国語に自動翻訳して一括公開します',
+    label: isTranslating ? '🔄 翻訳中...' : '🌍 20言語に一括翻訳',
+    title: `日本語の記事を${translationTargetLocales.length}言語に自動翻訳して保存します`,
     disabled: isTranslating,
     dialog: dialogOpen
       ? {
           type: 'dialog' as const,
-          header: '50カ国語 一括翻訳システム',
+          header: '20言語 翻訳システム',
           content: result ? (
             <div style={{ padding: '20px', lineHeight: 1.6 }}>
               <p style={{ 
@@ -86,7 +87,7 @@ export function TranslateAction({ id, type, draft, published }: TranslateActionP
             </div>
           ) : (
             <div style={{ padding: '20px', lineHeight: 1.6 }}>
-              <p>この記事を<strong>49カ国語</strong>に自動翻訳します。</p>
+              <p>この記事を<strong>{translationTargetLocales.length}言語</strong>に自動翻訳します。</p>
               <p style={{ color: '#6b7280', fontSize: '14px' }}>
                 ⚠️ 既存の翻訳があれば上書きされます。<br />
                 翻訳には30秒〜1分ほどかかります。

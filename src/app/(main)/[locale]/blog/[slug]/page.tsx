@@ -478,7 +478,7 @@ const tightPtComponents: any = {
 export default async function ArticlePage(props: PostPageProps) {
   const { locale, slug } = await props.params
 
-  const query = `*[_type == "post" && slug.current == $slug][0] {
+  const query = `*[_type == "post" && slug.current == $slug && coalesce(__i18n_lang, "ja") == $locale][0] {
     title,
     "slug": slug.current,
     "date": publishedAt,
@@ -491,7 +491,7 @@ export default async function ArticlePage(props: PostPageProps) {
     "imageUrl": coalesce(mainImage.asset->url, body[_type == "image"][0].asset->url)
   }`
   
-  const post = await client.fetch(query, { slug })
+  const post = await client.fetch(query, { slug, locale })
 
   if (!post) {
     notFound()
@@ -514,11 +514,10 @@ export default async function ArticlePage(props: PostPageProps) {
 
   // Fetch related articles
   // Using a GROQ query that finds other posts sharing at least one category
-  const langFilter = locale === 'ja' ? `(!defined(language) || language == 'ja')` : `language == '${locale}'`
-  const relatedQuery = `*[_type == "post" && ${langFilter} && slug.current != $slug && count((categories[]->slug.current)[@ in $catSlugs]) > 0] | order(publishedAt desc)[0...2] {
+  const relatedQuery = `*[_type == "post" && coalesce(__i18n_lang, "ja") == $locale && slug.current != $slug && count((categories[]->slug.current)[@ in $catSlugs]) > 0] | order(publishedAt desc)[0...2] {
     title, excerpt, "slug": slug.current, "date": publishedAt, "category": categories[0]->title, "imageUrl": coalesce(mainImage.asset->url, body[_type == "image"][0].asset->url)
   }`
-  const relatedPosts = await client.fetch(relatedQuery, { slug, catSlugs: categorySlugs })
+  const relatedPosts = await client.fetch(relatedQuery, { slug, catSlugs: categorySlugs, locale })
 
   // Share URLs
   const shareUrl = process.env.NEXT_PUBLIC_SITE_URL ? `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/blog/${slug}` : `https://tesshumatsuo.com/${locale}/blog/${slug}`
